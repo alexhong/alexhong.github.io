@@ -135,6 +135,12 @@ nav b 		{ color: #404040; }
 nav td > * 	{ display: block; }
 nav td		{ padding: 1px; }
 
+nav td a { 
+	margin: -1px;
+	border: 1px solid #f0f0f0;
+	border-radius: 3px;
+}
+
 nav a.a 	{ background: #ff8000; }
 nav a.b 	{ background: #ffc080; }
 nav a.c 	{ background: #ffe0c0; }
