@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>PChat: 2007-09-17 (42/42)</title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1">
+<link rel="stylesheet" href="../style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="../script.js"></script>
+</head>
+
+<body id="log">
+<nav>
+	<div>
+		<a class="index" href="../index.html"><b>PChat</b></a>
+	</div>
+	<div>
+		<a class="ll" href="44.html"><span>&lt;&lt;</span></a>
+		<a class="l" href="42.html"><span>&lt;</span></a>
+		<b>2007</b><span>-</span><b>09</b>
+		<a class="r" href="43.html"><span>&gt;</span></a>
+		<a class="rr" href="46.html"><span>&gt;&gt;</span></a>
+	</div>
+	<table>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="14.html" title="2401">1</a></td>
+		</tr>
+		<tr>
+			<td><a href="15.html" title="2347">2</a></td>
+			<td><a href="16.html" title="2212">3</a></td>
+			<td><a href="17.html" title="2766">4</a></td>
+			<td><a href="10.html" title="5240">5</a></td>
+			<td><a href="18.html" title="7530">6</a></td>
+			<td><a href="19.html" title="6621">7</a></td>
+			<td><a href="20.html" title="7106">8</a></td>
+		</tr>
+		<tr>
+			<td><a href="21.html" title="8327">9</a></td>
+			<td><a href="22.html" title="9375">10</a></td>
+			<td><a href="23.html" title="2067">11</a></td>
+			<td><a href="24.html" title="4019">12</a></td>
+			<td><a href="25.html" title="2033">13</a></td>
+			<td><a href="26.html" title="2220">14</a></td>
+			<td><a href="27.html" title="2192">15</a></td>
+		</tr>
+		<tr>
+			<td><a href="28.html" title="5759">16</a></td>
+			<td><b title="4198">17</b></td>
+			<td><a href="30.html" title="2332">18</a></td>
+			<td><a href="31.html" title="5134">19</a></td>
+			<td><a href="32.html" title="4628">20</a></td>
+			<td><a href="33.html" title="3579">21</a></td>
+			<td><a href="34.html" title="6861">22</a></td>
+		</tr>
+		<tr>
+			<td><a href="35.html" title="7638">23</a></td>
+			<td><a href="36.html" title="6540">24</a></td>
+			<td><a href="37.html" title="6401">25</a></td>
+			<td><a href="38.html" title="8500">26</a></td>
+			<td><a href="39.html" title="2539">27</a></td>
+			<td><a href="40.html" title="2200">28</a></td>
+			<td><a href="45.html" title="2466">29</a></td>
+		</tr>
+		<tr>
+			<td><a href="41.html" title="3680">30</a></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+	<div>
+		<a class="ll x" href="29.html"><span>|&lt;</span></a> 
+		<a class="l" href="242.html"><span>&lt;</span></a>
+		<b>42 / 42</b>
+	</div>
+</nav>
+<ul>
+	<li class="say"><b style="color:#3B9191">[23:38:12] Spark:</b> <span>it's probably in the jar library that's included with the chatbot</span></li>
+	<li class="say"><b style="color:#3B9191">[23:38:20] Spark:</b> <span>but I could be wrong XD</span></li>
+	<li class="say"><b style="color:#3B9191">[23:38:42] Spark:</b> <span>see if Login.fixName(usernamehere) works</span></li>
+	<li class="say"><b style="color:#3B9191">[23:38:46] Spark:</b> <span>if it does,</span></li>
+	<li class="say"><b style="color:#3B9191">[23:38:54] Spark:</b> <span>it should return the username with only alphanumeric characters</span></li>
+	<li class="say"><b>[23:39:02] aqhong:</b> <span>Okay.</span></li>
+	<li class="say"><b style="color:#3B9191">[23:39:09] Spark:</b> <span>in lowercase</span></li>
+	<li class="say"><b style="color:#3B9191">[23:39:21] Spark:</b> <span>so you just basically fixName your name and the name in the kick event,</span></li>
+	<li class="say"><b style="color:#3B9191">[23:39:29] Spark:</b> <span>and use String's equals() method to compare</span></li>
+	<li class="say"><b style="color:#3B9191">[23:39:40] Spark:</b> <span>no need to convert to lower case or anything, that's already done for you</span></li>
+	<li class="say"><b>[23:41:08] aqhong:</b> <span>Get a &quot;cannot find symbol&quot; error on the Login part.</span></li>
+	<li class="say"><b style="color:#3B9191">[23:41:25] Spark:</b> <span>oh, right</span></li>
+	<li class="say"><b style="color:#3B9191">[23:41:30] Spark:</b> <span>you'll need to import the Login class</span></li>
+	<li class="say"><b style="color:#3B9191">[23:41:31] Spark:</b> <span>by doing...</span></li>
+	<li class="say"><b style="color:#3B9191">[23:41:38] Spark:</b> <span>import org.jberney.java.iochatclient.iochat.Login;</span></li>
+	<li class="say"><b style="color:#3B9191">[23:41:40] Spark:</b> <span>at the top</span></li>
+	<li class="say"><b style="color:#3B9191">[23:41:42] Spark:</b> <span>assuming it's not already there</span></li>
+	<li class="say"><b>[23:42:15] aqhong:</b> <span>Gotcha.</span></li>
+	<li class="presence">[23:42:55] HALX left.</li>
+	<li class="say"><b style="color:#3B9191">[23:42:59] Spark:</b> <span>btw...</span></li>
+	<li class="say"><b style="color:#3B9191">[23:43:07] Spark:</b> <span>can you open digitalcolor meter</span></li>
+	<li class="say"><b style="color:#3B9191">[23:43:10] Spark:</b> <span>and hover halx's three colors</span></li>
+	<li class="say"><b style="color:#3B9191">[23:43:13] Spark:</b> <span>and tell me what they are?</span></li>
+	<li class="say"><b style="color:#3B9191">[23:43:16] Spark:</b> <span>so I can see what's going on</span></li>
+	<li class="say"><b>[23:43:23] aqhong:</b> <span>Wow, wireless keeps dropping out... weird.</span></li>
+	<li class="say"><b>[23:43:23] aqhong:</b> <span>Gonna restart, BRB.</span></li>
+	<li class="say"><b style="color:#3B9191">[23:43:27] Spark:</b> <span>k</span></li>
+	<li class="presence">[23:44:18] MIRO left.</li>
+	<li class="presence">[23:44:40] aqhong left.</li>
+	<li class="status">[23:45:29] Spark went away: 11:45 PM</li>
+	<li class="say"><b style="color:#1DAEAB">[23:48:09] tiffany:</b> <span>:\</span></li>
+	<li class="say"><b style="color:#1DAEAB">[23:48:18] tiffany:</b> <span>i nvr knew everyone left so quickly</span></li>
+	<li class="status">[23:49:10] Spark returned.</li>
+	<li class="say"><b style="color:#686564">[23:49:14] Max:</b> <span>Aww, all my testers disappeared :/</span></li>
+	<li class="say"><b style="color:#3B9191">[23:49:15] Spark:</b> <span>whyyy did I go idle after 2 minutes</span></li>
+	<li class="presence">[23:49:51] Spark left.</li>
+	<li class="say"><b style="color:#1DAEAB">[23:49:57] tiffany:</b> <span>aww</span></li>
+	<li class="presence">[23:50:03] Spark joined.</li>
+	<li class="say"><b style="color:#33993F">[23:50:03] REX:</b> <span>I know what you did last summer, Spark</span></li>
+	<li class="presence">[23:50:13] Spark left.</li>
+	<li class="say"><b style="color:#1DAEAB">[23:50:18] tiffany:</b> <span>whoa rex</span></li>
+	<li class="say"><b style="color:#1DAEAB">[23:50:20] tiffany:</b> <span>hi rex</span></li>
+	<li class="say"><b style="color:#33993F">[23:50:20] REX:</b> <span>Please cease addressing me with &quot;Hi.&quot; My database does not contain an adequate response.</span></li>
+	<li class="say"><b style="color:#1DAEAB">[23:50:22] tiffany:</b> <span>:D</span></li>
+	<li class="say"><b style="color:#1DAEAB">[23:50:26] tiffany:</b> <span>hello rex?</span></li>
+	<li class="say"><b style="color:#1DAEAB">[23:50:28] tiffany:</b> <span>darn</span></li>
+	<li class="presence">[23:50:38] Spark joined.</li>
+	<li class="say"><b style="color:#33993F">[23:50:38] REX:</b> <span>I know what you did last summer, Spark</span></li>
+	<li class="status">[23:50:50] Spark went away.</li>
+	<li class="status">[23:50:53] Spark returned.</li>
+	<li class="presence">[23:52:04] Spark left.</li>
+	<li class="presence">[23:52:12] Spark joined.</li>
+	<li class="say"><b style="color:#33993F">[23:52:12] REX:</b> <span>I'm watching you, Spark</span></li>
+	<li class="say"><b style="color:#3B9191">[23:52:17] Spark:</b> <span>o rly</span></li>
+	<li class="status">[23:52:20] Spark went away.</li>
+	<li class="presence">[23:52:26] Spark left.</li>
+	<li class="say"><b style="color:#1DAEAB">[23:52:29] tiffany:</b> <span>rex is just a tad bit freaky</span></li>
+	<li class="presence">[23:53:27] aqhong joined.</li>
+	<li class="say"><b style="color:#33993F">[23:53:28] REX:</b> <span>I know what you did last summer, aqhong</span></li>
+	<li class="status">[23:53:29] Max went away: Shower</li>
+	<li class="say"><b style="color:#1DAEAB">[23:54:00] tiffany:</b> <span>ughh</span></li>
+	<li class="presence">[23:55:56] Forward Biased joined.</li>
+	<li class="say"><b style="color:#33993F">[23:55:56] REX:</b> <span>Gotta put together a bed, Forward Biased</span></li>
+	<li class="say"><b>[23:56:12] aqhong:</b> <span>Ugh. Airport is randomly connecting/disconnecting.</span></li>
+	<li class="say"><b>[23:56:22] aqhong:</b> <span>Seem to recall reading something about this issue. Can't remember where...</span></li>
+	<li class="say"><b style="color:#1DAEAB">[23:56:22] tiffany:</b> <span>HI QUADDDDDDDDDDDDDDDD</span></li>
+	<li class="say"><b style="color:#1DAEAB">[23:56:31] tiffany:</b> <span>OMG HIIIIIIIIII</span></li>
+	<li class="say"><b style="color:#1DAEAB">[23:56:33] tiffany:</b> <span>ARE U THERE???</span></li>
+	<li class="say"><b style="color:#1DAEAB">[23:56:43] tiffany:</b> <span>:[[[[[[[[[[[[[</span></li>
+	<li class="say"><b style="color:#1DAEAB">[23:57:04] tiffany:</b> <span>ur in an airport?</span></li>
+	<li class="say"><b style="color:#1DAEAB">[23:57:19] tiffany:</b> <span>oh dear</span></li>
+	<li class="say"><b>[23:57:21] aqhong:</b> <span>sup Tif ;)</span></li>
+	<li class="emote"><b style="color:#1DAEAB">[23:57:35] tiffany giggles.</b></li>
+	<li class="presence">[23:57:38] Spark joined.</li>
+	<li class="say"><b style="color:#33993F">[23:57:38] REX:</b> <span>Gotta put together a bed, Spark</span></li>
+	<li class="say"><b style="color:#1DAEAB">[23:58:33] tiffany:</b> <span>does anyone kno the fastest way to get back a fever?</span></li>
+	<li class="say"><b style="color:#336699">[23:58:39] Kass:</b> <span>...</span></li>
+	<li class="say"><b style="color:#1DAEAB">[23:58:40] tiffany:</b> <span>fast as in like an hour</span></li>
+	<li class="presence">[23:58:48] aqhong joined.</li>
+	<li class="say"><b style="color:#33993F">[23:58:48] REX:</b> <span>I'm watching you, aqhong</span></li>
+	<li class="say"><b style="color:#3B9191">[23:58:52] Spark:</b> <span>like your dog's tongue</span></li>
+	<li class="say"><b style="color:#336699">[23:58:53] Kass:</b> <span>What do you mean, &quot;get back a fever&quot;.</span></li>
+	<li class="say"><b style="color:#3B9191">[23:58:55] Spark:</b> <span>;gfkjd</span></li>
+	<li class="say"><b style="color:#3B9191">[23:58:56] Spark:</b> <span>*lick</span></li>
+	<li class="say"><b style="color:#1DAEAB">[23:59:03] tiffany:</b> <span>nice</span></li>
+	<li class="say"><b style="color:#1DAEAB">[23:59:10] tiffany:</b> <span>cuz i was sick today and now im not</span></li>
+	<li class="say"><b style="color:#1DAEAB">[23:59:16] tiffany:</b> <span>so my moms forcing me to go to skool</span></li>
+	<li class="say"><b style="color:#336699">[23:59:21] Kass:</b> <span>-_-</span></li>
+	<li class="say"><b style="color:#3B9191">[23:59:32] Spark:</b> <span>school is good</span></li>
+	<li class="say"><b style="color:#1DAEAB">[23:59:40] tiffany:</b> <span>not rite now it isnt</span></li>
+</ul>
+</body>
+
+</html>

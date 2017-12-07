@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1">
+<link rel="stylesheet" href="../style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="../script.js"></script>
+</head>
+
+<body id="log">
+<nav>
+ <div class="calendar">
+ <div class="heading">June 2008</div>
+ 	<table>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+		</tr>
+		<tr>
+			<td><a href="08-149.html" title="8">8</a></td>
+			<td><a href="08-151.html" title="4">9</a></td>
+			<td>10</td>
+			<td>11</td>
+			<td><a href="08-150.html" title="14">12</a></td>
+			<td><a href="08-153.html" title="13">13</a></td>
+			<td><a href="08-152.html" title="17">14</a></td>
+		</tr>
+		<tr>
+			<td><a href="08-155.html" title="81">15</a></td>
+			<td><a href="08-154.html" title="9679">16</a></td>
+			<td><a href="08-157.html" title="4326">17</a></td>
+			<td><a href="08-156.html" title="5953">18</a></td>
+			<td><a href="08-158.html" title="5332">19</a></td>
+			<td><a href="08-159.html" title="6884">20</a></td>
+			<td><a href="08-160.html" title="6509">21</a></td>
+		</tr>
+		<tr>
+			<td><a href="08-161.html" title="8697">22</a></td>
+			<td><b title="7232">23</b></td>
+			<td><a href="08-163.html" title="6668">24</a></td>
+			<td><a href="08-165.html" title="12518">25</a></td>
+			<td><a href="08-164.html" title="6834">26</a></td>
+			<td><a href="08-166.html" title="3326">27</a></td>
+			<td><a href="08-167.html" title="3039">28</a></td>
+		</tr>
+		<tr>
+			<td><a href="08-168.html" title="5216">29</a></td>
+			<td><a href="08-94.html" title="6588">30</a></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+ </table>
+ <table class="months">
+		<tr>
+			<td><a href="08-169.html">May</a></td>
+			<td><a href="08-65.html">July</a></td>
+		</tr>
+		<tr>
+			<td>2007</td>
+			<td><a href="08-17.html">2009</a></td>
+		</tr>
+</nav>
+<ul>
+ <p><a href="08-162.html" title="First">&lt;&lt;</a> <a href="08-1204.html" title="Previous">&lt;</a> 62/73 <a href="08-1033.html" title="Next">&gt;</a> <a href="08-237.html" title="Last">&gt;&gt;</a></li>
+	<li><b style="color:#C4A83B">[21:32:00] guitar hero:</b> bottom margin</li>
+	<li><b style="color:#C4A83B">[21:32:03] guitar hero:</b> ?</li>
+	<li><b style="color:#91D52A">[21:32:04] taptapCRASH:</b> dd { margin: blahblah; }?</li>
+	<li><b style="color:#5D94A2">[21:32:22] aqhong:</b> Right, but you only wanted it on the bottom.</li>
+	<li><b style="color:#C4A83B">[21:32:32] guitar hero:</b> </li>
+	<li><b style="color:#91D52A">[21:32:33] taptapCRASH:</b> but wouldnt that also change the dds on the left</li>
+	<li><b style="color:#91D52A">[21:32:36] taptapCRASH:</b> in the boxes</li>
+	<li><b style="color:#5D94A2">[21:32:43] aqhong:</b> That's true.</li>
+	<li><b style="color:#5D94A2">[21:32:47] aqhong:</b> So you need a more specific selector.</li>
+	<li><b style="color:#91D52A">[21:32:51] taptapCRASH:</b> so i would do</li>
+	<li><b style="color:#5D94A2">[21:32:53] aqhong:</b> That will only select the &lt;dd&gt;s on the right.</li>
+	<li><b style="color:#91D52A">[21:32:58] taptapCRASH:</b> how?</li>
+	<li><b style="color:#5D94A2">[21:32:59] aqhong:</b> Do you know what descendant selectors are?</li>
+	<li><b style="color:#91D52A">[21:33:03] taptapCRASH:</b> no</li>
+	<li><b style="color:#5D94A2">[21:33:25] aqhong:</b> Basically, you put one element after another, separated by a space, and it'll look for the second element, but only when it's inside of the first element.</li>
+	<li><b style="color:#5D94A2">[21:33:28] aqhong:</b> For example...</li>
+	<li class="presence">[21:33:35] jasonlucero joined.</li>
+	<li><b style="color:#5D94A2">[21:33:47] aqhong:</b> div h2 { CSS here; } &lt;-- this will only apply to &lt;h2&gt;s that are inside &lt;div&gt;s.</li>
+	<li><b style="color:#91D52A">[21:34:17] taptapCRASH:</b> so</li>
+	<li><b style="color:#91D52A">[21:34:18] taptapCRASH:</b> i do </li>
+	<li><b style="color:#5D94A2">[21:34:21] aqhong:</b> So you want to find some element that contains the stuff on the right, but not the stuff on the left.</li>
+	<li><b style="color:#91D52A">[21:34:26] taptapCRASH:</b> div dd (css)</li>
+	<li><b style="color:#C4A83B">[21:34:31] guitar hero:</b> night</li>
+	<li><b style="color:#91D52A">[21:34:33] jasonlucero:</b> where do you go to find the tag for boxes?</li>
+	<li><b style="color:#5D94A2">[21:34:34] aqhong:</b> No, that was just an example.</li>
+	<li><b style="color:#91D52A">[21:34:48] jasonlucero:</b> with padding and stuff?</li>
+	<li><b style="color:#91D52A">[21:34:48] taptapCRASH:</b> nono isnt it div dd { css }?</li>
+	<li class="presence">[21:34:53] guitar hero left.</li>
+	<li><b style="color:#91D52A">[21:35:03] taptapCRASH:</b> because the ones on the right are in a table</li>
+	<li><b style="color:#91D52A">[21:35:04] taptapCRASH:</b> not a div</li>
+	<li><b style="color:#5D94A2">[21:35:29] aqhong:</b> Okay, you're right.</li>
+	<li><b style="color:#91D52A">[21:35:37] taptapCRASH:</b> okay hang on let me try</li>
+	<li><b style="color:#5D94A2">[21:35:50] aqhong:</b> Sorry, didn't get around to looking at the exact structure of the HTML...</li>
+	<li><b style="color:#C4A83B">[21:35:59] thesqyd250:</b> :O</li>
+	<li><b style="color:#5D94A2">[21:36:06] aqhong:</b> but yes, if there are only divs on the right and not the left, that should work.</li>
+	<li><b style="color:#91D52A">[21:36:12] jasonlucero:</b> where do you go to find the tags for boxes around words and stuff?</li>
+	<li><b style="color:#C4A83B">[21:36:26] thesqyd250:</b> what do u mean, find?</li>
+	<li><b style="color:#5D94A2">[21:36:28] aqhong:</b> What do you mean boxes?</li>
+	<li><b style="color:#C4A83B">[21:36:34] thesqyd250:</b> he means borders</li>
+	<li><b style="color:#C4A83B">[21:36:35] thesqyd250:</b> im guessing</li>
+	<li><b style="color:#91D52A">[21:36:38] jasonlucero:</b> yes</li>
+	<li><b style="color:#5D94A2">[21:36:40] aqhong:</b> Borders are created with CSS.</li>
+	<li><b style="color:#91D52A">[21:36:41] jasonlucero:</b> thank you</li>
+	<li><b style="color:#5D94A2">[21:36:46] aqhong:</b> You can apply borders to any element.</li>
+	<li><b style="color:#91D52A">[21:36:53] taptapCRASH:</b> It worked! :O</li>
+	<li><b style="color:#5D94A2">[21:36:56] aqhong:</b> Great.</li>
+	<li><b style="color:#91D52A">[21:36:57] taptapCRASH:</b> Thank you!</li>
+	<li><b style="color:#91D52A">[21:36:59] taptapCRASH:</b> I LOVE YOU</li>
+	<li><b style="color:#91D52A">[21:37:02] taptapCRASH:</b> YAYYY</li>
+	<li><b style="color:#91D52A">[21:37:08] jasonlucero:</b> where do you find the tag for it?</li>
+	<li><b style="color:#5D94A2">[21:37:12] aqhong:</b> You're welcome.</li>
+	<li><b style="color:#C4A83B">[21:37:32] thesqyd250:</b> what did u do, taptapCRASH? i think i ahve the same q -.-'</li>
+	<li><b style="color:#5D94A2">[21:37:32] aqhong:</b> What do you mean tag? Borders are created with CSS.</li>
+	<li><b style="color:#5D94A2">[21:37:35] aqhong:</b> Do you mean CSS property?</li>
+	<li><b style="color:#91D52A">[21:37:39] jasonlucero:</b> yes</li>
+	<li><b style="color:#5D94A2">[21:37:45] aqhong:</b> The property is &quot;border&quot;</li>
+	<li><b style="color:#C4A83B">[21:37:55] thesqyd250:</b> taptapCRASH were u trying to make like a space between the links and stuff?</li>
+	<li><b style="color:#91D52A">[21:37:56] taptapCRASH:</b> wait whats your question?</li>
+	<li><b style="color:#5D94A2">[21:37:58] aqhong:</b> border: width style color;</li>
+	<li><b style="color:#91D52A">[21:38:01] taptapCRASH:</b> yeah</li>
+	<li><b style="color:#C4A83B">[21:38:02] thesqyd250:</b> i couldnt figure it out either...</li>
+	<li><b style="color:#C4A83B">[21:38:14] thesqyd250:</b> i wasnt listening to u and Alex's convo ... -.-'</li>
+	<li class="beep">[21:38:22] taptapCRASH beeped aqhong.</li>
+	<li><b style="color:#91D52A">[21:38:24] taptapCRASH:</b> =]</li>
+	<li><b style="color:#C4A83B">[21:38:24] thesqyd250:</b> would u mind explaining...sorry...</li>
+	<li><b style="color:#C4A83B">[21:38:34] thesqyd250:</b> or alex. dats fine too. :D</li>
+	<li><b style="color:#5D94A2">[21:38:37] aqhong:</b> Khalid, you should be able to explain it to Sydney, right? ;)</li>
+	<li><b style="color:#91D52A">[21:38:42] taptapCRASH:</b> uh...</li>
+	<li><b style="color:#C4A83B">[21:38:44] thesqyd250:</b> hehe :)</li>
+	<li><b style="color:#91D52A">[21:38:44] taptapCRASH:</b> okay</li>
+	<li><b style="color:#91D52A">[21:38:46] taptapCRASH:</b> lemme try</li>
+	<li><b style="color:#91D52A">[21:38:48] taptapCRASH:</b> wait no</li>
+	<li><b style="color:#91D52A">[21:38:49] taptapCRASH:</b> i gtg</li>
+	<li><b style="color:#91D52A">[21:38:51] taptapCRASH:</b> sorry</li>
+	<li><b style="color:#C4A83B">[21:38:54] thesqyd250:</b> its k.</li>
+	<li><b style="color:#5D94A2">[21:38:54] aqhong:</b> lol. Seeya.</li>
+	<li><b style="color:#91D52A">[21:38:55] taptapCRASH:</b> gnite</li>
+	<li class="status">[21:38:55] awcchungster returned.</li>
+	<li><b style="color:#5D94A2">[21:38:56] awcchungster:</b> later</li>
+	<li class="status">[21:39:00] Cindy went away: 10:38 PM (PDT)</li>
+	<li class="presence">[21:39:01] taptapCRASH left.</li>
+	<li><b style="color:#C4A83B">[21:39:04] thesqyd250:</b> ok, so can someone else explain to me?</li>
+	<li><b style="color:#5D94A2">[21:39:12] aqhong:</b> So Sydney, look in your HTML and figure out which element you want to put the spaces under.</li>
+	<li class="presence">[21:39:15] ShiftOpt left.</li>
+	<li><b style="color:#C4A83B">[21:39:21] thesqyd250:</b> the dd?</li>
+	<li><b style="color:#5D94A2">[21:39:28] aqhong:</b> Right.</li>
+	<li><b style="color:#C4A83B">[21:39:33] thesqyd250:</b> but its in div</li>
+	<li><b style="color:#C4A83B">[21:39:35] thesqyd250:</b> so ...</li>
+	<li><b style="color:#5D94A2">[21:39:49] aqhong:</b> Yes?</li>
+	<li><b style="color:#C4A83B">[21:39:53] thesqyd250:</b> div dd { CSS: asdfl sd; }</li>
+	<li><b style="color:#C4A83B">[21:39:54] thesqyd250:</b> ?</li>
+	<li><b style="color:#5D94A2">[21:40:10] aqhong:</b> That declaration will only apply to &lt;dd&gt;s inside of &lt;div&gt;s, yes.</li>
+	<li><b style="color:#C4A83B">[21:40:25] thesqyd250:</b> except, what do i put after the open bracket? div dd { margin: sdfadsfpx; }</li>
+	<li><b style="color:#5D94A2">[21:40:39] aqhong:</b> What CSS property would you use if you wanted space beneath it?</li>
+	<li><b style="color:#C4A83B">[21:40:44] thesqyd250:</b> margin?</li>
+	<li><b style="color:#C4A83B">[21:40:48] thesqyd250:</b> or is it padding</li>
+	<li><b style="color:#C4A83B">[21:40:49] thesqyd250:</b> :O</li>
+	<li><b style="color:#5D94A2">[21:40:54] aqhong:</b> Right, but &quot;margin&quot; by itself would add spacing on all four sides.</li>
+	<li><b style="color:#5D94A2">[21:41:02] aqhong:</b> If you wanted it only on the bottom, what would you use?</li>
+	<li><b style="color:#C4A83B">[21:41:13] thesqyd250:</b> margin-bottom?</li>
+</ul>
+</body>
+
+</html>

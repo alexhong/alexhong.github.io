@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>PChat: 2009-11-18 (2/7)</title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1">
+<link rel="stylesheet" href="../style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="../script.js"></script>
+</head>
+
+<body id="log">
+<nav>
+	<div>
+		<a class="index" href="../index.html"><b>PChat</b></a>
+	</div>
+	<div>
+		<a class="ll" href="1000.html"><span>&lt;&lt;</span></a>
+		<a class="l" href="2991.html"><span>&lt;</span></a>
+		<b>2009</b><span>-</span><b>11</b>
+		<a class="r" href="1013.html"><span>&gt;</span></a>
+		<a class="rr" href="1005.html"><span>&gt;&gt;</span></a>
+	</div>
+	<table>
+		<tr>
+			<td><a href="2910.html" title="141">1</a></td>
+			<td><a href="2912.html" title="22">2</a></td>
+			<td><a href="2914.html" title="42">3</a></td>
+			<td><a href="2917.html" title="9">4</a></td>
+			<td><a href="2920.html" title="27">5</a></td>
+			<td><a href="2922.html" title="163">6</a></td>
+			<td><a href="2927.html" title="62">7</a></td>
+		</tr>
+		<tr>
+			<td><a href="2932.html" title="12">8</a></td>
+			<td><a href="2936.html" title="6">9</a></td>
+			<td>10</td>
+			<td>11</td>
+			<td><a href="2942.html" title="2">12</a></td>
+			<td>13</td>
+			<td>14</td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td><a href="2946.html" title="5">16</a></td>
+			<td><a href="2951.html" title="26">17</a></td>
+			<td><b title="603">18</b></td>
+			<td><a href="2958.html" title="6">19</a></td>
+			<td><a href="2960.html" title="16">20</a></td>
+			<td><a href="2962.html" title="1565">21</a></td>
+		</tr>
+		<tr>
+			<td><a href="2967.html" title="35">22</a></td>
+			<td><a href="2970.html" title="28">23</a></td>
+			<td><a href="2972.html" title="77">24</a></td>
+			<td><a href="2975.html" title="33">25</a></td>
+			<td><a href="2979.html" title="95">26</a></td>
+			<td><a href="2982.html" title="12">27</a></td>
+			<td><a href="2985.html" title="46">28</a></td>
+		</tr>
+		<tr>
+			<td><a href="2986.html" title="79">29</a></td>
+			<td><a href="1065.html" title="21">30</a></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+	<div>
+		<a class="ll x" href="2954.html"><span>|&lt;</span></a> 
+		<a class="l" href="2954.html"><span>&lt;</span></a>
+		<b>2 / 7</b>
+		<a class="r" href="4397.html"><span>&gt;</span></a> 
+		<a class="rr x" href="3383.html"><span>&gt;|</span></a>
+	</div>
+</nav>
+<ul>
+	<li><b style="color:#336699">[15:48:13] Kass:</b> The way the game is supposed to be built eventually, all the encounters are going to be randomly generated.</li>
+	<li><b style="color:#336699">[15:48:37] Kass:</b> In addition to, say, seeded encounters to handle the narrative... what little there will be.</li>
+	<li><b style="color:#336699">[15:48:57] Kass:</b> That means that... I can randomize the discovery of new nodes into these.</li>
+	<li><b style="color:#336699">[15:49:19] Kass:</b> So no, there doesn't have to be a fixed number of resources.</li>
+	<li><b style="color:#686564">[15:50:40] Max:</b> And if there's an imbalance in the proportion of resources you discover due to the randomness, there'll be a method to compensate for that?</li>
+	<li><b style="color:#686564">[15:51:04] Max:</b> Or do you actively seek out resources that you think you want</li>
+	<li><b style="color:#336699">[15:51:57] Kass:</b> ::quirk:: Good call. Algorithmically I can ensure that there's a balanced number of nodes/resources at any given time to be discovered, but I think the discovery and subsequent we're-choosing-to-mine-this has to be up to the players.</li>
+	<li><b style="color:#686564">[15:52:52] Max:</b> I guess the rate at which you gain resources will also increase with the difficulty it takes to clear the area to discourage adventurers to cleaning out lower level places for resources</li>
+	<li><b style="color:#336699">[15:53:29] Kass:</b> Hmm, good question.</li>
+	<li><b style="color:#336699">[15:53:56] Kass:</b> Well, this would depend on how exactly you get these resources.</li>
+	<li><b style="color:#336699">[15:54:28] Kass:</b> Like, let's look at it. A player sends their adventurers and scouts an area (because in the final version, scouting is not useless XP )...</li>
+	<li><b style="color:#336699">[15:54:52] Kass:</b> And they find an ... ore mine ... (-_-; ).</li>
+	<li><b style="color:#336699">[15:55:14] Kass:</b> A couple players band up to clear the area out so now the mine is accessible. That's two days down already.</li>
+	<li><b style="color:#336699">[15:55:20] Kass:</b> What happens then?</li>
+	<li><b style="color:#686564">[15:56:03] Max:</b> Either they completely clear out the ore mine or they only partly clear it and have to return on subsequent days or the town automates the collection of ore from the mine?</li>
+	<li><b style="color:#336699">[15:56:35] Kass:</b> Which do you like the sound of? I like the last one most, I think, even though that means we'd have to develop another unit that will go collect that stuff.</li>
+	<li><b style="color:#336699">[15:57:06] Kass:</b> I think players will be annoyed if they have to send their adventurers to go collect a resource... or even babysitting the units that will be collecting the resource.</li>
+	<li><b style="color:#686564">[15:57:10] Max:</b> I don't think you'd have to develop another unit. You already have citizens that don't get trained to become adventurers on hand. It's just a matter of allocating jobs</li>
+	<li><b style="color:#336699">[15:57:18] Kass:</b> Haha.</li>
+	<li><b style="color:#336699">[15:57:23] Kass:</b> ... oh, that's interesting.</li>
+	<li><b style="color:#336699">[15:57:40] Kass:</b> If citizens who weren't hired ended up getting experience at a slow rate because they worked in a mine somewhere.</li>
+	<li><b style="color:#336699">[15:58:07] Kass:</b> Then when someone has to replace a character, they don't have to work them up from completely nothing. &gt;_&gt;</li>
+	<li><b style="color:#686564">[15:58:35] Max:</b> Yep, there you go XD</li>
+	<li><b style="color:#336699">[15:59:20] Kass:</b> All right. So... SHOULD the nodes discovered in low level areas have less in them than higher level ones?</li>
+	<li><b style="color:#686564">[15:59:31] Max:</b> If you even had multiple mines to choose from at the same time, it becomes a matter of which resource you prioritize, and how you allocate your citizens</li>
+	<li><b style="color:#686564">[15:59:45] Max:</b> I'd say yes....</li>
+	<li><b style="color:#336699">[15:59:45] Kass:</b> Right.</li>
+	<li><b style="color:#336699">[16:00:29] Kass:</b> Maybe it depends on how common the nodes are and how much you get out of them.</li>
+	<li><b style="color:#336699">[16:00:46] Kass:</b> And how many days it takes for them to peter out.</li>
+	<li><b style="color:#336699">[16:00:56] Kass:</b> Well. I guess that part is player dependent.</li>
+	<li><b style="color:#336699">[16:03:07] Kass:</b> I suppose we can't make a decision on that until more number crunching is done and decided on.</li>
+	<li><b style="color:#336699">[16:08:10] Kass:</b> Okay. Now uh. Harder part. &gt;_&gt;</li>
+	<li><b style="color:#336699">[16:08:13] Kass:</b> Battle system.</li>
+	<li><b style="color:#686564">[16:08:23] Max:</b> :O</li>
+	<li><b style="color:#336699">[16:08:45] Kass:</b> I do want it to be, in fact, more strategic than you guys ended up getting to.</li>
+	<li><b style="color:#336699">[16:09:00] Kass:</b> I did have magic immune mobs in there that someone ran into, but it didn't really make a difference, because most people were physical heavy.</li>
+	<li><b style="color:#686564">[16:10:44] Max:</b> I think you could have gone with some physical damage reduction on the dire tortoise instead of it having a ridiculous amount of hp XD</li>
+	<li><b style="color:#336699">[16:11:30] Kass:</b> Fair enough. &gt;_&gt;</li>
+	<li><b style="color:#336699">[16:11:40] Kass:</b> I have to rethink some of the stats and stuff...</li>
+	<li><b style="color:#336699">[16:12:02] Kass:</b> For example, instead of modeling it straight off of D&amp;D stats, maybe I should be going with something more transparent.</li>
+	<li><b style="color:#336699">[16:12:19] Kass:</b> e.g. physical damage, accuracy, dodge...</li>
+	<li><b style="color:#336699">[16:12:46] Kass:</b> Potential or something equally absurd sounding for magic casting.</li>
+	<li><b style="color:#336699">[16:13:18] Kass:</b> The downside to that is that I won't be able to do &quot;pure stat&quot; checks that I was interested in trying for encounters, D&amp;DTA style.</li>
+	<li><b style="color:#686564">[16:14:51] Max:</b> Could just show how the stats are translating into physical damage, etc.</li>
+	<li><b style="color:#336699">[16:15:20] Kass:</b> Well, that's a given, no matter what I do. Still, there's something to be said for just showing what you mean.</li>
+	<li><b style="color:#336699">[16:15:31] Kass:</b> It depends on how desperately I want to keep the other types of encounters.</li>
+	<li><b style="color:#336699">[16:16:06] Kass:</b> At any rate...</li>
+	<li><b style="color:#336699">[16:16:30] Kass:</b> I'd like to consider what other model of battle system there is to increase strategy ... things.</li>
+	<li><b style="color:#686564">[16:16:42] Max:</b> Front line/back line? :O</li>
+	<li><b style="color:#336699">[16:16:55] Kass:</b> ... Probably not. &gt;_&gt; If that's what it sounds like.</li>
+	<li><b style="color:#336699">[16:17:33] Kass:</b> What is that?</li>
+	<li><b style="color:#336699">[16:17:50] Kass:</b> What! Pandora has a FREE LISTENING LIMIT??</li>
+	<li><b style="color:#686564">[16:18:05] Max:</b> You have adventurers in the front and adventurers in the back... the ones in the back can't be attacked without the ones in the front being knocked out. Something like that?</li>
+	<li><b style="color:#686564">[16:18:24] Max:</b> Aside from magic or ranged or etc</li>
+	<li><b style="color:#336699">[16:18:42] Kass:</b> Oh man. ::lol::</li>
+	<li><b style="color:#336699">[16:18:48] Kass:</b> You're trying to kill me coding wise.</li>
+	<li><b style="color:#336699">[16:19:04] Kass:</b> I'll keep that in mind, but I can't promise anything. At any rate, I meant something on a grander scale.</li>
+	<li><b style="color:#336699">[16:19:20] Kass:</b> Like... do we want the whole thing to be one huge rock paper scissors game?</li>
+	<li><b style="color:#686564">[16:20:02] Max:</b> Hmmm</li>
+	<li><b style="color:#336699">[16:20:47] Kass:</b> That's interesting, though, the front/back line thing... kind of a way to build in &quot;tanking&quot; without needing to build an aggro mechanic.</li>
+	<li><b style="color:#336699">[16:20:58] Kass:</b> Though makes the cover ability a little obsolete.</li>
+	<li><b style="color:#686564">[16:21:28] Max:</b> I was wondering how you would have dealt with if we taught Fireball AND Quake to a single adventurer?</li>
+	<li><b style="color:#336699">[16:21:44] Kass:</b> Not well!</li>
+	<li><b style="color:#336699">[16:21:52] Kass:</b> Yeah, I have no idea.</li>
+	<li><b style="color:#336699">[16:22:11] Kass:</b> If it weren't already clear, I was making shit up as we went along.</li>
+	<li><b style="color:#336699">[16:22:19] Kass:</b> Every time you guys learned a new ability, I had to program it into the simulator that night.</li>
+	<li><b style="color:#686564">[16:23:12] Max:</b> Well, that might be how to complicate things... if each adventurer had more than one attack and chose the attack based on the situation</li>
+	<li><b style="color:#336699">[16:23:37] Kass:</b> ::snaps fingers:: Ah, that's what I wanted to ask.</li>
+	<li><b style="color:#336699">[16:23:41] Kass:</b> You've played FF10, I assume?</li>
+	<li><b style="color:#336699">[16:23:42] Kass:</b> Er.</li>
+	<li><b style="color:#336699">[16:23:43] Kass:</b> 12.</li>
+	<li><b style="color:#336699">[16:23:45] Kass:</b> -_-;</li>
+	<li><b style="color:#686564">[16:23:48] Max:</b> Yeah, Gambits?</li>
+	<li><b style="color:#336699">[16:23:52] Kass:</b> Yeah. Is that what you want? :P</li>
+	<li><b style="color:#686564">[16:24:00] Max:</b> ....mm, maybe</li>
+	<li><b style="color:#336699">[16:24:08] Kass:</b> ::lol:: mm, maybe, he says.</li>
+	<li><b style="color:#686564">[16:24:18] Max:</b> Gambits are fine for smaller parties... but they can get really complicated with larger ones</li>
+	<li><b style="color:#336699">[16:24:26] Kass:</b> Did you finish FF12?</li>
+	<li><b style="color:#686564">[16:24:27] Max:</b> Depends on how many adventurers you have with you</li>
+	<li><b style="color:#686564">[16:24:32] Max:</b> Yeah, the game played itself for me</li>
+	<li><b style="color:#336699">[16:24:42] Kass:</b> Har har.</li>
+	<li><b style="color:#336699">[16:25:11] Kass:</b> How big did your parties get there?</li>
+	<li><b style="color:#686564">[16:25:14] Max:</b> But each of my characters had a lot of gambits... it wasn't pretty</li>
+	<li><b style="color:#336699">[16:25:23] Kass:</b> Hm.</li>
+	<li><b style="color:#686564">[16:25:35] Max:</b> I think there were only three fighting at a time? So it wasn't too bad to change the gambits around as I needed</li>
+	<li><b style="color:#336699">[16:25:42] Kass:</b> The INTENDED design is that you're not allowed to have parties bigger than four.</li>
+	<li><b style="color:#336699">[16:26:07] Kass:</b> I haven't quite decided whether I'll allow you to hire one or two more than that and allow you to swap characters in and out.</li>
+	<li><b style="color:#336699">[16:26:22] Kass:</b> But I don't think you'll ever be permitted to employ more than six, ever.</li>
+	<li><b style="color:#336699">[16:26:57] Kass:</b> The idea of doing gambits for Schism is both interesting and frightening.</li>
+	<li><b style="color:#336699">[16:27:15] Kass:</b> I never warmed up to FF12, but I'm not sure if it's because of the battle system or because the game narrative just bored me.</li>
+	<li><b style="color:#336699">[16:27:45] Kass:</b> You would think the gambit system would be something like ideal for these automated battles, but I'm not so sure. ::lol::</li>
+	<li><b style="color:#336699">[16:28:08] Kass:</b> You were also one of the only people who said you were absolutely not interested in a &quot;personality&quot; trait for adventurers (out of like, the four responses I got).</li>
+	<li><b style="color:#686564">[16:28:26] Max:</b> I think it's alright for flavor, but not gameplay :O</li>
+	<li><b style="color:#686564">[16:28:41] Max:</b> Or you could do Dragon Warrior Monsters style</li>
+	<li><b style="color:#336699">[16:28:59] Kass:</b> Well, what did that make you think of, when I mentioned it? What kinds of personality traits would you find annoying to work around?</li>
+	<li><b style="color:#686564">[16:30:00] Max:</b> The extreme ones. Too aggressive or too timid. But not only that, just the fact that there might be an &quot;ideal&quot; personality and all other adventurers without that personality would be subpar. This makes the ideal adventurers highly prized and leads to interplayer conflict, possibly</li>
+	<li><b style="color:#336699">[16:30:19] Kass:</b> What'd you think of the Umaro war? ::lol::</li>
+	<li><b style="color:#686564">[16:30:25] Max:</b> Exactly that!</li>
+	<li><b style="color:#336699">[16:30:36] Kass:</b> Yeah, but did you think it was a BAD conflict?</li>
+	<li><b style="color:#336699">[16:31:05] Kass:</b> I rather enjoyed the fact that people could get riled up over something that was essentially a not that important choice. Not having Umaro didn't make the rest of the players impotent.</li>
+</ul>
+</body>
+
+</html>

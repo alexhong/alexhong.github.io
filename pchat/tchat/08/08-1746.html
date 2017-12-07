@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1">
+<link rel="stylesheet" href="../style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="../script.js"></script>
+</head>
+
+<body id="log">
+<nav>
+ <div class="calendar">
+ <div class="heading">July 2008</div>
+ 	<table>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="08-65.html" title="4576">1</a></td>
+			<td><a href="08-64.html" title="4127">2</a></td>
+			<td><a href="08-66.html" title="5112">3</a></td>
+			<td><a href="08-67.html" title="3103">4</a></td>
+			<td><a href="08-68.html" title="2708">5</a></td>
+		</tr>
+		<tr>
+			<td><a href="08-69.html" title="4507">6</a></td>
+			<td><a href="08-70.html" title="6403">7</a></td>
+			<td><a href="08-71.html" title="7872">8</a></td>
+			<td><a href="08-72.html" title="6338">9</a></td>
+			<td><a href="08-73.html" title="5362">10</a></td>
+			<td><a href="08-74.html" title="4591">11</a></td>
+			<td><a href="08-75.html" title="3165">12</a></td>
+		</tr>
+		<tr>
+			<td><a href="08-77.html" title="2696">13</a></td>
+			<td><a href="08-76.html" title="4571">14</a></td>
+			<td><a href="08-78.html" title="3649">15</a></td>
+			<td><a href="08-79.html" title="2865">16</a></td>
+			<td><a href="08-80.html" title="4367">17</a></td>
+			<td><a href="08-81.html" title="3246">18</a></td>
+			<td><a href="08-82.html" title="3869">19</a></td>
+		</tr>
+		<tr>
+			<td><a href="08-83.html" title="850">20</a></td>
+			<td><a href="08-84.html" title="6711">21</a></td>
+			<td><b title="9283">22</b></td>
+			<td><a href="08-86.html" title="6153">23</a></td>
+			<td><a href="08-87.html" title="177">24</a></td>
+			<td><a href="08-88.html" title="1064">25</a></td>
+			<td><a href="08-89.html" title="70">26</a></td>
+		</tr>
+		<tr>
+			<td><a href="08-91.html" title="53">27</a></td>
+			<td><a href="08-90.html" title="144">28</a></td>
+			<td><a href="08-93.html" title="75">29</a></td>
+			<td><a href="08-92.html" title="14">30</a></td>
+			<td><a href="08-52.html" title="28">31</a></td>
+			<td></td>
+			<td></td>
+		</tr>
+ </table>
+ <table class="months">
+		<tr>
+			<td><a href="08-94.html">June</a></td>
+			<td><a href="08-43.html">August</a></td>
+		</tr>
+		<tr>
+			<td>2007</td>
+			<td><a href="08-17.html">2009</a></td>
+		</tr>
+</nav>
+<ul>
+ <p><a href="08-85.html" title="First">&lt;&lt;</a> <a href="08-1694.html" title="Previous">&lt;</a> 27/93 <a href="08-1750.html" title="Next">&gt;</a> <a href="08-140.html" title="Last">&gt;&gt;</a></li>
+	<li><b style="color:#E619BD">[13:50:47] Forward Biased:</b> so in the JavaScript, imgName = 'image1'</li>
+	<li><b style="color:#E619BD">[13:51:01] Forward Biased:</b> imgOn.src = &quot;image1-black.gif&quot;;</li>
+	<li><b style="color:#91D52A">[13:51:02] CorbinM:</b> ok.</li>
+	<li><b style="color:#E619BD">[13:51:20] Forward Biased:</b> <a href="http://tol1mac5.soe.berkeley.edu/~cmuraro/image1-black.gif">image1-black.gif</a></li>
+	<li><b style="color:#91D52A">[13:52:34] CorbinM:</b> so would I put the name I saved it at there?</li>
+	<li><b style="color:#E619BD">[13:52:44] Forward Biased:</b> do you understand what the problem is?</li>
+	<li><b style="color:#91D52A">[13:53:01] CorbinM:</b> image1-black.gif isn't a image?</li>
+	<li><b style="color:#E619BD">[13:53:14] Forward Biased:</b> image1-black.gif doesn't exist</li>
+	<li><b style="color:#91D52A">[13:53:21] CorbinM:</b> right.</li>
+	<li><b style="color:#91D52A">[13:53:39] CorbinM:</b> so do I change imgName to the name of my image?</li>
+	<li><b style="color:#E619BD">[13:53:44] Forward Biased:</b> your image name is &quot;home-black.gif&quot; but your &lt;img&gt;'s ID is 'image1' and you're giving the Javascript 'image1'</li>
+	<li><b style="color:#5D94A2">[13:54:01] aqhong:</b> Don't change the Javascript anymore. It already works perfectly for your purposes.</li>
+	<li><b style="color:#91D52A">[13:54:13] CorbinM:</b> ok.</li>
+	<li><b style="color:#5D94A2">[13:54:22] aqhong:</b> You have JS that will switch between two images that have the same filename and end with -white.gif and -black.gif.</li>
+	<li><b style="color:#91D52A">[13:54:35] CorbinM:</b> righht</li>
+	<li><b style="color:#5D94A2">[13:54:44] aqhong:</b> Now you need to make it so your HTML submits the name of your images to the Javascript.</li>
+	<li><b style="color:#5D94A2">[13:54:47] aqhong:</b> What are your images called?</li>
+	<li class="presence">[13:55:14] videogameguy42 joined.</li>
+	<li><b style="color:#91D52A">[13:55:40] CorbinM:</b> home-white.gif, history-white.gif, computers-white.gif, iPod-white.gif, iPhone-white.gif</li>
+	<li><b style="color:#91D52A">[13:55:49] CorbinM:</b> and all of them in -black as well.</li>
+	<li><b style="color:#5D94A2">[13:56:02] aqhong:</b> So without the -white.gif and -black.gif part, what are they called?</li>
+	<li><b style="color:#C4A83B">[13:56:14] guitar hero:</b> <a href="http://atdplogs.berkeley.edu/~hrajaram/home.html">home.html</a> quad anybetter</li>
+	<li><b style="color:#C4A83B">[13:56:16] guitar hero:</b> ?</li>
+	<li><b style="color:#91D52A">[13:56:22] CorbinM:</b> home, history, computers, iPod, and iPhone</li>
+	<li><b style="color:#C4A83B">[13:56:31] guitar hero:</b> or anybody</li>
+	<li><b style="color:#C4A83B">[13:57:18] guitar hero:</b> is it lag</li>
+	<li><b style="color:#E619BD">[13:57:29] Forward Biased:</b> @Harish: do you understand why it's hard to read?</li>
+	<li><b style="color:#5D94A2">[13:57:44] aqhong:</b> So those are the names you need to use as the IDs for the images, and the names you need to pass to the Javascript functions.</li>
+	<li><b style="color:#C4A83B">[13:57:56] guitar hero:</b> No</li>
+	<li class="status">[13:58:01] videogameguy42 went away: A bit of SC</li>
+	<li><b style="color:#91D52A">[13:58:10] CorbinM:</b> ok, so should I rename image1 home?</li>
+	<li><b style="color:#C4A83B">[13:58:17] guitar hero:</b> why is it hard to read?</li>
+	<li><b style="color:#91D52A">[13:58:18] CorbinM:</b> ('home')</li>
+	<li><b style="color:#5D94A2">[13:58:18] aqhong:</b> Well, what are the names of your images?</li>
+	<li><b style="color:#5D94A2">[13:58:21] aqhong:</b> You just said them.</li>
+	<li><b style="color:#91D52A">[13:58:25] CorbinM:</b> yeah.</li>
+	<li><b style="color:#5D94A2">[13:58:25] aqhong:</b> Yep.</li>
+	<li><b style="color:#91D52A">[13:58:30] CorbinM:</b> ok.</li>
+	<li><b style="color:#C4A83B">[13:58:39] guitar hero:</b> is it because the inconsistnecy of the backgorund?</li>
+	<li><b style="color:#91D52A">[13:58:49] CorbinM:</b> but, should I keep the ID, or change that as well?</li>
+	<li><b style="color:#C4A83B">[13:58:55] guitar hero:</b> inconsistency*</li>
+	<li><b style="color:#5D94A2">[13:59:02] aqhong:</b> Need to change the ID too.</li>
+	<li><b style="color:#91D52A">[13:59:07] CorbinM:</b> ok</li>
+	<li><b style="color:#C4A83B">[13:59:21] guitar hero:</b> @Quad is that why?</li>
+	<li><b style="color:#91D52A">[13:59:33] CorbinM:</b> ooh I get it now. Because Kass's images were named image1, but mine arent. </li>
+	<li><b style="color:#91D52A">[13:59:37] CorbinM:</b> Sorry =(</li>
+	<li><b style="color:#91D52A">[13:59:38] CorbinM:</b> lol</li>
+	<li><b style="color:#C4A83B">[14:00:13] guitar hero:</b> Is Quad here?</li>
+	<li><b style="color:#5D94A2">[14:00:14] aqhong:</b> Haha, yep.</li>
+	<li><b style="color:#C4A83B">[14:00:14] guitar hero:</b> lag</li>
+	<li class="presence">[14:00:31] kzhang joined.</li>
+	<li><b style="color:#A25D79">[14:00:36] kzhang:</b> hai lo</li>
+	<li><b style="color:#91D52A">[14:00:44] cuppycakes718:</b> hai</li>
+	<li><b style="color:#E619BD">[14:00:54] Forward Biased:</b> @Harish: the background is very busy...</li>
+	<li><b style="color:#E619BD">[14:01:05] Forward Biased:</b> I have a meeting now. I'll be back later.</li>
+	<li><b style="color:#C4A83B">[14:01:08] guitar hero:</b> oh two many color?</li>
+	<li><b style="color:#C4A83B">[14:01:12] guitar hero:</b> too8</li>
+	<li><b style="color:#C4A83B">[14:01:16] guitar hero:</b> okay Quad</li>
+	<li class="presence">[14:01:22] 107661 left.</li>
+	<li class="presence">[14:01:23] 107661 joined.</li>
+	<li><b style="color:#91D52A">[14:01:27] 107661:</b> hey guys</li>
+	<li class="presence">[14:01:27] rosa yuliana joined.</li>
+	<li><b style="color:#91D52A">[14:01:52] CorbinM:</b> NO WAI</li>
+	<li><b style="color:#91D52A">[14:01:54] CorbinM:</b> it works!!</li>
+	<li><b style="color:#91D52A">[14:01:54] cuppycakes718:</b> hola david</li>
+	<li><b style="color:#91D52A">[14:01:59] CorbinM:</b> <a href="http://tol1mac5.soe.berkeley.edu/~cmuraro/indiv_proj.html">http://tol1mac5.soe.berkeley.edu/~cmuraro/indiv_proj.html</a></li>
+	<li><b style="color:#91D52A">[14:02:00] cuppycakes718:</b> wat works?</li>
+	<li><b style="color:#91D52A">[14:02:12] CorbinM:</b> tyvm Quad and Alex.</li>
+	<li><b style="color:#A25D79">[14:02:19] Cheesecakes4ever:</b> I'm reallly bored</li>
+	<li><b style="color:#A25D79">[14:02:23] Cheesecakes4ever:</b> What to do...</li>
+	<li><b style="color:#91D52A">[14:02:23] CorbinM:</b> my javascript.</li>
+	<li><b style="color:#A25D79">[14:02:31] Cheesecakes4ever:</b> =/</li>
+	<li><b style="color:#A25D79">[14:02:35] Cheesecakes4ever:</b> bleh more TV</li>
+	<li><b style="color:#5D94A2">[14:02:45] aqhong:</b> You're welcome.</li>
+	<li><b style="color:#91D52A">[14:03:09] cuppycakes718:</b> what r u guys doing ur pages on?</li>
+	<li class="presence">[14:03:39] 107661 left.</li>
+	<li class="presence">[14:03:40] 107661 joined.</li>
+	<li><b style="color:#C4A83B">[14:03:44] guitar hero:</b> <a href="http://www.youtube.com/watch?v=GvskEGWMLp4&amp;eurl=">watch?v=GvskEGWMLp4&amp;eurl=</a> this is something you have too watch</li>
+	<li><b style="color:#91D52A">[14:03:51] 107661:</b> @ericka America&gt;Chivs</li>
+	<li><b style="color:#C4A83B">[14:03:51] guitar hero:</b> bill gates pwning himslef</li>
+	<li><b style="color:#91D52A">[14:03:54] 107661:</b> lol</li>
+	<li><b style="color:#91D52A">[14:04:05] cuppycakes718:</b> @ DAVID OHUD!!!!!!</li>
+	<li><b style="color:#91D52A">[14:04:17] cuppycakes718:</b> *onud</li>
+	<li><b style="color:#91D52A">[14:04:19] cuppycakes718:</b> my bad</li>
+	<li><b style="color:#C4A83B">[14:04:30] guitar hero:</b> did anybody else watch it</li>
+	<li><b style="color:#C4A83B">[14:04:36] guitar hero:</b> why is he doing that?</li>
+	<li><b style="color:#91D52A">[14:04:37] cuppycakes718:</b> AMERICA IS THE WORST TEAM THAT CAN POSSIBLY EXIST</li>
+	<li><b style="color:#C4A83B">[14:04:56] guitar hero:</b> America is pretty good at times</li>
+	<li><b style="color:#91D52A">[14:05:02] cuppycakes718:</b> U SAID IT</li>
+	<li><b style="color:#91D52A">[14:05:04] cuppycakes718:</b> @ TIMES</li>
+	<li><b style="color:#91D52A">[14:05:12] cuppycakes718:</b> AND THEYRE TIMES R OVER</li>
+	<li><b style="color:#91D52A">[14:05:17] cuppycakes718:</b> so no theyre bad</li>
+	<li><b style="color:#91D52A">[14:05:20] cuppycakes718:</b> *now</li>
+	<li><b style="color:#C4A83B">[14:06:02] guitar hero:</b> they were good about 6 years ago</li>
+	<li><b style="color:#C4A83B">[14:06:05] guitar hero:</b> now they suck</li>
+	<li><b style="color:#91D52A">[14:06:08] cuppycakes718:</b> there we go</li>
+	<li><b style="color:#91D52A">[14:06:11] cuppycakes718:</b> thank you</li>
+	<li><b style="color:#C4A83B">[14:06:12] guitar hero:</b> but they can still get better</li>
+	<li><b style="color:#91D52A">[14:06:17] cuppycakes718:</b> someone understands me</li>
+</ul>
+</body>
+
+</html>
