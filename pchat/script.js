@@ -1,4 +1,5 @@
 $(function(){
+	if (location.protocol == 'http:') $('a.index').attr('href','../');
 	$('[title]').each(function(){
 		var l = $(this).attr('title');
 		l >= 5000 ? $(this).addClass('a')
