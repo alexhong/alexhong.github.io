@@ -1,0 +1,1 @@
+if (navigator.appVersion.indexOf("Win")!=-1) {	var head = document.getElementsByTagName('head');    	var link = head[0].appendChild(document.createElement('link'));	link.setAttribute('rel', 'stylesheet');	link.setAttribute('type', 'text/css');	link.setAttribute('href', '/brokenlogic/win-filter.css');}

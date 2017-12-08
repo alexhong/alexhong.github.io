@@ -1,0 +1,537 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	background: #333;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	text-align: center;
+	min-width: 39em;
+	}
+
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dd, dt, p, blockquote {
+	margin: 0;
+	padding: 0;
+	}
+
+#main-content p, #main-content li, dl {
+	line-height: 1.67;
+	font-size: 75%;
+	}
+
+#main-content p.img {
+	font-size: 100%;
+	}
+
+h2, h3, h4.post-title {
+	margin-bottom: 0.5em;
+	color: #666;
+	font-size: 120%;
+	font-weight: normal;
+	}
+
+h3.date-header {
+	font-size: 70%;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #999;
+	letter-spacing: 0.09em;
+	}
+
+body.ArchivePage h4 {
+	margin-bottom: 0.5em;
+	}
+
+body.ArchivePage p.post-summary {
+	margin: -0.3em 0 1em;
+	}
+
+h5, h6, dl { 
+	margin-bottom: 0.6em;
+	}
+
+p {
+	margin-bottom: 0.8em;
+	}
+
+p.img {
+	margin: 1em 0;
+	}
+
+dl.subsections {
+	padding-bottom: 0.2em;
+	}
+
+dl.subsections  dt {
+	font-size: 154%;
+	clear: both;
+	}
+
+dl.subsections  dt span, dl.subsections dd {
+	margin-left: 64px;
+	padding-left: 1.2em;
+	}
+
+dl.subsections  dt span {
+	display: block;
+	text-indent: -0.45em;
+	}
+
+dl.subsections  dt a {
+	text-decoration: none;
+	}
+
+dl.subsections  dt a img {
+	border: 1px solid;
+	margin: 0.2em 0 1em;
+	float: left;
+	}
+
+dl.subsections  dd {
+	margin-bottom: 1.2em;
+	}
+
+h5 {
+	color: #666;
+	}
+
+h4 a {
+	text-decoration: none;
+	}
+
+a:link, a:visited {
+	color: #c66;
+	background: transparent;
+	}
+
+a:hover, a:active {
+	color: #a33;
+	background: transparent;
+	}
+
+blockquote, div.code {
+	display: block;
+	margin: 0.8em 0;
+	background: #eee;
+	border: 1px solid #ccc;
+	}
+
+blockquote {
+	padding: 0.7em 0.9em 0.2em;
+	}
+
+div.code {
+	font-size: 78%;
+	padding: 0.9em 1.15em;
+	}
+
+code {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 100%;
+	}
+
+* html #header {
+	width: 39em;
+	w\idth: 36em;
+	}
+
+#header {
+	padding: 1.5em 0;
+	border: solid #a33;
+	border-width: 0 1.5em;
+	width: 36em;
+	background: #a33 url("fade.gif") bottom repeat-x;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+#header h1 {
+	margin-left: auto;
+	margin-right: auto;
+	height: 57px;
+	width: 237px;
+	text-indent: -1000em;
+	background: transparent url("header.png") center no-repeat;
+	}
+
+#header a {
+	text-decoration: none;
+	display: block;
+	height: 57px;
+	width: 237px;
+	}
+
+#menu {
+	text-align: center;
+	}
+
+* html #menu ul {
+	width: 39em;
+	w\idth: 36em;
+	}
+
+#menu ul {
+	height: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 36em;
+	list-style-type: none;
+	background: #b85524;
+	border: solid #a33;
+	border-width: 0 1.5em;
+	}
+
+#menu li {
+	height: 1.5em;
+	float: left;
+	width: 7.195em;
+	background: #edd4c8 url("corner1.gif") top left no-repeat;
+	}
+	
+#menu li a {
+	display: block;
+	font-size: 82%;
+	font-weight: bold;
+	text-decoration: none;
+	width: 100%;
+	background: url("corner2.gif") top right no-repeat;
+	}
+
+#menu li a span {
+	display: block;
+	padding: 0.31em 0;
+	border-right: 1px solid #b85524;
+	background: url("shadow.gif") bottom repeat-x;
+	}
+
+#menu li.About a span {
+	border-right: none;
+	}
+
+#menu li a:link, #menu li a:visited {
+	color: #c66;
+	}
+
+#menu li a:hover, #menu li a:active {
+	color: #a33;
+	}
+
+body.Entries #menu li.Entries,
+body.Clippings #menu li.Clippings,
+body.Features #menu li.Features,
+body.About #menu li.About,
+body.Bookmarks #menu li.Bookmarks {
+	background: #f9f9f9 url("corner3.gif") top left no-repeat;
+	}	
+
+body.Entries #menu li.Entries a,
+body.Clippings #menu li.Clippings a,
+body.Features #menu li.Features a,
+body.About #menu li.About a,
+body.Bookmarks #menu li.Bookmarks a {
+	color: #666;
+	background: url("corner4.gif") top right no-repeat;
+	}
+
+body.Entries #menu li.Entries a span,
+body.Clippings #menu li.Clippings a span,
+body.Features #menu li.Features a span,
+body.About #menu li.About a span,
+body.Bookmarks #menu li.Bookmarks a span {
+	background: none;
+	}
+
+* html #content {
+	width: 39em;
+	w\idth: 36em;
+	}
+
+#content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 36em;
+	text-align: left;
+	color: #333;
+	background: #f9f9f9;
+	overflow: hidden;
+	border: solid #a33;
+	border-width: 0 1.5em 1.5em;
+	}
+
+#main-content {
+	padding: 1.3em 1.5em 0;
+	}
+
+#sidebar {
+	padding: 0.3em 1.5em 0;
+	}
+
+body.ArchivePage #main-content {
+	padding-top: 0;
+	}
+
+body.ArchivePage #sidebar {
+	margin-top: 1.2em;
+	}
+
+#sidebar a:link, #sidebar a:visited {
+	color: #999;
+	text-decoration: none;
+	display: block;
+	}
+
+#sidebar a:hover, #sidebar a:active {
+	color: #666;
+	}
+
+#sidebar ul, #sidebar li {
+	list-style-type: none;
+	}
+
+#sidebar ul {
+	margin-bottom: 1em;
+	padding: 0.1em 0.8em;
+	}
+
+#sidebar li {
+	font-size: 82%;
+	font-weight: bold;
+	}
+
+/* fix IE list item whitespace bug */
+#sidebar li a {
+	padding: 0.2em 0 0.2em 1.5em;
+	display: block;
+	float: left;
+	clear: left;
+	}
+
+/* first-child selector to undo for non-IE browsers */
+#sidebar li > a {
+	float: none;
+        }
+
+#sidebar h2 {
+	padding: 0.6em 1.2em;
+	text-transform: uppercase;
+	font-size: 70%;
+	font-weight: bold;
+	letter-spacing: 0.27em;
+	color: #f9f9f9;
+	background: #999;
+	border: 1px solid #999;
+	}
+
+body.MainPage #archive-list, body.MainPage #feed-list {
+	width: 16.5em;
+	}
+
+#archive-list, body.Clippings #archive-list {
+	width: 33em;
+	}
+
+#archive-list {
+	padding-bottom: 0.3em;
+	float: left; 
+	}
+
+#feed-list {
+	padding-bottom: 0.3em;
+	float: right; 
+	}
+
+#archive-list li a {
+	background: url("archive.png") 0 55% no-repeat;
+	}
+
+#feed-list li a {
+	background: url("feed.png") 0 55% no-repeat;
+	}
+
+#main-content ul, #main-content ul li {
+	list-style-type: square;
+	}
+
+#main-content ul {
+	margin: 0 1.2em 0.6em;
+	}
+
+#main-content ol {
+	margin: 0 1.6em 0.6em;	
+	}
+
+#main-content li {
+	margin-bottom: 0.2em;
+	}
+
+body.Clippings #main-content li {
+	color: #ccc;
+	margin-bottom: 0.3em;
+	}
+
+body.Clippings #main-content li div {
+	color: #333;
+	}
+
+#footer {
+	clear: both;
+	padding: 0 0 1em;
+	background: #f9f9f9;
+	}
+
+#footer a {
+	text-decoration: none;
+	}
+
+#footer p {
+	padding-top: 1.2em;
+	margin: 0 2.2em 0.2em;
+	font-size: 70%;
+	line-height: 1.5;
+	color: #999;
+	background: transparent;
+	border-top: 1px solid #ccc;
+	}
+
+div.post, div.day {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 1.2em;
+	padding-bottom: 0.7em;
+	clear: both;
+	}
+
+body.ArchivePage div.post, body.ArchivePage div.day {
+	border-bottom: none;
+	border-top: 1px solid #ccc;
+	padding: 1.2em 0 0;
+	}
+
+div.clear {
+	clear: both;
+	}
+
+p.img a {
+	display: block;	
+	width: 33em;
+	border: 1px solid #ccc;
+	background: #eee;
+	}
+
+p.img a:hover, p.img a:active  {
+	background: #fff;
+	}
+
+p.img a span {
+	display: block;
+	margin: 0.8em;	
+	overflow: hidden;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #ccc;
+	}
+
+p.img a span img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border: none;
+	}
+
+#main-content #comments {
+        margin-bottom: 1.1em;
+	}
+
+#main-content #comments h4 {
+	font-size: 70%;
+	margin: -2.5em 0 1.5em;
+	text-align: center;
+	}
+
+#main-content #comments h4 span {
+	font-weight: bold;
+	letter-spacing: 0.09em;
+	color: #666;
+	background: #f9f9f9;
+	border: solid #f9f9f9;
+	border-width: 0 1em;
+	}	
+
+#main-content #comments dl {
+	font-size: 100%;
+	}
+
+#main-content #comments dt {
+	padding: 0.4em 1.15em;
+	font-size: 78%;
+	margin: 0;
+	color: #666;
+	background: #fff;
+	border: solid #ccc;
+	border-width: 1px 1px 0;
+	}
+
+#main-content #comments dt a {
+	text-decoration: none;
+	}
+
+#main-content #comments dt .hide {
+	display: none;
+	}
+
+#main-content #comments dt .permalink {
+	display: block;
+	float: right;
+	font-size: 83%;
+	text-transform: uppercase;
+	letter-spacing: 0.09em;
+	padding: 0.2em 0;
+	}
+
+#main-content #comments dt .author {
+	font-weight: bold;
+	}
+
+#main-content #comments dd {
+	padding: 0.6em 0.9em 0;
+	border: 1px solid #ccc;
+	clear: both;
+	margin: 0 0 1.4em;
+	background: #eee;
+	}
+
+#main-content #comments dd .deleted-comment {
+	color: #999;
+	}
+
+#main-content p.post-footer {
+	line-height: 1.1;
+	margin: 1.15em 0 -1.35em;
+	text-align: center;
+	}
+
+#main-content p.post-footer a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 92%;
+	letter-spacing: 0.09em;
+	background: #f9f9f9;
+	border: solid #f9f9f9;
+	border-width: 0 1em;
+	}
+
+#main-content a.comment-link {
+	display: block;
+	padding: 0.4em 1.05em 0.4em 2.5em;
+	text-decoration: none;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	}
+
+#main-content a.comment-link:link, 
+#main-content a.comment-link:visited {
+	background: #eee url("add.png") 1em 55% no-repeat;
+	}
+
+#main-content a.comment-link:hover, 
+#main-content a.comment-link:active {
+	background: #fff url("add.png") 1em 55% no-repeat;
+	}

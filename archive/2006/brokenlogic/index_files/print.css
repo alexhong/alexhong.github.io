@@ -1,0 +1,73 @@
+body { 	
+	font-family: Palatino, "Palatino Linotype", "Book Antiqua", "Times New Roman", Times, serif; 
+	font-size: 12pt;
+	line-height: 1.5em;
+}
+
+a { 
+	color: inherit; 
+	text-decoration: none; 
+}
+
+a[href]:after { 
+	content: " <" attr(href) ">"; 
+	color: #808080; 
+	font-size: 10pt;
+	font-family: Monaco, "Andale Mono", "Lucida Console", monospace;
+	font-weight: normal;
+	letter-spacing: 0;
+}
+
+#header {
+	margin-bottom: 2em;
+	font-family: Futura, "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+#header h1 {
+	font-size: 18pt;
+	letter-spacing: 3pt;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+#header h2 {
+	font-size: 12pt;
+	letter-spacing: 2pt;
+}
+
+#header h2 a.prev span,
+#header h2 a.next span {
+	display: none;
+}
+
+
+#header a[href]:after,
+#comments h3 a:after,
+#comments a.timestamp[href]:after { display: none; }
+
+#recent li {
+	margin-bottom: 1em;
+}
+
+#recent h2 a,
+#footer, #comment-form { display: none; }
+
+.entrybody ins { color: #808080; text-decoration: none; }
+.entrybody ins:before { content: "["; }
+.entrybody ins:after { content: "]"; }
+
+.entrybody abbr,
+.entrybody .caps {
+	border: 0;
+
+	font-size: 75%;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	letter-spacing: 1pt;
+}
+
+.entrybody sup {
+	line-height: 0;
+}

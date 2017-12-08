@@ -1,0 +1,166 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background: #fed;
+	font-family: Verdana, sans-serif;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", sans-serif;
+ 	}
+
+p, ul, ol, li, dl, dt, dd, table {
+	margin: 0;
+	padding: 0;
+	}
+
+p, ul, ol, dl, table {
+	margin-bottom: 1.5em;
+	}
+
+ul {
+	list-style-type: none;
+	}
+
+#container {
+	}
+
+#header {
+	white-space: nowrap;
+	}
+
+#title {
+	padding: 3.5em 2em 0;
+	color: #fff;
+	background: #369;
+	border-top: 0.5em solid #69c;
+	border-bottom: 1px solid #369;
+	}
+
+#title h1 {
+	font-size: 150%;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	word-spacing: 0.1em;
+	line-height: 72%;
+	}
+
+#menu {
+	margin-bottom: -px;
+	padding: 1.5em 2em 0;
+	color: #369;
+	background: #fff url("border.gif") repeat-x bottom;
+	}
+
+#menu ul {
+	margin: 0;
+	}
+
+#menu li {
+	margin-bottom: -1px;
+	margin-right: 0.4em;
+	float: left;
+	}
+
+#menu a {
+	display: block;
+	color: #987;
+	background: #edc url("tab3.gif") no-repeat top left;
+	font-size: 70%;
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom: 1px solid #cba;
+	}
+
+#menu a span {
+	padding: 0.4em 0.8em;
+	position: relative;
+	display: block;
+	background: url("tab4.gif") no-repeat top right;
+	}
+
+#menu a:hover {
+	color: #fff;
+	background: #cba url("tab5.gif") no-repeat top left;
+	}
+
+#menu a:hover span {
+	background: url("tab6.gif") no-repeat top right;
+	}
+
+#bodyHome #menuHome a,
+#bodyNews #menuNews a,
+#bodyPhotos #menuPhotos a,
+#bodyJournal #menuJournal a {
+	color: #987;
+	background: #fed url("tab1.gif") no-repeat top left;
+	cursor: default;
+	border-bottom: 1px solid #fed;
+	}
+
+#bodyHome #menuHome a span,
+#bodyNews #menuNews a span,
+#bodyPhotos #menuPhotos a span,
+#bodyJournal #menuJournal a span {
+	background: url("tab2.gif") no-repeat top right;
+	}
+
+#content {
+	margin-bottom: 2em;
+	padding: 1.5em 0.5em 0 2em;
+	}
+
+#content div {
+	margin: 0 1.5em 0 0;
+	float: left;
+	width: 21em;
+	}	
+
+#content div div {
+	margin: 0 0 1.5em;
+	float: none;
+	width: auto;
+	color: #666;
+	background: #fffbf6;
+	border: 1px solid #ccc;
+	}
+
+html>body #content div div {
+	background: transparent;
+	background-image: url("screen.png");
+	}
+
+#content div div h2 {
+	margin: 1px;
+	padding: 0.5em 1em 0;
+	color: #fff;
+	background: #ccc;
+	font-size: 120%;
+	letter-spacing: 0.05em;
+	line-height: 72%;
+	border-top: 0.2em solid #9ac;
+	border-bottom: 1px solid #ccc;
+	}	
+
+#content div div div {
+	margin: 1px;
+	padding: 1.2em 1.8em 0;
+	font-size: 70%;
+	line-height: 160%;
+	border: none;
+	color: #666;
+	background: transparent;
+	}
+
+html>body #content div div div {
+	background-image: none;
+	}
+
+div.clear {
+	clear: both;
+	height: 1px;
+	overflow: hidden;
+	}

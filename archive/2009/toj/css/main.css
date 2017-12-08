@@ -1,0 +1,378 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-rendering: optimizeLegibility;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+	color: #fff;
+	background: #000;
+	font-size: 12px;
+	line-height: 1.5em;
+	border: solid #000;
+	padding: 2.5em 2.5em 2.5em 7em;
+	min-width: 69.5em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a 			{ outline: none; color: #0060c0; }
+a:hover 	{ color: #3090ff; }
+
+h1 {
+	font-family: Palatino, "Palatino Linotype", Georgia, "Times New Roman", serif;
+	font-size: 150%;
+	font-weight: bold;
+	color: #fff;
+	background: url("toj-logo.gif") left 50% no-repeat;
+	text-transform: uppercase;
+	letter-spacing: 0.1111em;
+	padding: 1em 0 1.5em 3em;
+	margin: 0 0 -0.5em -3em;
+	white-space: nowrap;
+	width: 46.3333em;
+	cursor: default;
+}
+
+h1 a {
+	font-family: Palatino, "Palatino Linotype", Georgia, "Times New Roman", serif;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 1em 0 1em 3em;
+	margin: -1em 0 -1em -3em;
+}
+
+h1 a:hover {
+	color: #fff;
+}
+
+abbr {
+	border-bottom: 1px solid #c0c0c0;
+}
+
+abbr:hover {
+	cursor: help;
+	background: #f0f0f0;
+	padding: 0.1667em 0 0.1667em 0.25em;
+	margin: -0.1667em 0 0 -0.3333em;
+	border: 0;
+	border-bottom: 0.0833em solid #c0c0c0;
+	border-left: 0.0833em solid #e0e0e0;
+	-webkit-border-top-left-radius: 0.25em;
+	-webkit-border-bottom-left-radius: 0.25em;
+	-moz-border-radius-topleft: 0.1667em;
+	-moz-border-radius-bottomleft: 0.1667em;
+	border-top-left-radius: 0.25em;
+	border-bottom-left-radius: 0.25em;
+}
+
+abbr:hover:after {
+	content: ': ' attr(title);
+	position: absolute;
+	background: #f0f0f0;
+	font-style: italic;
+	white-space: nowrap;
+	font-size: 12px;
+	padding-right: 0.25em;
+	border-bottom: 0.0833em solid #c0c0c0;
+	border-right: 0.0833em solid #e0e0e0;
+	-webkit-border-top-right-radius: 0.25em;
+	-webkit-border-bottom-right-radius: 0.25em;
+	-moz-border-radius-topright: 0.1667em;
+	-moz-border-radius-bottomright: 0.1667em;
+	border-top-right-radius: 0.25em;
+	border-bottom-right-radius: 0.25em;
+}
+
+tt {
+	margin: 0 0.1667em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#menu {
+	float: left;
+	width: 15em;
+}
+
+#menu div {
+	margin-bottom: 1.5em;
+	color: #909090;
+	background: #404040;
+}
+
+#menu h3 {
+	color: #fff;
+	padding: 0 1.5em;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-shadow: #000 0 1px 2px;
+	border-bottom: 1px solid #000;
+	margin-bottom: -1px;
+}
+
+#a h3 { background: #00c000; }
+#u h3 { background: #c0c000; }
+#d h3 { background: #c00000; }
+
+#menu ul {
+	padding: 0.75em 0;
+	list-style-type: none;
+}
+
+#menu ul ul {
+	margin: 0;
+}
+
+#menu a,
+#menu li {
+	padding: 0 1.5em;
+}
+
+#menu li li,
+#menu a {
+	margin: 0 -3em 0 -1.5em;
+}
+
+#menu li li a {
+	margin-right: -1.5em;
+}
+
+#menu li strong {
+	margin-right: 0.1667em;
+}
+
+#menu li strong span {
+	margin-left: 0.0833em;
+}
+
+#menu a {
+	display: block;
+	color: #c0c0c0;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	color: #404040;
+	background: #c0c0c0;
+}
+
+#content {
+	width: 50em;
+	min-height: 43.5em;
+	margin-left: 16.5em;
+	color: #404040;
+	background: #fff;
+	padding: 1.5em;
+	overflow: auto;
+}
+
+#content h2 {
+	font-weight: normal;
+	font-size: 200%;
+	margin-bottom: 0.75em;
+}
+
+#content h2 strong {
+	margin-right: 0.1667em;
+}
+
+#content h2 strong span {
+	margin-left: 0.0833em;
+}
+
+#content h3 {
+	font-size: 100%;
+	text-transform: uppercase;
+}
+
+#content h3.price {
+	text-align: right;
+	margin: -3em 0 1.5em;
+	white-space: nowrap;
+}
+
+#content h3.price strong {
+	font-size: 200%;
+	font-weight: bold;
+	margin: 0 0.0833em;
+}
+
+.available #content h3.price {
+	color: #00c000;
+}
+
+.upcoming #content h3.price {
+	color: #c0c000;
+}
+
+.discontinued #content h3.price {
+	color: #c00000;
+}
+
+#content h3.official {
+	margin-bottom: 1.5em;
+}
+
+#content h3.subtitle {
+	margin: -3em 0 1.5em;
+	width: 25em;
+}
+
+#content h4 {
+	font-size: 150%;
+	margin-bottom: 1em;
+}
+
+#content dt {
+	font-weight: bold;
+	}
+	
+#content dd {
+	margin: 0 0 1.5em 1.5em;
+}
+
+#content ul,
+#content ol {
+	padding-left: 1.5em;
+}
+
+#content ul {
+	list-style-type: square;
+}
+
+#content .nobullets {
+	padding-left: 0;
+	list-style-type: none;
+}
+	
+#content p,
+#content ul,
+#content ol {
+	margin-bottom: 1.5em;
+}
+
+#content p.note,
+#content ul ul,
+#content ol ol,
+#content ul ol,
+#content ol ul {
+	margin-bottom: 0;
+}
+
+#content p.photo {
+	float: right;
+	margin: 0 0 1.5em 1.5em;
+	width: 304px;
+}
+
+#content p.photo img {
+	display: block;
+	padding: 1px;
+	border: 1px solid #404040;
+}
+
+#content p.photo span {
+	display: block;
+	text-align: center;
+	font-style: italic;
+	margin-top: 0.5em;
+	width: 304px;
+}
+
+.measurements {
+	clear: right;
+	margin-bottom: 1.5em;
+}
+
+.measurements table {
+	margin-bottom: 0;
+}
+
+.measurements caption {
+	text-align: left;
+	margin-bottom: -1.5em;
+	font-size: 100%;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.measurements th {
+	text-align: left;
+	padding: 0 1.125em 0 0;
+	font-weight: normal;
+}
+
+.measurements thead th {
+	font-weight: bold;
+}
+
+.measurements td, .measurements thead th {
+	padding: 0 0.375em;
+	text-align: center;
+}
+
+#content p.photos {
+	margin: 0.5em 0 0 -0.5833em;
+}
+
+#content p.photos a {
+	display: block;
+	height: 75px;
+	width: 75px;
+	float: left;
+	padding: 1px;
+	margin: 0 0 0.5833em 0.5833em;
+	border: 1px solid #404040;
+	background: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#content p.photos a img {
+	display: block;
+	border: 0;
+}
+
+#content p.photos a span {
+	display: block;
+	padding: 25px 0 0;
+	height: 50px;
+	color: #c0c0c0;
+	background: #404040;
+}
+
+#content p.photos a:hover span {
+	color: #404040;
+	background: #c0c0c0;
+}
+
+#news {
+	border-bottom: 1px solid #000;
+	margin-bottom: -1px;
+}
+
+#disclaimer {
+	margin-top: 1.5em;
+}
+
+.fade {
+	color: #c0c0c0;
+}
+
+span.clear {
+	clear: both;
+}
+
+.obsolete {
+	color: #f00;
+	font-size: 150%;
+	font-weight: bold;
+}
+
+.obsolete a {
+	color: inherit;
+}

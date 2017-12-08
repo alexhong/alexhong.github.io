@@ -1,0 +1,67 @@
+body {
+	font-family: "Times New Roman", serif;
+	}
+
+h1, h2, h3, h4, #header p {
+	font-family: "Lucida Sans Unicode", Verdana, sans-serif;
+	}
+	
+h1 {
+	margin: 0;
+	font-size: 20pt;
+	line-height: 20pt;
+	font-weight: bold;
+	letter-spacing: -0.1em;
+	}
+
+h2 {
+	font-size: 16pt;
+	text-align: left;
+	margin: 0 5%;
+	}
+
+h3 {
+	padding-bottom: 0.2em;
+	border-bottom: 0.1em dotted;
+	}
+
+h3 a {
+	text-decoration: none;
+	}
+
+#header {
+	border: 0.1em solid;
+	padding: 0.8em 0.4em 0.4em;
+	}
+
+#header p {
+	margin: 0 0 0 10em;
+	font-size: 14pt;
+	line-height: 14pt;
+	letter-spacing: 0.1em;
+	font-variant: small-caps;
+	}
+
+#main {
+	padding: 0.8em 0;
+	text-align: center;
+	}
+
+#content {
+	text-align: left;
+	margin: 0 10%;
+	}
+
+#content {
+	font-size: 12pt;
+	line-height: 14pt;
+	}
+	
+.hide,
+#header address,
+#links,
+#menu,
+#submenu,
+#footer p {
+	display: none;
+	}

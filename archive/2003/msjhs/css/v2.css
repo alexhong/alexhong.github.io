@@ -1,0 +1,291 @@
+body {
+	padding: 0;
+	margin: 0;
+	color: #333;
+	background: #999;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align: center;
+	}
+
+#container {
+	padding: 2px;
+	border: 10px solid #999;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	min-width: 37em;
+	text-align: left;
+	color: #333;
+	background: #fff;
+	}	
+
+.hide, #links {
+	display: none;
+	}
+
+h1, h2, h3, h4, h5, h6, #header, #footer p a {
+	margin: 0;
+	font-family: Georgia, Garamond, "Times New Roman", Times, serif;
+	}
+
+#header {
+	white-space: nowrap;
+	border-bottom: 15px solid #eee;
+	}
+
+h1 {
+	padding: 1.8em 9.5em 0 0.8em;
+	color: #fff;
+	background: #060;
+	font-size: 150%;
+	letter-spacing: -0.04em;
+	word-spacing: 0.08em;
+	}
+
+#header h2 {
+	margin-top: 2px;
+	padding: 0 19em 0.5em 1.2em;
+	color: #fff;
+	background: #093;
+	font-size: 100%;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	word-spacing: 0.08em;
+	border-bottom: 2px solid #fff;
+	}
+
+#header address {
+	margin: -7.7em 2em 3.3em 34em;
+	font-size: 70%;
+	font-style: normal;
+	font-weight: bold;
+	letter-spacing: 0.08em;
+	text-align: right;
+	line-height: 110%;
+	color: #fff;
+	background: transparent;
+	}
+
+#header a {
+	color: #fff;
+	background: transparent;
+	}
+
+#menu {
+	position: absolute;
+	width: 10em;
+	overflow: hidden;
+	border: solid #fff;
+	border-width: 0 2px 0 0;
+	color: #333;
+	background: #ddd;
+	}
+
+* html #menu {
+	margin-left: -2px;
+	}
+
+#menu h2, #main h2 {
+	padding: 0.5em 1.2em 0;
+	color: #fff;
+	background: #999;
+	font-size: 100%;
+	letter-spacing: 0.08em;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	}
+
+#main h2 {
+	border-left: 2px solid #fff;
+	}
+
+#menu ul {
+	font-size: 78%;
+	letter-spacing: 0.08em;
+	line-height: 120%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	}
+
+#menu li {
+	margin: 0;
+	padding: 0 0 0 1.2em;
+	list-style-type: none;
+	border-bottom: 2px solid #fff;
+	}
+
+#menu a {
+	display: block;
+	padding: 0.2em 0.5em;
+	text-decoration: none;
+	color: #888;
+	background: #eee;
+	border-left: 2px solid #fff;
+	}
+
+#menu a:hover {
+	color: #fff;
+	background: #093;
+	}
+
+#menu a.active {
+	color: #666;
+	background: #ddd;
+	cursor: default;
+	border-color: #ddd;
+	}
+
+#menu a.active:hover {
+	color: #666;
+	background: #ddd;
+	cursor: default;
+	}
+
+#main {
+	padding-left: 10em;
+	color: #333;
+	background: #eee;
+	}
+
+#content {
+	padding: 0.8em 1.5em;
+	color: #333;
+	background: #f8f8f8;
+	border-left: 2px solid #fff;
+	}
+
+#content h3 {
+	margin: 0 -0.7em 0.6em;
+	padding: 0.1em 0.5em;
+	color: #666;
+	background: #eee;
+	font-size: 100%;
+	border: 2px solid #fff;
+	}
+
+h3 a {
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	}
+
+h4 {
+	margin: 0 0 0.4em;
+	font-size: 92%;
+	font-variant: small-caps;
+	letter-spacing: 0.08em;
+	color: #888;
+	background: transparent;
+	}
+
+
+
+#submenu {
+	color: #aaa;
+	background: #eee;
+	border-bottom: 2px solid #fff;
+	border-left: 2px solid #fff;
+	font-size: 78%;
+	letter-spacing: 0.08em;
+	line-height: 120%;
+	padding: 0.2em 1.9em;
+	}
+
+#submenu a {
+	color: #888;
+	background: #transparent;
+	text-decoration: none;
+	}
+
+#submenu a:hover {
+	color: #333;
+	background: transparent;
+	text-decoration: underline;
+	}
+
+#submenu a.active {
+	color: #666;
+	background: transparent;
+	cursor: default;
+	}
+
+#submenu a.active:hover {
+	color: #666;
+	background: transparent;
+	text-decoration: none;
+	}
+
+#submenu p {
+	margin: 0;	
+	}
+
+#content p, #content ul, #content ol, #content dl {
+	margin-top: 0;
+	margin-bottom: 1.4em;
+	font-size: 82%;
+	line-height: 152%;
+	}
+
+
+#content ul, #content ol {
+	margin-left: 2em;
+	padding-left: 0;
+	}
+
+#content li {
+	margin-bottom: 0.1em;
+	}
+
+#content p.nomargin {
+	margin-bottom: 0.2em;
+	}
+
+#footer {
+	margin-top: 2px;
+	padding-left: 10em;
+	height: 3.3em;
+	color: #666;
+	background: #eee;
+	white-space: nowrap;
+	}
+
+#footer p {
+	margin: 0 1.4em -2em 19em;
+	padding-top: 0.6em;
+	text-align: right;
+	font-size: 120%;
+	text-transform: uppercase;
+	font-weight: bold;
+	}
+
+#footer p a {
+	color: #ccc;
+	background: transparent;
+	text-decoration: none;
+	}
+
+#footer p a:hover {
+	color: #999;
+	background: transparent;
+	}
+
+#footer address {
+	letter-spacing: 0.08em;
+	line-height: 120%;
+	font-size: 64%;
+	font-style: normal;
+	padding: 1em 2.4em;
+	border-left: 2px solid #fff;
+	}
+
+#footer address a {
+	color: #666;
+	background: transparent;
+	}
+
+#footer address a:hover {
+	color: #333;
+	background: transparent;
+	}
+	

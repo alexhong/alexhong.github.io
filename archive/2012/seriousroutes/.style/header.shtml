@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title><!--#echo var="SERVER_NAME"--><!--#echo var="REQUEST_URI"--></title>
+<meta charset="iso-8859-1" />
+<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<link rel="stylesheet" href="/.style/index.css">
+<script src="http://mint.graphr.net/?js"></script>
+</head>
+
+<body>
+
+<div><h1><a href="/"><!--#echo var="SERVER_NAME"--></a><!--#echo var="REQUEST_URI"--></h1></div>
+

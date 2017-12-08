@@ -1,0 +1,126 @@
+@import url('http://fonts.googleapis.com/css?family=Lato:400,700');
+
+* { 
+	margin: 0; 
+	padding: 0; 
+	border: 0;
+	list-style: none;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	margin: 40px 0;
+	color: #404040;
+	background: #fff;
+	-webkit-text-size-adjust: 100%;
+	font: 13px/20px Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {	
+	color: inherit;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+div {
+	margin: -5px 0 15px;
+	padding: 5px 0;
+	overflow: hidden;
+	min-width: 480px;
+}
+
+h1 {
+	font-size: inherit;
+	font-weight: normal;
+	padding: 5px 50px;
+	margin: -5px -10px;
+	background: #e0e0e0;
+    -webkit-box-shadow: inset 0 1px 1px #c0c0c0;
+    -moz-box-shadow: inset 0 1px 1px #c0c0c0;
+    box-shadow: inset 0 1px 1px #c0c0c0;
+}
+
+h1 a {
+	padding: 8px 0 8px 21px;
+	background: url("icons/web.png") left no-repeat;
+}
+
+table a {
+	display: block;
+	padding: 0 480px;
+	margin: 0 -480px;
+}
+
+tr:hover td,
+a:hover,
+a:focus {
+	color: #808080;
+	cursor: pointer;
+}
+
+table a[href^='/'] {
+	text-transform: lowercase;
+}
+
+table {
+	margin: 0 40px;
+	width: 400px;
+	text-align: left;
+	border-collapse: collapse;
+	overflow: hidden;
+}
+
+th {
+	display: none;
+	color: #808080;
+	text-transform: lowercase;
+}
+
+th, td {
+	padding: 0 5px;
+	white-space: nowrap;
+}
+
+th:first-child,
+td:first-child {
+	padding: 0;
+}
+
+td:first-child,
+td + td + td {
+	width: 1px;
+}
+
+th + th + th + th,
+td + td + td + td {
+	text-align: right;
+}
+
+td + td + td + td + td {
+	display: none;
+}
+
+img {
+	vertical-align: bottom;
+	position: relative;
+	top: -3px;
+}
+
+@media only screen and (max-width: 320px) {
+	body {
+		margin: 20px 0;
+	}
+	
+	div {
+		min-width: 320px;
+	}	
+	
+	h1 {
+		padding: 5px 30px;
+	}
+	
+	table {
+		margin: 0 20px;
+		width: 280px;
+	}
+}

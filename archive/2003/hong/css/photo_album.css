@@ -1,0 +1,221 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background: #fed;
+	font-family: Verdana, sans-serif;
+	}
+
+h1 {
+	margin: 0;
+	padding: 0.6em 1.33em 1.25em;
+	padding/**/: 0.83em 1.33em 1.5em;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 150%;
+	line-height: 72%;
+	letter-spacing: 0.1em;
+	word-spacing: 0.1em;
+	text-transform: uppercase;
+	white-space: nowrap;
+	text-align: center;
+	color: #fff;
+	background: #369;
+	border-top: 0.6em solid #69c;
+	border-top/**/: 0.33em solid #69c;
+	}
+
+td {
+	padding: 4px;
+	}
+
+.home {
+	position: absolute;
+	top: 0;
+	left: 0.8em;
+	z-index: 1;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 120%;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	background: url("logo_hover.gif") no-repeat 0 0.1em;
+	}
+
+.home a {
+	display: block;
+	text-decoration: none;
+	color: #69c;
+	background: transparent url("logo.gif") no-repeat 0 0.1em;
+	padding-left: 50px;
+	padding-top: 0.2em;
+	height: 50px;
+	}
+
+
+* html .home a {
+	width: 1px;
+	}
+
+.home a:hover {
+	color: #fff;
+	background: transparent;
+	}
+
+.index {
+	margin: 1.5em 0;
+	margin/**/: 1em 0;
+	text-align: center;
+	}
+
+.index table {
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.index .thumbcell a {
+	display: block;
+	padding: 8px;
+	text-align: center;
+	border: 1px solid #ccc;
+	color: #000;
+	background: #fff;
+	}
+
+.index .thumbcell a img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border: 1px solid #fff;
+	}
+
+.index .thumbcell a:hover {
+	border-color: #369;
+	background: #69c;
+	}
+
+.index .textright {
+	padding: 0.6em 0;
+	width: 100%;
+	text-align: center;
+	font-size: 70%;
+	letter-spacing: 0.09em;
+	font-weight: bold;
+	position: absolute;
+	top: 4.1em;
+	left: 0;
+	z-index: 2;
+	color: #999;
+	background: #fff;
+	}
+
+.index .textright a {
+	text-decoration: none;
+	color: #369;
+	background: transparent;
+	}
+
+.index .textright a:hover {
+	color: #09f;
+	background: transparent;
+	}
+
+* html .navigation {
+	height: 5.05em;
+	he\ight: 4.55em;
+	}
+
+.navigation {
+	height: 4.55em;
+	color: #fff;
+	background: #369;
+	border-top: 0.5em solid #69c;
+	}
+
+.navigation table {
+	position: absolute;
+	top: 4.1em;
+	left: 0;
+	z-index: 2;
+	font-size: 70%;
+	font-weight: bold;
+	letter-spacing: 0.09em;
+	width: 100%;
+	color: #999;
+	background: #fff;
+	}
+
+.navigation table td {
+	padding: 0 0.25em;
+	}
+
+.navigation table td.thumbcell {
+	padding: 0;
+	width: 50%;
+	}
+
+.navigation table td div {
+	padding: 0.45em 0;
+	}
+
+.navigation .textleft {
+	text-align: right;
+	}
+
+.navigation .textcenter {
+	text-align: center;
+	}
+
+.navigation .textright {
+	text-align: left;
+	}
+
+.navigation a {
+	text-decoration: none;
+	color: #369;
+	background: transparent;
+	}
+
+.navigation a:hover {
+	color: #09f;
+	background: transparent;
+	}
+
+.photograph {
+	margin: 1em 0;
+	}
+
+.photograph table {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	}
+
+.photograph table td img {
+	padding: 8px;
+	border: 8px solid #fff;
+	b\order: 1px solid #ccc;
+	color: #000;
+	background: #fff;
+	}
+
+.photograph .title {
+	position: absolute;
+	top: 1.15em;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	background: transparent;
+	font-size: 150%;
+	font-family: "Trebuchet MS", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	word-spacing: 0.1em;
+	line-height: 72%;
+	}
+
+.footnote {
+	display: none;
+	}
+

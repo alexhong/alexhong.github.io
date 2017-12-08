@@ -1,0 +1,150 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: verdana, sans-serif;
+	text-align: center;
+	color: #000;
+	background: #fff;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "trebuchet ms", sans-serif;
+	}
+
+h1 {
+	margin: 0px;
+	font-size: 250%;
+	letter-spacing: 4px;
+	}
+
+h2 {
+	margin: 1em 0px;
+	font-size: 150%;
+	letter-spacing: 2px;
+	}
+
+p {
+	margin: 2em 0px;
+	font-size: 70%;
+	line-height: 160%;
+	}
+
+hr {
+	height: 1px;
+	color: #888;
+	background: #888;
+	border: none;
+	}
+
+
+dt {
+	font-size: 80%;
+	}
+
+dd {
+	margin-left: 2em;
+	}
+
+a:link {
+	font-weight: bold;
+	color: #068;
+	background: transparent;
+	text-decoration: none;
+	}
+
+a:visited {
+	font-weight: bold;
+	color: #068;
+	background: transparent;
+	text-decoration: none;
+	}
+
+a:hover {
+	text-decoration: underline;
+	}
+
+a:active {
+	text-decoration: underline;
+	}	
+
+#container {
+	width: 30em;
+	margin: 2em auto;
+	text-align: left;
+	border: 1px solid #888;
+	}
+
+#header, #tabs, #content, #footer {
+	margin: 1.5em 2em;
+	}
+
+#tabs {
+	border-bottom: 1px solid #888;
+	}
+
+#tabs ul {
+	margin: 0px;
+	padding: 0px 0px 8px;
+	font-size: 70%;
+	text-align: center;
+	list-style-type: none;
+	}
+
+#tabs li {
+	display: inline;
+	margin: 0px 1px;
+	}
+
+#tabs li a {
+	padding-bottom: 4px;
+	text-decoration: none;
+	color: #aaa;
+	background: transparent;
+	border-left: 4px solid #fff;
+	border-right: 4px solid #fff;
+	}
+
+#tabs li a:hover {
+	color: #888;
+	background: transparent;
+	border-bottom: 4px solid #aaa;
+	}
+
+#tabs li a.active, #tabs li a.active:hover {
+	color: #666;
+	background: transparent;
+	border-bottom: 4px solid #888;
+	}
+
+#footer {
+	border-top: 1px solid #888;
+	}
+
+#footer ul {
+	margin: 3px 0px 0px;
+	padding: 0px;
+	font-size: 65%;
+	font-weight: bold;
+	text-align: center;
+	list-style-type: none;
+	}
+
+#footer li {
+	display: inline;
+	margin: 0px;
+	}
+
+#footer li a {
+	padding: 3px 6px;
+	text-decoration: none;
+	color: #aaa;
+	background: transparent;
+	border: 1px solid #fff;
+	border-top: 0px;
+	}
+
+#footer li a:hover {
+	color: #888;
+	background: #eee;
+	border: 1px solid #888;
+	}

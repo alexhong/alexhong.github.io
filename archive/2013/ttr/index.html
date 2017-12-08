@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>TTR Score</title>
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1">
+<style>
+
+* { 
+	margin: 0; 
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+	outline: none; 
+	list-style: none;
+	font: 24px/50px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	white-space: nowrap;
+	text-decoration: none;
+	text-rendering: optimizeLegibility;
+	text-shadow: 0 1px 1px #000;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-text-size-adjust: 100%;
+}
+
+*, input[disabled autocomplete="off"] {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+.click :hover {
+	-webkit-transition: color .1s, background .1s, opacity .1s;
+	-moz-transition: color .1s, background .1s, opacity .1s;
+	transition: color .1s, background .1s, opacity .1s;
+}
+
+.click :active,
+.click :focus {
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;	
+}
+
+input {
+	width: 100%;
+	padding: 10px 0 10px 50px;
+	line-height: 30px;
+	background: transparent;
+	opacity: 1;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-user-select: text;
+	-moz-user-select: text;
+}
+
+li, input {
+	height: 50px;
+}
+
+li.extra {
+	display: none;
+	height: auto;
+}
+
+*, input[disabled autocomplete="off"]	{ cursor: default; }
+a, .x .grab,
+.add, .v + * + * + .sub,
+label, label *		{ cursor: pointer; }
+input			 	{ cursor: text; }
+.grab 				{ cursor: -webkit-grab; cursor: -moz-grab; cursor: grab; }
+.drag * 			{ cursor: -webkit-grabbing; cursor: -moz-grabbing; cursor: grab; }
+
+a::-moz-selection,
+b::-moz-selection,
+i::-moz-selection,
+span::-moz-selection				{ background: transparent; }
+::-webkit-input-placeholder 		{ color: inherit; opacity: 1; }
+:-moz-placeholder 					{ color: inherit; opacity: 1; }
+::-moz-placeholder 					{ color: inherit; opacity: 1; }
+:focus::-webkit-input-placeholder 	{ opacity: 0; }
+:focus:-moz-placeholder		 		{ opacity: 0; }
+:focus::-moz-placeholder	 		{ opacity: 0; }
+
+a, label, section, header {
+	display: block;
+}
+
+body {
+	border: 1px solid #000;
+	color: #fff;
+	background: #000;
+}
+
+body:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+div {
+	float: left;
+	color: #606060;
+	box-shadow: 0 0 0 1px #000;
+}
+
+ol {
+	background: #606060;
+}
+
+#p0			{ min-width: 300px; }
+#p1			{ min-width: 400px; }
+#p2			{ min-width: 500px; }
+#p3			{ min-width: 600px; }
+#p4			{ min-width: 700px; }
+#p5			{ min-width: 800px; }
+#p6			{ min-width: 900px; }
+
+#p1 .o		{ margin-right: 250px; }
+#p2	.o 		{ margin-right: 200px; }
+#p3 .o		{ margin-right: 150px; }
+#p4 .o		{ margin-right: 100px; }
+#p5 .o		{ margin-right: 50px; }
+
+#p1 .o div	{ width: 100%; }
+#p2 .o div	{ width: 50%; }
+#p3 .o div 	{ width: 33.33%; }
+#p4 .o div 	{ width: 25%; }
+#p5 .o div	{ width: 20%; }
+#p6 .o div 	{ width: 16.66%; }
+
+.o div		{ min-width: 150px; }
+.x div 		{ width: 50px; }
+
+.x input, .x li *,
+.drag .name 		{ visibility: hidden; }
+.x .total,
+.x .subtotal 		{ visibility: visible; }
+
+header, li, 
+input, b 			{ box-shadow: inset 0 0 0 1px #000; }
+header, li 			{ position: relative; }
+input, a			{ color: inherit; }
+ol input 			{ color: #fff; }
+ol input + span		{ color: rgba(255,255,255,0.5); }
+header 				{ background: rgba(0,0,0,0.5); }
+li					{ background: inherit; }
+
+i, b, span {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 50px;
+	text-align: center;
+	text-shadow: none;
+}
+
+i {
+	margin: 15px;
+	padding: 0;
+	width: 20px;
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 2px;
+	background: rgba(255,255,255,0.5);
+}
+
+.add {
+	width: auto;
+	right: 50px;
+}
+
+.sub {
+	left: auto;
+	right: 0;
+	color: rgba(0,0,0,0.25);
+}
+
+.sub:after {
+	content: '\2212';
+}
+
+.v + i {
+	background: #fff;
+	box-shadow: 0 1px 1px #000;
+}
+
+.color + i {
+	margin: 16px;
+	width: 6px;
+	border-left: 6px solid #f00;
+	background: #0f0;
+	border-right: 6px solid #00f;
+	border-radius: 1px;
+	box-shadow: 0 0 0 1px #fff;
+}
+
+.color + i a {
+	margin: 0 -6px;
+	background: #fff;
+	font: inherit;
+	line-height: 18px;
+	opacity: 0;
+}
+
+.color + i a:hover {
+	opacity: 1;
+}
+
+.color + i a:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: -16px -22px;
+}
+
+.v + span {
+	color: #fff;
+	text-shadow: 0 1px 1px #000;
+}
+
+b, .big {
+	font-size: 36px;
+	line-height: 42px;
+}
+
+.bonus + span {
+	width: auto;
+	right: 0;
+	text-align: left;
+}
+
+.bonus + span:after {
+	content: '\2605';
+	font-family: 'Arial Unicode MS', sans-serif;
+	display: block;
+	width: 50px;
+	text-align: center;
+}
+
+.click .add:hover,
+.click .v + * + * + .sub:hover,
+.click label:hover input,
+.add:active,
+.v + * + * + .sub:active,
+b.clicked,
+label:active input {
+	background: rgba(255,255,255,0.25);
+}
+
+.click .drag .add:hover,
+.click .drag .v + * + * + .sub:hover,
+.click .drag label:hover input {
+	background: transparent;
+}
+
+input:focus,
+.click label:hover input:focus {
+	background: #fff;
+}
+
+ul {
+	position: absolute;
+	z-index: 1;
+	top: 50px;
+	left: 0;
+	right: 0;
+	background: rgba(32,32,32,0.75);
+}
+
+li > a {
+	padding: 0 15px;
+}
+
+.click header input:hover,
+.click .drag input:focus + .grab:hover,
+.click .grab:hover,
+.click ul a:hover,
+header input:active,
+ul a:active,
+.drag .grab {
+	color: #fff;
+}
+
+.click header input:focus,
+.click input:focus + .grab:hover,
+.add, 
+.v + * + * + .sub,
+.color + i a:hover,
+input:focus,
+input:focus + span {
+	color: #000;
+	text-shadow: none;
+}
+
+.drag .grab:after {
+	content: 'Drag';
+	position: absolute;
+	top: 0;
+	left: 50px;
+}
+
+.total,	.subtotal { 
+	color: inherit; 
+	-webkit-text-fill-color: inherit; 
+	background: #fff; 
+	text-shadow: none; 
+}
+
+.total {
+	font-weight: bold;
+}
+
+.subtotal {
+	opacity: 0.75;
+}
+
+.total + i {
+	margin: 10px; 
+	border-radius: 30px;
+	width: 30px; 
+	line-height: 30px; 
+	font-size: 24px; 
+	font-weight: normal;
+	color: #fff;
+	background: inherit; 
+}
+
+.subtotal + i {
+	margin-left: 1px;
+	padding: 0 6px 0 0;
+	width: 28px;
+	border-radius: 0 2px 2px 0;
+	color: rgba(255,255,255,0.75);
+	background: inherit; 
+	text-align: right;
+}
+
+.total.v + i,
+.subtotal.v + i {
+	box-shadow: none;
+}
+
+.total + i,
+.subtotal + i,
+ul,
+.o .drag .grab:hover + ul {
+	display: none;
+}
+
+.total.v + i,
+.subtotal.v + i,
+ul:hover,
+.o .grab:hover + ul {
+	display: block;
+}
+
+</style>
+<!-- <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script> -->
+<script src="jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>(function(b){b.support.touch='ontouchend' in document;if(!b.support.touch){return;}var c=b.ui.mouse.prototype,e=c._mouseInit,a;function d(g,h){if(g.originalEvent.touches.length>1){return;}g.preventDefault();var i=g.originalEvent.changedTouches[0],f=document.createEvent('MouseEvents');f.initMouseEvent(h,true,true,window,1,i.screenX,i.screenY,i.clientX,i.clientY,false,false,false,false,0,null);g.target.dispatchEvent(f);}c._touchStart=function(g){var f=this;if(a||!f._mouseCapture(g.originalEvent.changedTouches[0])){return;}a=true;f._touchMoved=false;d(g,'mouseover');d(g,'mousemove');d(g,'mousedown');};c._touchMove=function(f){if(!a){return;}this._touchMoved=true;d(f,'mousemove');};c._touchEnd=function(f){if(!a){return;}d(f,'mouseup');d(f,'mouseout');if(!this._touchMoved){d(f,'click');}a=false;};c._mouseInit=function(){var f=this;f.element.bind('touchstart',b.proxy(f,'_touchStart')).bind('touchmove',b.proxy(f,'_touchMove')).bind('touchend',b.proxy(f,'_touchEnd'));e.call(f);};})(jQuery);</script>
+<script>
+
+$(function(){
+	$('body')
+	.addClass('ontouchend' in document?'touch':'click')
+	.on('keydown','input',function(e){
+		var tabindex = parseInt('0'+$(this).attr('tabindex'),10);
+		if (tabindex && e.keyCode == 13)
+			$('input[tabindex='+(tabindex+1)+']').focus();
+	})
+	.on('mousedown mouseup','.o .grab',function(){
+		$(this).parents('div').toggleClass('drag');
+	})
+	.on('click','.hide,.x .grab',function(){
+		$(this).is('.hide')?
+			$(this).parents('div').prependTo('.x'):
+			$(this).parents('div').appendTo('.o');
+		$('body').attr('id','p'+$('.o div').length);
+		rank();
+		tabindex();
+	})
+	.on('click','b',function(){
+		var $input = $(this).siblings('input');
+		var val = $input.val();
+		var n = parseInt('0'+val,10);
+		$(this).is('.add')?n++:n--;
+		$input.val(n>0?n:'').v();
+		if ($input.val() != val) {
+			$('.clicked').removeClass('clicked');
+			$(this).addClass('clicked');
+			score($input);
+		}
+	})
+	.on('blur change','input[pattern]',function(){
+		var n = parseInt('0'+$(this).val(),10);
+		$(this).val(n>0?n:'').v();
+		score($(this));
+	})
+	.on('click','.bonus+span',function(){
+		var $input = $(this).prev();
+		var val = $input.val();
+		score($('.bonus.v').val('').v());
+		if (!val)
+			score($input.val(10).v());
+	})
+
+	.on('change','.color',function(){
+		if (!$(this).val())
+			$(this).val($(this).attr('placeholder'));
+		var color = $(this).val();
+		$(this).parents('header').parent().css('color',color).find('ol').css('background',color);
+	})
+
+	$('.o').sortable({
+		axis: 'x',
+		containment: 'body',
+		handle: '.grab',
+		tolerance: 'pointer',
+		stop: function(e,ui) { ui.item.removeClass('drag'); },
+		update: function() { tabindex(); },
+	})
+
+	$('ul').prepend('<li class="hide"><a>Hide</a></li><li class="clear"><a>Clear</a></li><li class="reset"><a>Reset</a></li>');
+	$('.color').each(function(){
+		$(this).val($(this).attr('placeholder')).change();
+	});
+
+	tabindex();
+});
+
+$.fn.v = function() {
+	$(this).each(function(){
+		$(this).val()? 
+			$(this).addClass('v'): 
+			$(this).removeClass('v');
+	});
+	return $(this);
+}
+
+function tabindex() {
+	var i = 0;
+	$('.o .name').each(function(){$(this).attr('tabindex',++i);});
+	$('input[pattern]').each(function(){$(this).attr('tabindex',++i);});
+}
+
+function score(el) {
+	var col = el.parents('div');
+	if (col.length != 1)
+		return false;
+	var subtotal = 0, cars = 0, total = 0;
+	$('input[data-x]',col).each(function(){
+		var p = $(this).val()*$(this).attr('data-x');
+		if ($(this).parent().is('li')) {
+			subtotal += p;
+			cars += $(this).val()*$(this).next().text();
+		}
+		total += p;
+	});
+	$('.subtotal',col).val(subtotal?subtotal:'').v().next().text(cars);
+	$('.total',col).val($('input[pattern].v',col).length?total:'').v();
+	rank();
+}
+
+function rank() {
+	var rank = 1, temp = 0;
+	$('.o .total.v').sort(function(a,b){
+		var a = parseInt(a.value,10);
+		var b = parseInt(b.value,10); 
+		return a<b?1:a>b?-1:0;
+	}).each(function(i){
+		if ($(this).val() != temp) 
+			rank = i+1;
+		$(this).next().text(rank);
+		temp = $(this).val();
+	});
+}
+
+function createCookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = '; expires='+date.toGMTString();
+	}
+	else var expires = '';
+	document.cookie = name+'='+value+expires+'; path=/';
+}
+
+function readCookie(name) {
+	var nameEQ = name+'=';
+	var ca = document.cookie.split(';');
+	for (var i=0; i<ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0) == ' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+
+function eraseCookie(name) {
+	createCookie(name,'',-1);
+}
+
+</script>
+</head>
+
+<body id="p5">
+<section class="o">
+	<div>
+		<header>
+			<input class="name" type="text" placeholder="Red" autocomplete="off"><span class="grab">&#9776;</span>
+			<ul><li><input class="color" type="text" placeholder="#C03030" autocomplete="off"><i><a target="_blank" href="http://html-color-codes.info/">?</a></i></li></ul>
+		</header>
+		<ol>
+			<li><input type="text" disabled autocomplete="off" data-x="1"><i>1</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="2"><i>2</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="4"><i>3</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="7"><i>4</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="10"><i>5</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="15"><i>6</i><b class="add"></b><b class="sub"></b></li>
+			<li class="extra"><ol>
+				<li><input type="text" disabled autocomplete="off" data-x="18"><i>7</i><b class="add"></b><b class="sub"></b></li>
+				<li><input type="text" disabled autocomplete="off" data-x="21"><i>8</i><b class="add"></b><b class="sub"></b></li>
+				<li><input type="text" disabled autocomplete="off" data-x="27"><i>9</i><b class="add"></b><b class="sub"></b></li>
+			</ol></li>
+			<li><input class="subtotal" type="text" disabled autocomplete="off"><i></i></li>
+			<li><label><input type="text" pattern="\d*" autocomplete="off" data-x="1"><span class="big">+</span></label></li>
+			<li><label><input type="text" pattern="\d*" autocomplete="off" data-x="-1"><span class="big">&minus;</span></label></li>
+			<li><label><input class="bonus" type="text" disabled autocomplete="off" data-x="1"><span></span></label></li>
+			<li><input class="total" type="text" disabled autocomplete="off"><i></i></li>
+		</ol>
+	</div>
+	<div>
+		<header>
+			<input class="name" type="text" placeholder="Yellow" autocomplete="off"><span class="grab">&#9776;</span>
+			<ul><li><input class="color" type="text" placeholder="#909000" autocomplete="off"><i><a target="_blank" href="http://html-color-codes.info/">?</a></i></li></ul>
+		</header>
+		<ol>
+			<li><input type="text" disabled autocomplete="off" data-x="1"><i>1</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="2"><i>2</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="4"><i>3</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="7"><i>4</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="10"><i>5</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="15"><i>6</i><b class="add"></b><b class="sub"></b></li>
+			<li class="extra"><ol>
+				<li><input type="text" disabled autocomplete="off" data-x="18"><i>7</i><b class="add"></b><b class="sub"></b></li>
+				<li><input type="text" disabled autocomplete="off" data-x="21"><i>8</i><b class="add"></b><b class="sub"></b></li>
+				<li><input type="text" disabled autocomplete="off" data-x="27"><i>9</i><b class="add"></b><b class="sub"></b></li>
+			</ol></li>
+			<li><input class="subtotal" type="text" disabled autocomplete="off"><i></i></li>
+			<li><label><input type="text" pattern="\d*" autocomplete="off" data-x="1"><span class="big">+</span></label></li>
+			<li><label><input type="text" pattern="\d*" autocomplete="off" data-x="-1"><span class="big">&minus;</span></label></li>
+			<li><label><input class="bonus" type="text" disabled autocomplete="off" data-x="1"><span></span></label></li>
+			<li><input class="total" type="text" disabled autocomplete="off"><i></i></li>
+		</ol>
+	</div>
+	<div>
+		<header>
+			<input class="name" type="text" placeholder="Green" autocomplete="off"><span class="grab">&#9776;</span>
+			<ul><li><input class="color" type="text" placeholder="#309060" autocomplete="off"><i><a target="_blank" href="http://html-color-codes.info/">?</a></i></li></ul>
+		</header>
+		<ol>
+			<li><input type="text" disabled autocomplete="off" data-x="1"><i>1</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="2"><i>2</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="4"><i>3</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="7"><i>4</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="10"><i>5</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="15"><i>6</i><b class="add"></b><b class="sub"></b></li>
+			<li class="extra"><ol>
+				<li><input type="text" disabled autocomplete="off" data-x="18"><i>7</i><b class="add"></b><b class="sub"></b></li>
+				<li><input type="text" disabled autocomplete="off" data-x="21"><i>8</i><b class="add"></b><b class="sub"></b></li>
+				<li><input type="text" disabled autocomplete="off" data-x="27"><i>9</i><b class="add"></b><b class="sub"></b></li>
+			</ol></li>
+			<li><input class="subtotal" type="text" disabled autocomplete="off"><i></i></li>
+			<li><label><input type="text" pattern="\d*" autocomplete="off" data-x="1"><span class="big">+</span></label></li>
+			<li><label><input type="text" pattern="\d*" autocomplete="off" data-x="-1"><span class="big">&minus;</span></label></li>
+			<li><label><input class="bonus" type="text" disabled autocomplete="off" data-x="1"><span></span></label></li>
+			<li><input class="total" type="text" disabled autocomplete="off"><i></i></li>
+		</ol>
+	</div>
+	<div>
+		<header>
+			<input class="name" type="text" placeholder="Blue" autocomplete="off"><span class="grab">&#9776;</span>
+			<ul><li><input class="color" type="text" placeholder="#0060C0" autocomplete="off"><i><a target="_blank" href="http://html-color-codes.info/">?</a></i></li></ul>
+		</header>
+		<ol>
+			<li><input type="text" disabled autocomplete="off" data-x="1"><i>1</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="2"><i>2</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="4"><i>3</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="7"><i>4</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="10"><i>5</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="15"><i>6</i><b class="add"></b><b class="sub"></b></li>
+			<li class="extra"><ol>
+				<li><input type="text" disabled autocomplete="off" data-x="18"><i>7</i><b class="add"></b><b class="sub"></b></li>
+				<li><input type="text" disabled autocomplete="off" data-x="21"><i>8</i><b class="add"></b><b class="sub"></b></li>
+				<li><input type="text" disabled autocomplete="off" data-x="27"><i>9</i><b class="add"></b><b class="sub"></b></li>
+			</ol></li>
+			<li><input class="subtotal" type="text" disabled autocomplete="off"><i></i></li>
+			<li><label><input type="text" pattern="\d*" autocomplete="off" data-x="1"><span class="big">+</span></label></li>
+			<li><label><input type="text" pattern="\d*" autocomplete="off" data-x="-1"><span class="big">&minus;</span></label></li>
+			<li><label><input class="bonus" type="text" disabled autocomplete="off" data-x="1"><span></span></label></li>
+			<li><input class="total" type="text" disabled autocomplete="off"><i></i></li>
+		</ol>
+	</div>
+	<div>
+		<header>
+			<input class="name" type="text" placeholder="Black" autocomplete="off"><span class="grab">&#9776;</span>
+			<ul><li><input class="color" type="text" placeholder="#606060" autocomplete="off"><i><a target="_blank" href="http://html-color-codes.info/">?</a></i></li></ul>
+		</header>
+		<ol>
+			<li><input type="text" disabled autocomplete="off" data-x="1"><i>1</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="2"><i>2</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="4"><i>3</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="7"><i>4</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="10"><i>5</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="15"><i>6</i><b class="add"></b><b class="sub"></b></li>
+			<li class="extra"><ol>
+				<li><input type="text" disabled autocomplete="off" data-x="18"><i>7</i><b class="add"></b><b class="sub"></b></li>
+				<li><input type="text" disabled autocomplete="off" data-x="21"><i>8</i><b class="add"></b><b class="sub"></b></li>
+				<li><input type="text" disabled autocomplete="off" data-x="27"><i>9</i><b class="add"></b><b class="sub"></b></li>
+			</ol></li>
+			<li><input class="subtotal" type="text" disabled autocomplete="off"><i></i></li>
+			<li><label><input type="text" pattern="\d*" autocomplete="off" data-x="1"><span class="big">+</span></label></li>
+			<li><label><input type="text" pattern="\d*" autocomplete="off" data-x="-1"><span class="big">&minus;</span></label></li>
+			<li><label><input class="bonus" type="text" disabled autocomplete="off" data-x="1"><span></span></label></li>
+			<li><input class="total" type="text" disabled autocomplete="off"><i></i></li>
+		</ol>
+	</div>
+</section>
+<section class="x">
+	<div>
+		<header>
+			<input class="name" type="text" placeholder="Pink" autocomplete="off"><span class="grab">&#9776;</span>
+			<ul><li><input class="color" type="text" placeholder="#C00060" autocomplete="off"><i><a target="_blank" href="http://html-color-codes.info/">?</a></i></li></ul>
+		</header>
+		<ol>
+			<li><input type="text" disabled autocomplete="off" data-x="1"><i>1</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="2"><i>2</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="4"><i>3</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="7"><i>4</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="10"><i>5</i><b class="add"></b><b class="sub"></b></li>
+			<li><input type="text" disabled autocomplete="off" data-x="15"><i>6</i><b class="add"></b><b class="sub"></b></li>
+			<li class="extra"><ol>
+				<li><input type="text" disabled autocomplete="off" data-x="18"><i>7</i><b class="add"></b><b class="sub"></b></li>
+				<li><input type="text" disabled autocomplete="off" data-x="21"><i>8</i><b class="add"></b><b class="sub"></b></li>
+				<li><input type="text" disabled autocomplete="off" data-x="27"><i>9</i><b class="add"></b><b class="sub"></b></li>
+			</ol></li>
+			<li><input class="subtotal" type="text" disabled autocomplete="off"><i></i></li>
+			<li><label><input type="text" pattern="\d*" autocomplete="off" data-x="1"><span class="big">+</span></label></li>
+			<li><label><input type="text" pattern="\d*" autocomplete="off" data-x="-1"><span class="big">&minus;</span></label></li>
+			<li><label><input class="bonus" type="text" disabled autocomplete="off" data-x="1"><span></span></label></li>
+			<li><input class="total" type="text" disabled autocomplete="off"><i></i></li>
+		</ol>
+	</div>
+</section>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #444;
+    background: #cfc url("tile.gif") left repeat-y;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dd, dt {
+    padding: 0;
+}
+
+p, ul {
+    margin: 0 0 0.8em;
+    line-height: 1.6;
+    font-size: 82%;
+}
+
+a    { color: #575; }
+a:hover    { color: #8b8; }
+
+#container {
+    width: 880px;
+    min-height: 520px;
+    background: url("layout.jpg") top no-repeat;
+}
+
+#header {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+#header h1 {
+    text-indent: -1000em;
+    width: 520px;
+    height: 70px;
+}
+
+#header h1 a {
+    display: block;
+    width: 520px;
+    height: 70px;
+    text-decoration: none;
+}
+
+#content {
+    padding: 170px 72px 20px;
+    width: 454px;
+}
+
+.post {
+    margin-bottom: 1.5em;
+}
+
+.post-date {
+    float: left;
+    margin: 0.15em 0.8em 0 0;
+    padding: 0 0.3em 0.2em;
+    line-height: 0.7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 95%;
+    color: #fff;
+    background: #8b8;
+    word-spacing: -0.1em;
+    white-space: nowrap;
+}
+
+.post-date span {
+    font-size: 140%;
+}
+
+.post-title {
+    margin: 0 0 0.4em;
+	color: #575;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 135%;
+    letter-spacing: -0.04em;
+}
+
+.post-title a {
+    text-decoration: none;
+}
+
+#comments h2 {
+    margin: 0 0 0.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 135%;
+    letter-spacing: -0.04em;
+    color: #8b8;
+}
+
+.comment {
+    background: #cfc;
+    margin: 0 0 0.8em;
+}
+    
+.posted {
+    color: #fff;
+    background: #8b8;
+    padding: 0.2em 1em;
+    margin-bottom: 0;
+}
+
+.postedby {
+    display: block;
+    float: left;
+}
+
+.postedby a { color: #fff; }
+.postedby a:hover { color: #cfc; }
+
+.timestamp {
+    display: block;
+    text-align: right;
+    color: #cfc;
+}
+
+.comment-body {
+    padding: 0.4em 0.8em 1px;
+    background: #cfc;
+}
+
+#comment-form {        
+    background: #cfc;
+    padding: 0.4em 0.8em;
+    margin-bottom: 0.8em;
+}
+
+#sidebar {
+    position: absolute;
+    width: 294px;
+    top: 160px;
+    left: 526px;
+    overflow: visible;
+    padding-bottom: 20px;
+}
+
+#calendar {
+    height: 165px;
+    margin: 0 0 115px 60px;
+}
+
+#calendar caption {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 135%;
+    letter-spacing: -0.04em;
+    color: #8b8;
+}
+
+#calendar th {
+    color: #8b8;
+    text-transform: uppercase;
+    font-size: 70%;
+}
+
+#calendar td {
+    color: #575;
+    font-size: 75%;
+}
+
+#calendar th, #calendar td {
+    text-align: center;
+    width: 25px;
+    padding: 2px 0;
+}
+
+#calendar a {
+    text-decoration: none;
+    display: block;
+    background: #cfc;
+    margin: 0 2px;
+    border: 1px solid #8b8;
+}
+
+#calendar a.previous {
+    margin-left: 2px;
+    width: 45%;
+    float: left;
+}
+
+#calendar a.next {
+    margin-right: 2px;
+    width: 45%;
+    float: right;
+}
+
+#calendar a:hover {
+    color: #cfc;
+    background: #575;
+    border-color: #575;
+}
+
+#archives {
+    padding: 1px 0 0;
+    background: url("sidebar-tile.gif") repeat-y;
+}
+
+#archives div {
+    min-height: 67px;
+    padding: 0 48px 47px;
+    background: url("sidebar-bottom.gif") bottom no-repeat;
+}
+
+#archives h2 {
+    margin: -35px 0 0.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 135%;
+    letter-spacing: -0.04em;
+    color: #8b8;
+}
+
+#archives ul {
+    list-style-type: none;
+}
+
+#archives a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#links {
+    margin: 5px 0 1.5em 65px;
+}
+
+#links h2 {    
+    display: none;
+}
+
+#links ul {
+    list-style-type: none;
+}    
+
+#links a {
+    text-decoration: none;
+}
+
+#powered {
+    color: #8b8;
+    margin: 0 0 0 65px;
+}
+
+#powered p {
+    font-size: 70%;
+}
+
+#powered a {
+    text-decoration: none;
+}
+
+#powered a img {
+    border: none;
+    display: block;
+}
