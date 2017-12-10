@@ -209,10 +209,12 @@ nav div i {
 
 .ll.x:before,
 .rr.x:after { 
-	content: 'I';
+	content: '|';
 	position: absolute;
+	top: 2px;
 	background: transparent;
-	font-size: 14px;
+	font-size: 10px;
+	font-weight: bold;
 }
 
 .ll.x:before 	{ left: 4px; }
