@@ -1,0 +1,93 @@
+#menu li.ask,
+#p>.link>.p>.thumbnail,
+#p>*>.p>.tags li[data-tag="persona 4"],
+body.pday #p>*[data-tags=""],
+body.pday #p>*[data-tags~="commentary"],
+body.pday #p>*[data-tags~="meta"],
+body.pday #p>*[data-tags~="recap"],
+body.pday #p>*[data-tags~="off_topic"],
+#p>*[data-tags=""]>.p>.tags .day,
+#p>*[data-tags~="commentary"]>.p>.tags .day,
+#p>*[data-tags~="meta"]>.p>.tags .day,
+#p>*[data-tags~="recap"]>.p>.tags .day,
+#p>*[data-tags~="off_topic"]>.p>.tags .day {
+	display: none;
+}
+
+/*#p>.h08>.p>.tags .day a:after { content: ': Early Morning'; }
+#p>.h10>.p>.tags .day a:after { content: ': Morning'; }
+#p>.h12>.p>.tags .day a:after { content: ': Lunchtime'; }
+#p>.h13>.p>.tags .day a:after { content: ': Daytime'; }
+#p>.h14>.p>.tags .day a:after { content: ': Afternoon'; }
+#p>.h16>.p>.tags .day a:after { content: ': After School'; }
+#p>.h18>.p>.tags .day a:after { content: ': Evening'; }*/
+
+#p>*>.meta li.permalink {
+	font-weight: normal;
+}
+
+#p>*>.meta .reblog a span:before { 
+	content: '\f079\00a0';
+}
+
+#p>*>.p>.tags li.day a:before {
+	content: '\f073\00a0';
+	font: 14px FontAwesome;
+	position: relative;
+	top: -0.1em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#p>*>.p {
+	border-bottom: 0;
+}
+
+#p>*>*>*,
+#p>.photo>.p>.fitWrap,
+#p>*>.p>.full,
+#notes { 
+	max-width: 33.4em; 
+}
+
+#p>*>.p>.full { 
+	padding: 0 1.6em 0 4.8em; 
+}
+
+	body {
+		font-size: 15px;
+	}
+	#menu a {
+		padding: 0 8px 0 7px;
+	}
+	#menu a:before {
+		margin-right: 5px;
+	}
+	#p>*>.meta li,
+	#p>*>.meta a {
+		padding: 0 8px;
+	}
+	#p>*>.meta a {
+		margin: 0 -8px;
+	}
+	#p>*>.meta span {
+		top: -1px;
+	}
+
+
+@media only screen and (max-width: 500px) {
+	#p>*>*>*,
+	#notes {
+		padding-left: 1.6em;
+	}
+	#p>*>.p>.full {
+		padding: 0;
+	}
+	#p>.link>.p>.thumbnail {
+		float: none;
+		max-width: 100%;
+	}
+	#p>*:first-child>.meta {
+		padding-top: 4.8em;
+	}
+}
