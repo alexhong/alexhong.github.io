@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+	<title>{Title}{block:PostSummary}: {PostSummary}{/block:PostSummary}{block:TagPage}: #{Tag}{/block:TagPage}{block:SearchPage}: &#128270; {SearchQuery}{/block:SearchPage}{block:DayPage}: {block:Posts}{block:Post1}{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Post1}{/block:Posts}{/block:DayPage}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1">{block:Description}
+	<meta name="description" content="{MetaDescription}">{/block:Description}
+	<link rel="alternate" type="application/rss+xml" href="{RSS}">
+	<link rel="shortcut icon" href="{Favicon}">
+	<link rel="stylesheet" href="//alexhong.ml/tumblr/style.css">
+	<style>{CustomCSS}</style>
+	<script src="//code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="//alexhong.ml/tumblr/script.js"></script>
+</head>
+
+<body class="{block:PermalinkPage}{block:Posts}{block:Date}permalink {/block:Date}{PostType}{/block:Posts}{/block:PermalinkPage}{block:IndexPage}index p{CurrentPage}{block:DayPage}day{/block:DayPage}{/block:IndexPage}{block:TagPage} tag{/block:TagPage}{block:SearchPage} search{/block:SearchPage}"{block:PermalinkPage}{block:Posts} data-tags="{TagsAsClasses}"{/block:Posts}{/block:PermalinkPage}>{block:IfGoogleAnalyticsID}
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create','{text:Google Analytics ID}','{text:Google Analytics domain}');
+ga('send','pageview');
+</script>{/block:IfGoogleAnalyticsID}
+	<div id="header">
+		<a id="home" href="/">
+			<h1>{Title}</h1>
+			<img src="{PortraitURL-128}" alt="">
+		</a>
+		<div id="menu">
+			<ul>
+				<li class="home"><a href="/">Home</a></li>{block:Pagination}{block:PreviousPage}
+				<li class="newer"><a href="{PreviousPage}">Newer</a></li>{/block:PreviousPage}{block:NextPage}
+				<li class="older"><a href="{NextPage}">Older</a></li>{/block:NextPage}{/block:Pagination}{block:PermalinkPagination}{block:NextPost}
+				<li class="newer"><a href="{NextPost}">Newer</a></li>{/block:NextPost}{block:PreviousPost}
+				<li class="older"><a href="{PreviousPost}">Older</a></li>{/block:PreviousPost}{/block:PermalinkPagination}{block:DayPagination}{block:NextDayPage}
+				<li class="newer"><a href="{NextDayPage}">Newer</a></li>{/block:NextDayPage}{block:PreviousDayPage}
+				<li class="older"><a href="{PreviousDayPage}">Older</a></li>{/block:PreviousDayPage}{/block:DayPagination}
+				<li class="archive"><a href="/archive">Archive</a></li>{block:HasPages}{block:Pages}
+				<li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}{block:AskEnabled}
+				<li class="ask"><a href="/ask">{AskLabel}</a></li>{/block:AskEnabled}
+			</ul>
+		</div>
+	</div>
+	<div id="p"{block:IndexPage} class="autopagerize_page_element"{/block:IndexPage}>{block:Posts}
+		<div class="{PostType} h{24HourWithZero} m{Minutes}" data-tags="{TagsAsClasses}">
+			<div class="meta">{block:Date}
+				<ul>
+					<li class="permalink">{block:IndexPage}<a href="{Permalink}"><span>{TimeAgo}</span></a>{/block:IndexPage}{block:PermalinkPage}<span>{Year}.{MonthNumberWithZero}.{DayOfMonthWithZero}</span>{/block:PermalinkPage}</li>{block:ContentSource}<!--
+					--><li class="source"><a href="{SourceURL}"><span><i>@ </i>{SourceTitle}</span></a></li>{/block:ContentSource}{block:RebloggedFrom}<!--
+					--><li class="reblog"><a href="{ReblogRootURL}"><span><i>from </i>{ReblogRootName}<!-- via {ReblogParentName}--></span></a></li>{/block:RebloggedFrom}{block:NoteCount}<!--
+					--><li class="notes"><a href="{block:IndexPage}{Permalink}{/block:IndexPage}#notes"><span><b>+</b> {NoteCount}</span></a></li>{/block:NoteCount}
+				</ul>{/block:Date}
+			</div>
+			<div class="p">{block:Text}{block:Title}
+				<h2><span>{Title}</span></h2>{/block:Title}
+				<div>{Body}</div>
+			{/block:Text}{block:Photo}
+				<div class="fitWrap{block:HighRes} full{/block:HighRes}">{LinkOpenTag}<img src="{PhotoURL-HighRes}" width="{PhotoWidth-HighRes}" height="{PhotoHeight-HighRes}">{LinkCloseTag}</div>{block:Caption}
+				<div>{Caption}</div>{/block:Caption}
+			{/block:Photo}{block:Photoset}
+				<div class="fitWrap">{Photoset}</div>{block:Caption}
+				<div>{Caption}</div>{/block:Caption}
+			{/block:Photoset}{block:Quote}
+				<div>
+					<blockquote><div class="{Length}">{Quote}</div></blockquote>{block:Source}
+					<div class="source"><span>&mdash;</span>{Source}</div>{/block:Source}
+				</div>
+			{/block:Quote}{block:Link}{block:Thumbnail}
+				<div class="thumbnail"><img src="{Thumbnail}" alt=""></div>{/block:Thumbnail}
+				<h2><span><a href="{URL}">{Name}</a></span></h2>{block:Host}
+				<h3 class="host">{Host}</h3>{/block:Host}{block:Description}
+				<div>{Description}</div>{/block:Description}
+			{/block:Link}{block:Chat}{block:Title}
+				<h2><span>{Title}</span></h2>{/block:Title}
+				<div>
+					<ul class="chat">{block:Lines}
+						<li>{block:Label}<b>{Label}</b> {/block:Label}{Line}</li>{/block:Lines}
+					</ul>
+				</div>
+			{/block:Chat}{block:Video}
+				<div class="videoWrap">{VideoEmbed-700}</div>{block:Caption}
+				<div>{Caption}</div>{/block:Caption}
+			{/block:Video}{block:Audio}
+				<div class="fitWrap"><div class="audio_player">{AudioEmbed}</div></div>{block:Caption}
+				<div>{Caption}</div>{/block:Caption}
+			{/block:Audio}{block:Answer}
+				<div>
+					<p>{Asker} asked:</p>
+					<blockquote>{Question}</blockquote>
+					{Answer}
+				</div>
+			{/block:Answer}{block:HasTags}
+				<ul class="tags">{block:Tags}<!--
+					--><li data-tag="{PlaintextTag}"><a href="{TagURL}">#{Tag}</a></li>{/block:Tags}
+				</ul>{/block:HasTags}
+			</div>
+		</div>{/block:Posts}
+	</div>{block:PostNotes}
+	<div id="notes">
+		{PostNotes-64}
+	</div>{/block:PostNotes}
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<html lang="en">
+
+<head>
+    <title>{Title}{block:PostSummary}: {PostSummary}{/block:PostSummary}</title>
+    <meta charset="utf-8" />
+    <link rel="alternate" type="application/rss+xml" href="{RSS}" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Vast+Shadow" />
+    <style>
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	color: #404040;
+	background: #e0e0e0;
+	font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	min-width: 940px;
+	padding: 0 40px;
+}
+
+header,
+article,
+footer {
+	width: 900px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+header,
+footer {
+	text-align: center;
+	text-transform: uppercase;	
+	-o-text-shadow: 0 1px 1px #fff;
+	-moz-text-shadow: 0 1px 1px #fff;
+	-webkit-text-shadow: 0 1px 1px #fff;
+	text-shadow: 0 1px 1px #fff;
+	margin: 20px auto;
+}
+
+footer {
+	color: #808080;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 110px;
+	margin: -70px auto 0;
+}
+
+footer span {
+	margin: 0 5px;
+	color: #c0c0c0;
+}
+
+footer span.current { 
+	color: #808080;
+}
+
+footer a {
+	color: #808080;
+	margin: -20px;
+	padding: 20px;
+}
+
+footer a:hover {
+	color: #404040;
+}
+
+header a {
+	color: inherit;
+	display: block;
+	padding: 20px;
+	margin: -20px;
+}
+
+header a:hover {
+	color: #808080;
+}
+
+header h1 {
+	font: 48px/50px "Vast Shadow";
+	letter-spacing: -2px;
+	word-spacing: 2px;
+	font-weight: normal;
+}
+
+header p {
+	font-size: 11px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+article {
+	margin-bottom: 70px;
+	background: #fff;
+	-o-box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+	box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+}
+
+article p {
+	margin-bottom: 20px;
+}
+
+a.permalink {
+	display: block;
+}
+
+img.photo {
+	display: block;
+	height: 600px;
+	width: 900px;
+	margin-bottom: 20px;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #005c73;
+}
+
+a:hover,
+p.meta a:hover {
+	color: #d79035;
+}
+
+p.meta {
+	margin: -10px 0 0;
+	overflow: hidden;
+	font-size: 11px;
+}
+
+p.meta a,
+p.meta span {
+	font-weight: normal;
+	color: #808080;
+	display: block;
+	float: left;
+	padding: 0 10px;
+}
+
+p.meta .permalink {
+	background: url("http://c1.glitch.bz/img/sprite-status-actions_96663.png") left -367px no-repeat;
+	padding-left: 15px;
+}    
+
+p.meta a.permalink:hover {
+	background-position: left -387px;
+}
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <a href="/">
+        <h1>{Title}</h1>
+	    {block:Description}<p>{Description}</p>{/block:Description}
+    </a>
+</header>
+
+{block:Posts}{block:Photo}
+<article>
+	{block:IndexPage}<a class="permalink" href="{Permalink}">{/block:IndexPage}<img class="photo" src="{PhotoURL-HighRes}" width="900" height="600" alt="" />{block:IndexPage}</a>{/block:IndexPage}
+	{block:Caption}
+	<div class="caption">
+		{Caption}
+	</div>
+	{/block:Caption}
+	<p class="meta">{block:IndexPage}<a class="permalink" href="{Permalink}">{TimeAgo}</a>{/block:IndexPage}{block:PermalinkPage}<span class="permalink" title="{Timestamp}">{Year}.{MonthNumberWithZero}.{DayOfMonthWithZero}</span>{/block:PermalinkPage}{block:ContentSource} <a class="source" href="{SourceURL}">photo credit</a>{/block:ContentSource}</p>
+</article>
+{/block:Photo}{block:Posts}
+
+{block:Pagination}
+<footer>
+<span class="previous">{block:PreviousPage}<a href="{PreviousPage}">{/block:PreviousPage}◄{block:PreviousPage}</a>{/block:PreviousPage}</span>
+<span class="current" >{CurrentPage} / {TotalPages}</span>
+<span class="next">{block:NextPage}<a href="{NextPage}">{/block:NextPage}►{block:NextPage}</a>{/block:NextPage}</span>
+</footer>
+{/block:Pagination}
+
+</body>
+
+</html>
