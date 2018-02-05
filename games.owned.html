@@ -4,44 +4,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>alexhong.ml/games</title>
+<title>games.owned</title>
+<link href="css/games.css" rel="stylesheet">
 <script src="js/smartquotes.js"></script>
-<script>smartquotes()</script>
-<style>
-*		{ margin: 0; padding: 0; list-style: none; font-family: inherit; }
-body 	{ padding: 20px 10px 0; font: 13px/20px -apple-system, BlinkMacSystemFont, Roboto, sans-serif; }
-div 	{ padding: 0 10px 20px; box-sizing: border-box; }
-@media only screen and (min-width: 560px) { 
-	div { width: 50%; float: left; }}
-li li	{ padding-left: 10px; }
-header:after {
-	content: '\00a0\00a0'attr(title);
-	font-size: 10px;
-	line-height: 0;
-	color: #808080;
-}
-u { 
-	text-decoration: none;
-	font-size: 10px;
-	display: inline-block;
-	line-height: 11px;
-	vertical-align: 1px;
-	text-align: center;
-	white-space: nowrap;
-	width: 7px;
-	padding: 0 2px;
-	margin-right: 2px;
-	border: 1px solid;
-	border-radius: 2px;
-	box-shadow: 0 1px 0 rgba(0,0,0,0.25);
-}
-.ps4 { color: #4080c0; }
-.ps3,.ps2 { color: #808080; }
-.psv,.psp,.ps1 { color: #40c080; }
-</style>
 </head>
 
-<body>
+<body id="owned">
 
 <div id="psn"><header><b>PSN</b></header><pre>
 [4] 2064: Read Only Memories $8
@@ -483,6 +451,7 @@ Resident Evil: Chronicles HD Collection
 </pre></div>
 
 <script>
+smartquotes();
 Array.from(document.getElementsByTagName('pre')).map(function(pre){
 	var lines = pre.innerHTML.trim().split('\n');
 	var ol = document.createElement('ol');
