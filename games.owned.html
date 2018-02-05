@@ -454,7 +454,7 @@ Resident Evil: Chronicles HD Collection
 smartquotes();
 Array.from(document.getElementsByTagName('pre')).map(function(pre){
 	var lines = pre.innerHTML.trim().split('\n');
-	var ol = document.createElement('ol');
+	var list = document.createElement('ol');
 	var total = 0;
 	lines.map(function(line){
 		// strip comments
@@ -477,18 +477,18 @@ Array.from(document.getElementsByTagName('pre')).map(function(pre){
 		var li = document.createElement('li');
 		li.innerHTML = line.trim();
 		if (line[0] == ' ') {
-			var last = ol.lastElementChild;
+			var last = list.lastElementChild;
 			if (!last.getElementsByTagName('ul').length) last.append(document.createElement('ul'));
 			last.getElementsByTagName('ul')[0].append(li);
 	 	} else {
-			ol.append(li);
+			list.append(li);
 		}
 	});
 	if (pre.parentNode.id == 'plus')
 		total = parseInt((Date.now()-Date.parse('2013-02-28'))/1000/60/60/24*50/365);
 	if (total)
-		pre.previousSibling.setAttribute('title','$'+total+' ('+ol.childElementCount+' × '+(total/ol.childElementCount).toFixed(2)+')');
-	pre.replaceWith(ol);
+		pre.previousSibling.setAttribute('title','$'+total+' ('+list.childElementCount+' × '+(total/list.childElementCount).toFixed(2)+')');
+	pre.replaceWith(list);
 });
 </script>
 </body>

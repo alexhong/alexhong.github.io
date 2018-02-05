@@ -160,19 +160,12 @@
 smartquotes();
 Array.from(document.getElementsByTagName('pre')).map(function(pre){
 	var lines = pre.innerHTML.trim().split('\n');
-	var ol = document.createElement('ol');
-	var total = 0;
+	var list = document.createElement('ul');
 	lines.map(function(line){
 		// strip comments
 		if ((i = line.indexOf('#')) != -1) {
 			line = line.substr(0,i);
 			if (!line.trim()) return;
-		}
-		// sum $
-		if ((i = line.indexOf('$')) != -1) {
-			var price = parseInt(line.substr(i+1),10);
-			isNaN(price) ? alert('invalid $: '+line) : total += price;
-			line = line.substr(0,i);
 		}
 		// chiclets
 		line = line
@@ -184,18 +177,14 @@ Array.from(document.getElementsByTagName('pre')).map(function(pre){
 		var li = document.createElement('li');
 		li.innerHTML = line.trim();
 		if (line[0] == ' ') {
-			var last = ol.lastElementChild;
+			var last = list.lastElementChild;
 			if (!last.getElementsByTagName('ul').length) last.append(document.createElement('ul'));
 			last.getElementsByTagName('ul')[0].append(li);
 	 	} else {
-			ol.append(li);
+			list.append(li);
 		}
 	});
-	if (pre.parentNode.id == 'plus')
-		total = parseInt((Date.now()-Date.parse('2013-02-28'))/1000/60/60/24*50/365);
-	if (total)
-		pre.previousSibling.setAttribute('title','$'+total+' ('+ol.childElementCount+' × '+(total/ol.childElementCount).toFixed(2)+')');
-	pre.replaceWith(ol);
+	pre.replaceWith(list);
 });
 </script>
 </body>
