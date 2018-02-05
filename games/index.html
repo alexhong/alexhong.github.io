@@ -8,11 +8,18 @@
 <script src="../smartquotes.js"></script>
 <script>smartquotes()</script>
 <style>
-* { margin: 0; padding: 0; list-style: none; font-family: inherit; }
-body { padding: 20px 10px 0; font: 13px/20px -apple-system, BlinkMacSystemFont, Roboto, sans-serif; }
-div { padding: 0 10px 20px; box-sizing: border-box; }
-@media only screen and (min-width: 560px) { div { float: left; width: 50%;  } }
-li li { padding-left: 10px; }
+* 		{ margin: 0; padding: 0; list-style: none; font-family: inherit; }
+body 	{ padding: 20px 10px 0; font: 13px/20px -apple-system, BlinkMacSystemFont, Roboto, sans-serif; }
+div 	{ padding: 0 10px 20px; box-sizing: border-box; }
+@media only screen and (min-width: 560px) { 
+	div { width: 50%; float: left; }}
+li li	{ padding-left: 10px; }
+header:after {
+	content: '\00a0\00a0'attr(title);
+	font-size: 10px;
+	line-height: 0;
+	color: #808080;
+}
 u { 
 	text-decoration: none;
 	font-size: 10px;
@@ -28,6 +35,9 @@ u {
 	border-radius: 2px;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.25);
 }
+.ps4 { color: #4080c0; }
+.ps3,.ps2 { color: #808080; }
+.psv,.psp,.ps1 { color: #40c080; }
 </style>
 </head>
 
@@ -36,13 +46,13 @@ u {
 <div id="psn"><header><b>PSN</b></header><pre>
 [4] 2064: Read Only Memories $8
 [V] Actual Sunlight $2
-[4][V] Alone With You $4
-[4][3][V] Another World $7
+[4V] Alone With You $4
+[43V] Another World $7
 [4] Assassin's Creed IV: Black Flag $10
 [3] Batman: Arkham Asylum $5
 [4] Batman: Arkham Knight $9
 [3] Beyond Good & Evil $3
-[4][V] Bit.Trip Presents Runner 2: Future Legend of Rhythm Alien $2
+[4V] Bit.Trip Presents Runner 2: Future Legend of Rhythm Alien $2
 [4] Bloodborne $8
 Borderlands Bundle $21
  [3] Borderlands
@@ -52,10 +62,10 @@ Borderlands: The Handsome Collection $18
  [4] Borderlands: The Pre-Sequel
 [3] Braid $1
 [3] Catherine $7
-[4][3][V] Cel Damage HD $3
+[43V] Cel Damage HD $3
 [4] Chambara $4
 [4] Clustertruck $6
-[4][3][V] Cosmophony $2
+[43V] Cosmophony $2
 [3] Counter-Strike: Global Offensive $7
 [4] Dear Esther $3
 [4] Divekick $1
@@ -64,26 +74,26 @@ Borderlands: The Handsome Collection $18
 [4] Everybody's Gone to the Rapture $8
 [3] Far Cry 3 $5
 [3] Far Cry 3: Blood Dragon $4
-[4][3] Fibbage $2
+[43] Fibbage $2
 [4] Firewatch $18
-[4][3][V] Flow $1
-[4][3][V] Flower $2
+[43V] Flow $1
+[43V] Flower $2
 [V] Freedom Wars $5
 [3] Grand Theft Auto IV $15
-[4][V] Grim Fandango Remastered $15
-[4][V] Hatoful Boyfriend $5
-[4][V] Home $1
-[4][3][V] Hotline Miami
+[4V] Grim Fandango Remastered $15
+[4V] Hatoful Boyfriend $5
+[4V] Home $1
+[43V] Hotline Miami
 [4] Inside $14
 [4] The Jackbox Party Pack $5
 [4] The Jackbox Party Pack 2 $5
-[4][3] Journey $7
+[43] Journey $7
 [3] Just Cause 2 $4
 [2] Katamari Damacy $1
 [V] Killzone: Mercenary $9
 [4] Last Day of June $11
 [3] The Last of Us $36
-	Season Pass $20
+ Season Pass $20
 [4] The Last of Us Remastered $11
 [4] Life Is Strange $10
 Mass Effect Trilogy $15
@@ -98,10 +108,10 @@ Metal Gear Solid HD Collection $9
 [4] Mirror's Edge Catalyst $12
 [V] Need for Speed: Most Wanted $5
 [4] Never Alone $4
-[4][V] Nidhogg $5
+[4V] Nidhogg $5
 [3] Noby Noby Boy $1
 [3] Okami $7
-[4][3][V] OlliOlli $3
+[43V] OlliOlli $3
 [4] Overcooked $20
 [4] Overwatch $35
 [4] Oxenfree $12
@@ -119,34 +129,34 @@ Prince of Persia Trilogy $8
  [3] Prince of Persia: The Two Thrones
 [3] Prince of Persia: The Forgotten Sands $4
 [3] Red Dead Redemption $14
-[4][3][V] Resogun
+[43V] Resogun
 [3] Sam & Max: Beyond Time and Space $1
 [3] Sam & Max: The Devil's Playhouse $1
 [4] Screencheat $6
 [3] Shadow of the Colossus $5
 [4] Sleeping Dogs $10
-[4][3][V] Sound Shapes $7
-[4][3][V] Spelunky $4
+[43V] Sound Shapes $7
+[43V] Spelunky $4
 [3] Stacking $4
-[4][3] Starwhal $3
+[43] Starwhal $3
 [V] Steins;Gate $3
-[3][V] Stick It to the Man $6
+[3V] Stick It to the Man $6
 [4] Street Fighter V #60
-	Season Pass #30
+ Season Pass #30
 [4] Tales from the Borderlands $4
 [3] Tales of Monkey Island $1
 [3] Terraria $4
-[4][3][V] Thomas Was Alone $3
+[43V] Thomas Was Alone $3
 [V] Three Fourths Home $2
 [3] Tokyo Jungle $1
 Uncharted: The Nathan Drake Collection $8
  [4] Uncharted: Drake's Fortune
  [4] Uncharted 2: Among Thieves
  [4] Uncharted 3: Drake's Deception
-[4][3][V] The Unfinished Swan $4
+[43V] The Unfinished Swan $4
 [4] Virginia $5
-[4][V] Volume $5
-[4][3] The Walking Dead $8
+[4V] Volume $5
+[43] The Walking Dead $8
 [3] The Walking Dead: Season 2 $15
 [4] The Walking Dead: Michonne $5
 [4] What Remains of Edith Finch $11
@@ -155,8 +165,8 @@ Uncharted: The Nathan Drake Collection $8
 </pre></div>
 
 <div id="plus"><header><b>PS+</b></header><pre>
-[4][V] 10 Second Ninja X
-[4][3] Aaru's Awakening
+[4V] 10 Second Ninja X
+[43] Aaru's Awakening
 [3] Abyss Odyssey
 [4] Abzû
 [3] Alien Rage
@@ -166,13 +176,13 @@ Uncharted: The Nathan Drake Collection $8
 [3] Anomaly Warzone Earth
 [4] Apotheon
 [4] Assassin's Creed Freedom Cry
-[4][V] Azkend 2
-[4][3][V] Badland
+[4V] Azkend 2
+[43V] Badland
 [3] Batman: Arkham City
 [4] Batman: The Telltale Series
 [3] Battlefield 3
 [3] Binary Domain
-[4][V] The Binding of Isaac: Rebirth
+[4V] The Binding of Isaac: Rebirth
 [3] Bionic Commando Rearmed 2
 [3] BioShock Infinite
 [3] Bit.Trip Presents Runner 2: Future Legend of Rhythm Alien
@@ -182,29 +192,29 @@ Uncharted: The Nathan Drake Collection $8
 [3] The Book of Unwritten Tales 2
 [4] Bound
 [4] Broforce
-[4][V] Broken Age
+[4V] Broken Age
 [V] Broken Sword 5: The Serpent's Curse
 [3] Brothers: A Tale of Two Sons
 [3] Call of Juarez: Bound in Blood
 [3] Call of Juarez: Gunslinger
 [3] Castle of Illusion Starring Mickey Mouse
-[3][V] CastleStorm
+[3V] CastleStorm
 [3] The Cave
 [3] Chariot
 [3] Closure
 [3] Cloudberry Kingdom
 [V] Code: Realize ~Guardian of Rebirth~
-[4][V] Color Guardians
+[4V] Color Guardians
 [4] Contrast
 [3] Costume Quest 2
-[4][3][V] CounterSpy
+[43V] CounterSpy
 [3] Crysis 3
-[4][V] Curses ’n Chaos
+[4V] Curses ’n Chaos
 [3] Darksiders
 [4] Darksiders II
 [3] Darkstalkers Resurrection
 [3] Datura
-[4][V] Day of the Tentacle Remastered
+[4V] Day of the Tentacle Remastered
 [3] Deadly Premonition
 [4] The Deadly Tower of Monsters
 [4] Dead Nation
@@ -216,36 +226,36 @@ Uncharted: The Nathan Drake Collection $8
 [4] Disc Jam
 [3] Dishonored
 [3] DmC: Devil May Cry
-[4][3][V] Doki-Doki Universe
+[43V] Doki-Doki Universe
 [V] Dokuro
-[4][V] Don’t Die, Mr. Robot
-[4][3][V] Don't Starve
-[4][V] Downwell
+[4V] Don’t Die, Mr. Robot
+[43V] Don't Starve
+[4V] Downwell
 [3] Dragon Age: Origins
-[4][3][V] Dragon Fin Soup
-[3][V] Dragon's Crown
+[43V] Dragon Fin Soup
+[3V] Dragon's Crown
 [3] Dragon's Dogma: Dark Arisen
 [4] Drawn to Death
 [3] DuckTales: Remastered
 [3] Dungeon Defenders
 [3] Dungeons & Dragons: Chronicles of Mystara
-[4][V] Dungeon Punks
+[4V] Dungeon Punks
 [4] Dust: An Elysian Tail
 [3] Dyad
 [3] Earth Defense Force 2025
 [V] Element4l
-[4][3][V] Entwined
-[4][V] Escape Plan
+[43V] Entwined
+[4V] Escape Plan
 [4] Ether One
 [3] Fat Princess
-[4][3][V] Fez
+[43V] Fez
 [V] Final Horizon
 [V] Flame Over
-[4][V] Forma.8
+[4V] Forma.8
 [3] From Dust
 [3] Frozen Synapse Prime
 [4] Furi
-[4][V] Futuridium EP Deluxe
+[4V] Futuridium EP Deluxe
 [4] Galak-Z: The Dimensional
 [3] Galaga Legions DX
 [4] Game of Thrones
@@ -262,7 +272,7 @@ Uncharted: The Nathan Drake Collection $8
 [4] Guacamelee!
 [3] Handball 2016
 [4] Hardware: Rivals
-[4][3][V] Helldivers
+[43V] Helldivers
 [V] History Legends of War: Patton
 Hitman HD Trilogy
  [3] Hitman 2: Silent Assassin
@@ -270,8 +280,8 @@ Hitman HD Trilogy
  [3] Hitman: Blood Money
 [3] Hitman: Absolution
 [3] Hoard
-[4][3][V] Hohokum
-[4][V] Hue
+[43V] Hohokum
+[4V] Hue
 [V] The Hungry Horde
 [3] Hustle Kings
 [3] Hyper Void
@@ -288,20 +298,20 @@ Hitman HD Trilogy
 [3] Joe Danger 2: The Movie
 [4] Just Cause 3
 [V] Kick & Fennick
-[3][V] KickBeat
+[3V] KickBeat
 [4] Killing Floor 2
 [3] Kingdoms of Amalur: Reckoning
 [4] King's Quest: A Knight to Remember
-[3][V] Knytt Underground
+[3V] Knytt Underground
 [4] Kung Fu Panda: Showdown of Legendary Legends
-[3][V] Kung Fu Rabbit
+[3V] Kung Fu Rabbit
 [3] Labyrinth Legends
 [V] La-Mulana EX
 [4] Lara Croft and the Temple of Osiris
-[4][V] Laser Disco Defenders
+[4V] Laser Disco Defenders
 [3] The Last Guy
 [V] Lemmings Touch
-[4][V] Letter Quest Remastered
+[4V] Letter Quest Remastered
 [V] Level 22
 [4] Limbo
 [3] LittleBigPlanet 2
@@ -309,12 +319,12 @@ Hitman HD Trilogy
 [3] LittleBigPlanet Karting
 [V] Little Deviants
 [3] LocoRoco Cocoreccho!
-[3][V] Lone Survivor
+[3V] Lone Survivor
 [4] Lords of the Fallen
 [4] Lovers in a Dangerous Spacetime
-[3][V] Luftrausers
-[4][V] Lumo
-[3][V] Machinarium
+[3V] Luftrausers
+[4V] Lumo
+[3V] Machinarium
 [3] Mad Riders
 [4] Magicka 2
 [3] Malicious
@@ -329,40 +339,40 @@ Mega Man 9 & 10 Combo Pack
 [V] ModNation Racers: Road Trip
 [V] MonsterBag
 [3] Monster Jam Battlegrounds
-[4][3][V] MouseCraft
+[43V] MouseCraft
 [V] Muramasa Rebirth
 [V] Murasaki Baby
-[3][V] Mutant Mudds Deluxe
+[3V] Mutant Mudds Deluxe
 [4] NBA 2K16
-[4][V] Neon Chrome
+[4V] Neon Chrome
 [4] Never Alone
 [V] Nihilumbra
-[4][V] Ninja Senki DX
+[4V] Ninja Senki DX
 [4] Nom Nom Galaxy
 [4] Not a Hero
 [V] Nova-111
 [3] Oddworld: Munch's Oddysee
 [4] Oddworld: New ’n’ Tasty!
 [V] Oddworld: Stranger's Wrath
-[4][V] OlliOlli2: Welcome to Olliwood
+[4V] OlliOlli2: Welcome to Olliwood
 [V] Oreshika: Tainted Bloodlines
 [4] Outlast
 [3] Payday 2
 [3] Persona 4 Arena Ultimax
 [V] PixelJunk Monsters
-[4][V] Pix the Cat
-[3][V] PlayStation All-Stars Battle Royale
+[4V] Pix the Cat
+[3V] PlayStation All-Stars Battle Royale
 [3] Poker Night 2
 [3] Port Royale 3: Pirates and Merchants
-[3][V] Proteus
-[4][V] Psycho-Pass: Mandatory Happiness
-[4][3][V] Pumped BMX +
+[3V] Proteus
+[4V] Psycho-Pass: Mandatory Happiness
+[43V] Pumped BMX +
 [3] Puppeteer
 [3] Quantum Conundrum
-[4][3][V] Race the Sun
+[43V] Race the Sun
 [3] Rag Doll Kung Fu: Fists of Plastic
 [3] Rain
-[3][V] Rainbow Moon
+[3V] Rainbow Moon
 [3] Ratchet & Clank: All 4 One
 [V] Rayman Origins
 [V] Reality Fighters
@@ -377,7 +387,7 @@ Resident Evil: Chronicles HD Collection
 [4] Road Not Taken
 [V] Rocketbirds: Hardboiled Chicken
 [4] Rocket League
-[4][3][V] Rogue Legacy
+[43V] Rogue Legacy
 [3] R-Type Dimensions
 [3] Sacred 3
 [4] Saints Row: Gat out of Hell
@@ -386,106 +396,115 @@ Resident Evil: Chronicles HD Collection
 [4] Secret Ponchos
 [V] Severed
 [3] Sherlock Holmes: Crimes & Punishments
-[4][V] Shutshimi
+[4V] Shutshimi
 [V] Sine Mora
 [3] Siren: Blood Curse
 [3] Skullgirls Encore
 [4] Skulls of the Shogun
-[4][3][V] Sky Force Anniversary
+[43V] Sky Force Anniversary
 [3] Sleeping Dogs
 [V] Smart As...
 [3] Snakeball
 [V] Sonic & All-Stars Racing Transformed
 [V] Soul Sacrifice
 [3] Spec Ops: The Line
-[4][3] Sportsfriends
-[4][V] Spy Chameleon
+[43] Sportsfriends
+[4V] Spy Chameleon
 [3] SSX
-[3][V] Stealth Inc: A Clone in the Dark
-[4][3][V] Stealth Inc 2: A Game of Clones
+[3V] Stealth Inc: A Clone in the Dark
+[43V] Stealth Inc 2: A Game of Clones
 [4] Stick It to the Man
-[4][V] SteamWorld Dig
+[4V] SteamWorld Dig
 [4] Stories: The Path of Destinies
 [V] Street Fighter X Tekken
 [4] Strider
 [4] Strike Vector EX
 [4] Styx: Master of Shadows
-[4][V] Super Exploding Zoo
-[4][V] Super Meat Boy
+[4V] Super Exploding Zoo
+[4V] Super Meat Boy
 [3] Super Motherload
 [3] Super Stardust HD
 [3] Super Street Fighter IV: Arcade Edition
-[4][V] Super Time Force Ultra
+[4V] Super Time Force Ultra
 [V] Surge Deluxe
-[4][3][V] The Swapper
-[4][3][V] The Swindle
-[4][V] Switch Galaxy Ultra
+[43V] The Swapper
+[43V] The Swindle
+[4V] Switch Galaxy Ultra
 [3] Syberia Collection
 [4] Table Top Racing: World Tour
 [4] Tearaway Unfolded
 [V] Terraria
-[4][3] Teslagrad
+[43] Teslagrad
 [3] Thief
 [4] This War of Mine: The Little Ones
-[4][3][V] Titan Attacks!
-[4][V] Titan Souls
-[4][3][V] Tiny Troopers: Joint Ops
+[43V] Titan Attacks!
+[4V] Titan Souls
+[43V] Tiny Troopers: Joint Ops
 [3] Tomb Raider
-[4][V] TorqueL
-[4][V] TowerFall Ascension
-[4][3] Tower of Guns
+[4V] TorqueL
+[4V] TowerFall Ascension
+[43] Tower of Guns
 [4] Transistor
 [4] Tricky Towers
 [4] Tropico 5
 [3] Truck Racer
 [3] Twisted Metal
 [V] TxK
-[4][V] Type:Rider
-[4][3][V] Ultratron
-[4][V] Uncanny Valley
+[4V] Type:Rider
+[43V] Ultratron
+[4V] Uncanny Valley
 [V] Uncharted: Golden Abyss
 [3] Under Night In-Birth Exe:Late
 [V] Unit 13
-[4][3] Unmechanical: Extended
+[43] Unmechanical: Extended
 [4] Until Dawn
 [V] Urban Trial Freestyle
 [4] Valiant Hearts: The Great War
 [3] Vanquish
-[4][V] Velocity 2X
+[4V] Velocity 2X
 [V] Velocity Ultra
 [3] Vessel
 [V] A Virus Named TOM
 [V] VVVVVV
 [4] The Walking Dead: Season 2
 [V] Wanted Corp.
-[4][V] We Are Doomed
+[4V] We Are Doomed
 [V] Wipeout 2048
-[4][V] Woah Dave!
+[4V] Woah Dave!
 [4] Worms Battlegrounds
 [3] WRC 5
 [3] Xblaze Lost: Memories
-[4][V] Xeodrifter
+[4V] Xeodrifter
 [3] Yakuza 4
 [3] Yakuza 5
 [V] Zero Escape: Virtue's Last Reward
 [4] Zombi
-[3][V] Zombie Tycoon 2: Brainhov's Revenge
+[3V] Zombie Tycoon 2: Brainhov's Revenge
 </pre></div>
 
 <script>
 Array.from(document.getElementsByTagName('pre')).map(function(pre){
-	var lines = pre.innerHTML.trim().replace(/\[(.*?)\]/g,'<u>$1</u>').split('\n');
+	var lines = pre.innerHTML.trim().split('\n');
 	var ol = document.createElement('ol');
-	var total_cost = 0;
+	var total = 0;
 	lines.map(function(line){
 		// strip comments
-		line = line.split('#',1)[0];
-		if (!line.trim()) return;
+		if ((i = line.indexOf('#')) != -1) {
+			line = line.substr(0,i);
+			if (!line.trim()) return;
+		}
 		// sum $
-		var arr = line.split('$',2);
-		var cost = parseInt(arr[1]);
-		if (Number.isInteger(cost)) total_cost += cost;
-		line = arr[0];
+		if ((i = line.indexOf('$')) != -1) {
+			var price = parseInt(line.substr(i+1),10);
+			isNaN(price) ? alert('invalid $: '+line) : total += price;
+			line = line.substr(0,i);
+		}
+		// chiclets
+		line = line.replace(/\[(.*?)\]/,function(match,sub){
+			var s = '';
+			sub.split('').forEach(function(v){ s += '<u class="ps'+v.toLowerCase()+'">'+v+'</u>'; })
+			return s;
+		})
 		var li = document.createElement('li');
 		li.innerHTML = line.trim();
 		if (line[0] == ' ') {
@@ -496,9 +515,11 @@ Array.from(document.getElementsByTagName('pre')).map(function(pre){
 			ol.append(li);
 		}
 	});
-	if (total_cost) pre.previousSibling.append(' ($'+total_cost+')');
+	if (pre.parentNode.id == 'plus')
+		total = parseInt((Date.now()-Date.parse('2013-02-28'))/1000/60/60/24*50/365);
+	if (total)
+		pre.previousSibling.setAttribute('title','$'+total+' ('+ol.childElementCount+' × '+(total/ol.childElementCount).toFixed(2)+')');
 	pre.replaceWith(ol);
 });
-document.getElementById('plus').firstElementChild.append(' (~$'+parseInt((Date.now()-Date.parse('2013-02-28'))/1000/60/60/24*50/365)+')');
 </script>
 </body>
