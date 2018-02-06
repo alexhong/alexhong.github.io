@@ -1,11 +1,8 @@
-$(function(){
-	if (location.protocol == 'http:') $('a.index').attr('href','../');
-	$('[title]').each(function(){
-		var l = $(this).attr('title');
-		l >= 5000 ? $(this).addClass('a')
-		: l >= 1000 ? $(this).addClass('b')
-		: l >= 500 ? $(this).addClass('c') 
-		: l >= 100 ? $(this).addClass('d') 
-		: '';
+window.onload = function(){
+	if (location.protocol == 'http:') 
+		document.querySelectorAll('a.index').setAttribute('href','../');
+	Array.from(document.querySelectorAll('[title]')).map(function(a){
+		var l = a.getAttribute('title');
+		a.className = l>=5000 ? 'a' : l>=1000 ? 'b' : l>=500 ? 'c' : l>=100 ? 'd' : '';
 	});
-});
+}
