@@ -7,10 +7,10 @@
 	<meta name="description" content="{MetaDescription}">{/block:Description}
 	<link rel="alternate" type="application/rss+xml" href="{RSS}">
 	<link rel="shortcut icon" href="{Favicon}">
-	<link rel="stylesheet" href="//alexhong.ml/tumblr/style.css">
+	<link rel="stylesheet" href="//alexhong.github.io/tumblr/style.css">
 	<style>{CustomCSS}</style>
 	<script src="//code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-	<script src="//alexhong.ml/tumblr/script.js"></script>
+	<script src="//alexhong.github.io/tumblr/script.js"></script>
 </head>
 
 <body class="{block:PermalinkPage}{block:Posts}{block:Date}permalink {/block:Date}{PostType}{/block:Posts}{/block:PermalinkPage}{block:IndexPage}index p{CurrentPage}{block:DayPage}day{/block:DayPage}{/block:IndexPage}{block:TagPage} tag{/block:TagPage}{block:SearchPage} search{/block:SearchPage}"{block:PermalinkPage}{block:Posts} data-tags="{TagsAsClasses}"{/block:Posts}{/block:PermalinkPage}>{block:IfGoogleAnalyticsID}
