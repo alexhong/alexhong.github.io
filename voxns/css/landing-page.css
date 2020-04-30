@@ -1,21 +1,22 @@
-in.c/*!
+@font-face { font-family: 'CiscoSansTT'; font-weight: 600; font-style: normal; src: url('../fonts/CiscoSansTTHeavy.woff') format('woff'); }
+@font-face { font-family: "CiscoSansTT"; font-weight: 500; font-style: normal; src: url('../fonts/CiscoSansTTBold.woff') format('woff'); }
+@font-face { font-family: "CiscoSansTT"; font-weight: 400; font-style: normal; src: url('../fonts/CiscoSansTTRegular.woff') format('woff'); }
+@font-face { font-family: "CiscoSansTT"; font-weight: 300; font-style: normal; src: url('../fonts/CiscoSansTTLight.woff') format('woff'); }
+@font-face { font-family: "CiscoSansTT"; font-weight: 200; font-style: normal; src: url('../fonts/CiscoSansTTExtraLight.woff') format('woff'); }
+@font-face { font-family: "CiscoSansTT"; font-weight: 100; font-style: normal; src: url('../fonts/CiscoSansTTThin.woff') format('woff'); }
+
+/*!
  * Start Bootstrap - Landing Page v5.0.7 (https://startbootstrap.com/template-overviews/landing-page)
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
  */
 
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: CiscoSansTT, 'Times New Roman', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
 }
 
 header.masthead {
@@ -125,6 +126,14 @@ footer.footer {
   padding-bottom: 4rem;
 }
 
+a {
+  color: #00BCEA;
+}
+
+a:hover {
+  color: #1F4F70;
+}
+
 .btn-primary {
   background-color: #00BCEA;
   border-color: #00BCEA;
@@ -132,6 +141,7 @@ footer.footer {
 
 .btn-primary.round {
   border-radius: 10rem;
+  font-size: 0.875rem;
 }
 
 .btn-primary:hover,
@@ -148,7 +158,7 @@ footer.footer {
 .navbar-brand {
   width: 128px;
   height: 50px;
-  background: #00BCEA url("../img/vox-mask.png") center/100% 100%;
+  background: url("../img/vox-logo.png") center/100% 100%;
 }
 
 .navbar-brand span {
@@ -156,6 +166,21 @@ footer.footer {
 }
 
 .navbar-brand .cisco {
-  margin-left: 128px;
+  margin-left: 140px;
   height: 40px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
