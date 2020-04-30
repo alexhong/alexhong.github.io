@@ -140,6 +140,7 @@ a:hover {
 }
 
 .btn-primary.round {
+  margin: 0.5rem 0;
   border-radius: 10rem;
   font-size: 0.875rem;
 }
@@ -151,14 +152,10 @@ a:hover {
   border-color: #1F4F70;
 }
 
-.navbar {
-  padding: 1rem;
-}
-
 .navbar-brand {
-  width: 128px;
   height: 50px;
-  background: url("../img/vox-logo.png") center/100% 100%;
+  margin: 0.5rem 0;
+  background: url("../img/vox-logo.png") left/auto 100% no-repeat;
 }
 
 .navbar-brand span {
