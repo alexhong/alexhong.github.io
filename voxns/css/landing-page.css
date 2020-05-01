@@ -24,8 +24,8 @@ header.masthead {
   background-color: #343a40;
   background: url("../img/bg-masthead.jpg") no-repeat center center;
   background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 16rem;
+  padding-bottom: 4rem;
 }
 
 header.masthead .overlay {
@@ -44,8 +44,8 @@ header.masthead h1 {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: 24rem;
+    padding-bottom: 6rem;
   }
   header.masthead h1 {
     font-size: 3rem;
@@ -153,18 +153,12 @@ a:hover {
 }
 
 .navbar-brand {
+  width: 128px;
   height: 50px;
-  margin: 0.5rem 0;
+  margin: 0.5rem 1rem 0.5rem 0;
   background: url("../img/vox-logo.png") left/auto 100% no-repeat;
-}
-
-.navbar-brand span {
-  display: none;
-}
-
-.navbar-brand .cisco {
-  margin-left: 140px;
-  height: 40px;
+  text-indent: -1000em;
+  overflow: hidden;
 }
 
 .video-container {
