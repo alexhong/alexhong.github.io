@@ -20,9 +20,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3rem;
   font-weight: 600;
   letter-spacing: -0.05rem;
+}
+
+.cisco-partner {
+  opacity: 0.5;
 }
 
 header.masthead {
@@ -30,7 +33,12 @@ header.masthead {
   background-color: #343a40;
   background: url("../img/bg-masthead.jpg") no-repeat center center;
   background-size: cover;
-  padding: 8rem 1rem 4rem;
+  padding: 8rem 1rem 2rem;
+}
+
+header.masthead+section {
+  background: #0096bb;
+  padding: 0 0 8rem;
 }
 
 header.masthead .overlay {
@@ -85,7 +93,7 @@ header.masthead .overlay {
 }
 
 .testimonials .testimonial-item {
-  max-width: 18rem;
+  max-width: 36rem;
 }
 
 .testimonials .testimonial-item img {
