@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  font-size: 3rem;
   font-weight: 600;
   letter-spacing: -0.05rem;
 }
@@ -29,7 +30,7 @@ header.masthead {
   background-color: #343a40;
   background: url("../img/bg-masthead.jpg") no-repeat center center;
   background-size: cover;
-  padding: 12rem 1rem 4rem;
+  padding: 8rem 1rem 4rem;
 }
 
 header.masthead .overlay {
@@ -40,15 +41,6 @@ header.masthead .overlay {
   top: 0;
   left: 0;
   opacity: 0.2;
-}
-
-@media (min-width: 768px) {
-  header.masthead {
-    padding-top: 6rem;
-  }
-  header.masthead h1 {
-    font-size: 3rem;
-  }
 }
 
 .showcase .showcase-text {
