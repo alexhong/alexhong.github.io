@@ -19,16 +19,22 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+h1 {
+  font-weight: 600;
+  letter-spacing: -0.05rem;
+}
+
 header.masthead {
   position: relative;
   background-color: #343a40;
   background: url("../img/bg-masthead.jpg") no-repeat center center;
   background-size: cover;
-  padding-top: 16rem;
+  padding-top: 8rem;
   padding-bottom: 4rem;
 }
 
 header.masthead .overlay {
+  display: none;
   position: absolute;
   background-color: #212529;
   height: 100%;
@@ -44,7 +50,7 @@ header.masthead h1 {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 24rem;
+    padding-top: 12rem;
     padding-bottom: 6rem;
   }
   header.masthead h1 {
