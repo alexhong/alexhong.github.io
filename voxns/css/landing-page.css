@@ -19,13 +19,29 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-h1 {
+h1, h2 {
   font-weight: 600;
   letter-spacing: -0.05rem;
 }
 
+h1.hr {
+  margin-top: 1rem;
+  border-top: 0.25rem solid;
+}
+
+h1.hr span {
+  background: #f8f9fa;
+  position: relative;
+  top: -1.8rem;
+  padding: 0 1rem;
+}
+
 .cisco-partner {
   opacity: 0.5;
+}
+
+.text-primary {
+  color: inherit !important;
 }
 
 header.masthead {
@@ -39,6 +55,10 @@ header.masthead {
 header.masthead+section {
   background: #0096bb;
   padding: 0 0 8rem;
+}
+
+section.blue {
+  background: #0096bb;
 }
 
 header.masthead .overlay {
