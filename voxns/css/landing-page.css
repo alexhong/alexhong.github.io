@@ -37,11 +37,11 @@ h1.hr span {
 }
 
 h2 .o7 {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .cisco-partner {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .text-primary {
@@ -63,16 +63,6 @@ header.masthead+section {
 
 section.blue {
   background: #0096bb;
-}
-
-header.masthead .overlay {
-  position: absolute;
-  background-color: #212529;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.2;
 }
 
 .showcase .showcase-text {
@@ -135,15 +125,6 @@ header.masthead .overlay {
   padding-bottom: 7rem;
 }
 
-.call-to-action .overlay {
-  position: absolute;
-  background-color: #212529;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.3;
-}
 
 footer.footer {
   padding-top: 4rem;
