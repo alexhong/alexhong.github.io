@@ -5,26 +5,35 @@
 @font-face { font-family: "CiscoSansTT"; font-weight: 200; font-style: normal; src: url('../fonts/CiscoSansTTExtraLight.woff') format('woff'); }
 @font-face { font-family: "CiscoSansTT"; font-weight: 100; font-style: normal; src: url('../fonts/CiscoSansTTThin.woff') format('woff'); }
 
-/*!
- * Start Bootstrap - Landing Page v5.0.7 (https://startbootstrap.com/template-overviews/landing-page)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
- */
-
 body {
   font-family: CiscoSansTT, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-}
 
-h1, h2 {
+h1, h2, h3 {
   font-weight: 500;
   letter-spacing: -0.05rem;
 }
 
+h4, h5, h6 {
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
 h2 span {
+  font-weight: 300;
+}
+
+.text-white h2 span {
   font-weight: 200;
 }
 
@@ -38,10 +47,6 @@ h1.hr span {
   position: relative;
   top: -1.8rem;
   padding: 0 1rem;
-}
-
-.o7 {
-  opacity: 0.6;
 }
 
 .cisco-partner {
@@ -60,7 +65,7 @@ header.masthead {
   padding: 4rem 1rem;
 }
 
-section.blue {
+.bg-blue {
   background: #0096bb;
 }
 
@@ -69,15 +74,9 @@ section.blue {
 }
 
 .showcase .showcase-img {
-  min-height: 30rem;
+  min-height: 24rem;
   background-size: cover;
   background-position: center;
-}
-
-@media (min-width: 768px) {
-  .showcase .showcase-text {
-    padding: 7rem;
-  }
 }
 
 .features-icons {
@@ -138,13 +137,17 @@ a:hover {
   color: #1F4F70;
 }
 
+.btn-primary.call {
+  margin: 0.5rem 0;
+}
+
 .btn-primary {
   background-color: #00BCEA;
   border-color: #00BCEA;
 }
 
-.btn-primary.round {
-  margin: 0.5rem 0;
+.btn-primary,
+.btn-warning {
   border-radius: 10rem;
 }
 
