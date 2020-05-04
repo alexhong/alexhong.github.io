@@ -20,12 +20,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2 {
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: -0.05rem;
-}
-
-h2 span {
-  font-weight: 200;
 }
 
 h1.hr {
@@ -40,7 +36,7 @@ h1.hr span {
   padding: 0 1rem;
 }
 
-.o7 {
+h2 .o7 {
   opacity: 0.6;
 }
 
@@ -57,7 +53,12 @@ header.masthead {
   background-color: #343a40;
   background: url("../img/masthead.jpg") no-repeat center center;
   background-size: cover;
-  padding: 4rem 1rem;
+  padding: 8rem 1rem 2rem;
+}
+
+header.masthead+section {
+  background: #0096bb;
+  padding: 0 0 8rem;
 }
 
 section.blue {
@@ -146,6 +147,7 @@ a:hover {
 .btn-primary.round {
   margin: 0.5rem 0;
   border-radius: 10rem;
+  font-size: 0.875rem;
 }
 
 .btn-primary:hover,
