@@ -9,44 +9,34 @@ body {
   font-family: CiscoSansTT, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-
-h1, h2, h3, h4 {
-  font-weight: 500;
-  letter-spacing: -0.05rem;
-}
-
-h5, h6 {
+.light {
   font-weight: 400;
 }
 
-h2 {
-  font-size: 1.75rem;
-}
-
-@media (min-width: 576px) {
-  h2 {
-    font-size: 2rem;
-  }
-}
-
-h2 span {
+.text-white .light {
   font-weight: 300;
 }
 
-.text-white h2 span {
-  font-weight: 200;
+.heavy {
+  font-weight: 600;
 }
 
-h2.hr {
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  letter-spacing: -0.04rem;
+}
+
+
+.hr {
   margin-top: 6rem;
   border-top: 0.25rem solid;
 }
 
-h2.hr span {
+.hr span {
   font-weight: inherit;
   background: #fff;
   position: relative;
-  top: -1.8rem;
+  top: -1.6rem;
   padding-right: 1rem;
 }
 
@@ -85,7 +75,7 @@ header.masthead {
     padding: 3rem;
   }
   .showcase .showcase-img {
-    min-height: 24rem;
+    min-height: 20rem;
   }
 }
 
@@ -151,8 +141,7 @@ a:hover {
   border-color: #00BCEA;
 }
 
-.btn-primary,
-.btn-warning {
+.btn-primary {
   border-radius: 10rem;
 }
 
