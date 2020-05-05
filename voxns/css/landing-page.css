@@ -9,6 +9,19 @@ body {
   font-family: CiscoSansTT, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 768px) { 
+  .already {
+    background: url("../img/cisco-phone.jpg") no-repeat center top;
+    background-size: auto 600px;
+  }
+}
+
 .light {
   font-weight: 400;
 }
@@ -51,33 +64,47 @@ h1, h2, h3, h4, h5, h6 {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../img/masthead.jpg") no-repeat center center;
+  background: url("../img/masthead.jpg") no-repeat top center;
   background-size: cover;
-  padding: 4rem 1rem;
+  padding: 4rem 1rem 0;
+}
+
+.masthead .video-container {
+  position: relative;
+  /*top: 4rem;*/
+  margin-bottom: -4rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
 .bg-blue {
   background: #0096bb;
 }
 
+.showcase {
+  padding: 2rem 1rem 6rem;
+}
+
 .showcase .showcase-text {
-  padding: 2rem;
+  /*padding: 0 15px;*/
 }
 
 .showcase .showcase-img {
   min-height: 16rem;
   background-size: cover;
   background-position: center;
+  border: 1rem solid white;
 }
 
+/*
 @media (min-width: 768px) {
   .showcase .showcase-text {
-    padding: 3rem;
+    padding: 1rem 3rem;
   }
   .showcase .showcase-img {
     min-height: 20rem;
   }
 }
+*/
 
 .features-icons .features-icons-item {
   max-width: 20rem;
