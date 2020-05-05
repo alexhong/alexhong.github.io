@@ -10,12 +10,12 @@ body {
 }
 
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-weight: 500;
   letter-spacing: -0.05rem;
 }
 
-h4, h5, h6 {
+h5, h6 {
   font-weight: 400;
 }
 
@@ -37,16 +37,17 @@ h2 span {
   font-weight: 200;
 }
 
-h1.hr {
-  margin-top: 1rem;
+h2.hr {
+  margin-top: 6rem;
   border-top: 0.25rem solid;
 }
 
-h1.hr span {
-  background: #f8f9fa;
+h2.hr span {
+  font-weight: inherit;
+  background: #fff;
   position: relative;
   top: -1.8rem;
-  padding: 0 1rem;
+  padding-right: 1rem;
 }
 
 .cisco-partner {
@@ -88,11 +89,6 @@ header.masthead {
   }
 }
 
-.features-icons {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
 .features-icons .features-icons-item {
   max-width: 20rem;
 }
@@ -110,8 +106,8 @@ header.masthead {
 }
 
 .testimonials {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .testimonials .testimonial-item {
@@ -128,8 +124,8 @@ header.masthead {
   background-color: #343a40;
   background: url("../img/masthead.jpg") no-repeat center center;
   background-size: cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 
