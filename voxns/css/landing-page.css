@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
   position: relative;
   top: -1.6rem;
-  padding-right: 1rem;
+  padding-right: 0.5rem;
 }
 
 .cisco-partner {
@@ -126,8 +126,8 @@ header.masthead {
   height: 7rem;
   color: #fff;
   background: #00BCEA;
-  border-radius: 0.3rem;
-/*  text-shadow: 0 1px 4px rgba(0,0,0,0.2);
+/* border-radius: 0.3rem;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.2);
   box-shadow: inset 0 1px 4px rgba(0,0,0,0.2);*/
 }
 
