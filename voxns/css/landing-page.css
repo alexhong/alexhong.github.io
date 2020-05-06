@@ -58,16 +58,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hr {
+  color: #0096bb;
   margin-bottom: 2rem;
-  border-bottom: 0.25rem solid;
+  border-bottom: 0.2rem solid #0096bb;
 }
 
 .hr span {
   font-weight: inherit;
   background: #fff;
   position: relative;
-  top: 0.7rem;
-  padding-right: 0.5rem;
+  top: 0.65rem;
+  padding-right: 1rem;
 }
 
 .cisco-partner {
@@ -97,11 +98,7 @@ header.masthead {
 }
 
 .showcase {
-  padding: 3rem 1rem 4rem;
-}
-
-.showcase .showcase-text {
-  /*padding: 0 15px;*/
+  padding: 0 1rem;
 }
 
 .showcase .showcase-img {
@@ -110,7 +107,7 @@ header.masthead {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  border: 1rem solid white;
+  border: 1rem solid #fff;
 }
 
 /*
@@ -168,24 +165,25 @@ a:hover {
   color: #1F4F70;
 }
 
-.btn-primary.call {
+.contact {
   margin: 0.5rem 0;
 }
 
-.btn-primary {
-  background-color: #00BCEA;
-  border-color: #00BCEA;
+.social {
+  font-size: 1.5rem;
 }
 
-.btn-primary {
+.call {
   border-radius: 10rem;
+  white-space: nowrap;
 }
 
-.btn-primary:hover,
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
-.show > .btn-primary.dropdown-toggle {
-  background-color: #1F4F70;
-  border-color: #1F4F70;
+.btn-warning {
+  font-size: 1.1rem;
+}
+
+.btn-warning .fas {
+  font-size: 90%;
 }
 
 .navbar-brand {
