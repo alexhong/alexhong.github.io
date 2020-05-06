@@ -76,13 +76,13 @@ header.masthead {
   position: relative;
   background: #0096bb url("../img/masthead.jpg") no-repeat top center;
   background-size: cover;
-  padding: 4rem 1rem 0;
+  padding: 4rem 1rem 4rem;
 }
 
 .masthead .video-container {
   position: relative;
   /*top: 4rem;*/
-  margin-bottom: -4rem;
+  /*margin-bottom: -4rem;*/
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
