@@ -6,6 +6,7 @@
 @font-face { font-family: "CiscoSansTT"; font-weight: 100; font-style: normal; src: url('../fonts/CiscoSansTTThin.woff') format('woff'); }
 
 body {
+  color: #505050;
   font-family: CiscoSansTT, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -46,8 +47,13 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  color: #202020;
   font-weight: 500;
   letter-spacing: -0.04rem;
+}
+
+.text-white h3 {
+  color: #fff;
 }
 
 .hr {
@@ -90,7 +96,7 @@ header.masthead {
 }
 
 .showcase {
-  padding: 4rem 1rem;
+  padding: 3rem 1rem 4rem;
 }
 
 .showcase .showcase-text {
@@ -100,8 +106,8 @@ header.masthead {
 .showcase .showcase-img {
   min-height: 16rem;
   background-color: transparent;
-  background-size: contain;
-  background-position: right;
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
   border: 1rem solid white;
 }
@@ -119,10 +125,6 @@ header.masthead {
 
 .features-icons .features-icons-item {
   /*max-width: 20rem;*/
-}
-
-.features-icons p {
-  color: #606060;
 }
 
 .features-icons .features-icons-item .features-icons-icon {
