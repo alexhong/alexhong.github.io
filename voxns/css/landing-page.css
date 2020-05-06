@@ -22,6 +22,17 @@ body {
   }
 }
 
+.testimonial {
+  background: #0096bb url("../img/testimonial.jpg") no-repeat center;
+  background-size: auto 100%;
+}
+
+@media (min-width: 990px) {
+  .testimonial {
+    background-position: right;
+  }
+}
+
 .light {
   font-weight: 400;
 }
@@ -63,8 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header.masthead {
   position: relative;
-  background-color: #343a40;
-  background: url("../img/masthead.jpg") no-repeat top center;
+  background: #0096bb url("../img/masthead.jpg") no-repeat top center;
   background-size: cover;
   padding: 4rem 1rem 0;
 }
@@ -90,8 +100,10 @@ header.masthead {
 
 .showcase .showcase-img {
   min-height: 16rem;
-  background-size: cover;
-  background-position: center;
+  background-color: transparent;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
   border: 1rem solid white;
 }
 
