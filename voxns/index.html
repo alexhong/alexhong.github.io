@@ -154,7 +154,8 @@
       <div class="row">
         <div class="col-lg-4">
           <div class="video-container">
-            <iframe class="video" src="https://www.youtube-nocookie.com/embed/MbvtjK7nkW4" allowfullscreen></iframe>
+            <a class="video-overlay" href="#"></a>
+            <iframe class="video" src="https://www.youtube-nocookie.com/embed/MbvtjK7nkW4?showinfo=0" allowfullscreen></iframe>
           </div>
           <h5 class="mt-3">Unique Consultative Approach</h5>
           <p class="mb-4">We use our proprietary Vox Lifecycle consultative framework to find the right technology fit for your unique business needs and desired outcomes.</p>
@@ -216,6 +217,19 @@
 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+(function($) {
+$(document).ready(function() {
+$('.video-overlay').click(function() {
+event.preventDefault();
+$(this).fadeOut();
+var iframe = $(this).next('iframe'),
+iframe_src = $(iframe).attr('src');
+$(iframe).attr('src', iframe_src + '&autoplay=1');
+});
+});
+})(jQuery);
+</script>
 
 </body>
 
