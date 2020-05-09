@@ -207,6 +207,24 @@ a:hover {
   font-size: 90%;
 }
 
+/*.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}*/
+
+.navbar-light {
+  background: #fff;
+}
+
+.navbar.fixed-top {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
 .navbar-brand {
   width: 128px;
   height: 50px;
