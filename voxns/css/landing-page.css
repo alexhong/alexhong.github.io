@@ -5,6 +5,10 @@
 @font-face { font-family: "CiscoSansTT"; font-weight: 200; font-style: normal; src: url('../fonts/CiscoSansTTExtraLight.woff') format('woff'); }
 @font-face { font-family: "CiscoSansTT"; font-weight: 100; font-style: normal; src: url('../fonts/CiscoSansTTThin.woff') format('woff'); }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #505050;
   font-family: CiscoSansTT, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -115,6 +119,10 @@ header.masthead {
 
 .showcase {
   padding: 3rem 1rem;
+  background: #f0f0f0;
+}
+
+footer {
   background: #f0f0f0;
 }
 
@@ -268,4 +276,9 @@ a:hover {
   right: 0;
   bottom: 0;
   background: rgba(0,0,0,0.2);
+}
+
+.ceiling-bg {
+  background: #fff url("../img/ceiling.jpg") center no-repeat;
+  background-size: cover;
 }
