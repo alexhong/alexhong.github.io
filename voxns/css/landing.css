@@ -54,9 +54,14 @@ header  { padding: 6rem 1rem 1rem; }
 section { padding: 6rem 1rem; }
 footer  { padding: 4rem 1rem; }
 
+.masthead { 
+  padding: 4rem 1rem 0;
+  background-image: url("bg-masthead.jpg"); 
+  background-position: top center; 
+}
+
 .bg-gray  { background-color: #f0f0f0; }
 .bg-blue  { background-color: #0096bb; }
-.masthead { background-image: url("bg-masthead.jpg"); background-position: top center; }
 .skyline  { background-image: url("bg-skyline.jpg");  }
 .ceiling  { background-image: url("bg-ceiling.jpg"); background-position: bottom center; }
 .happy    { background-image: url("bg-happy.jpg"); }
@@ -135,12 +140,6 @@ form {
 
 .btn-lg {
   font-size: 1.1rem;
-}
-
-.btn-caps {
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 0.04rem;
 }
 
 .features-icons {
