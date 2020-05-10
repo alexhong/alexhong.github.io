@@ -20,9 +20,9 @@ body {
   }
 }
 
-p, ul, ol {
-  color: #505050;
-}
+a         { color: #00BCEA; }
+a:hover   { color: #1F4F70; }
+p, ul, ol { color: #505050; }
 
 ul, ol {
   padding-left: 1.5rem;
@@ -72,7 +72,7 @@ footer  { padding: 4rem 1rem; }
 
 @media (min-width: 768px) { 
   .already {
-    background: url("../img/cisco-phone2.jpg") no-repeat center top;
+    background: url("../img/bg-phone.jpg") no-repeat center top;
     background-size: auto 500px;
   }
 }
@@ -97,7 +97,6 @@ label small   { color: #a0a0a0; }
   opacity: 0.6;
 }
 
-
 .masthead .video-container {
   position: relative;
   /*top: 4rem;*/
@@ -116,7 +115,6 @@ label small   { color: #a0a0a0; }
 }
 
 .form-header {
-  background: #fff url("../img/ceiling.jpg") bottom no-repeat;
   background-size: cover;
   padding: 1.5rem;
   border-radius: 0.5rem 0.5rem 0 0;
@@ -135,22 +133,23 @@ form {
   box-shadow: inset 0 1px 4px rgba(0,0,0,0.1);
 }
 
-.features-icons {
-  text-align: center;
+.btn-lg {
+  font-size: 1.1rem;
 }
 
-.features-icons .features-icons-item {
-  /*max-width: 20rem;*/
+.btn-caps {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+}
+
+.features-icons {
+  text-align: center;
 }
 
 .features-icons .features-icons-item .features-icons-icon {
   height: 7rem;
   color: #00BCEA;
-  /*color: #fff;*/
-  /*background: #00BCEA;*/
-/* border-radius: 0.3rem;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.2);
-  box-shadow: inset 0 1px 4px rgba(0,0,0,0.2);*/
 }
 
 .features-icons .features-icons-item .features-icons-icon i {
@@ -161,32 +160,12 @@ form {
   font-size: 5rem;
 }
 
-
-
-a {
-  color: #00BCEA;
-}
-
-a:hover {
-  color: #1F4F70;
-}
-
 .contact {
   margin: 0.5rem 0;
 }
 
 .social {
   font-size: 1.5rem;
-}
-
-.btn-lg {
-  font-size: 1.1rem;
-}
-
-.btn-caps {
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 0.04rem;
 }
 
 .call {
@@ -210,17 +189,7 @@ a:hover {
   font-size: 90%;
 }
 
-/*.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: #fff;
-  z-index: 1;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}*/
-
-.navbar-light {
+.navbar {
   background: #fff;
 }
 
@@ -273,8 +242,7 @@ a:hover {
   background: rgba(0,0,0,0.2);
 }
 
-
-.presenter-item img {
+.headshot {
   max-width: 12rem;
   box-shadow: 0 1px 4px rgba(0,0,0,0.2)
 }
