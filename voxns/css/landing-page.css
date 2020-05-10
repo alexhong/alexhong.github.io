@@ -106,6 +106,15 @@ header.masthead {
   padding: 4rem 1rem 0;
 }
 
+@media (max-width: 576px) {
+  .call span {
+    display: none;
+  }
+  header.masthead {
+    background-image: none;
+  }
+}
+
 .masthead .video-container {
   position: relative;
   /*top: 4rem;*/
@@ -119,9 +128,9 @@ header.masthead {
 
 .showcase {
   padding: 3rem 1rem;
-  background: #f0f0f0;
 }
 
+.gray-bg,
 footer {
   background: #f0f0f0;
 }
@@ -293,5 +302,10 @@ a:hover {
 
 .ceiling-bg {
   background: #fff url("../img/ceiling.jpg") bottom no-repeat;
+  background-size: cover;
+}
+
+.skyline {
+  background: #0096bb url("../img/skyline.jpg") no-repeat center center; 
   background-size: cover;
 }
