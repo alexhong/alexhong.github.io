@@ -1,9 +1,9 @@
-@font-face { font-family: 'CiscoSansTT'; font-weight: 600; font-style: normal; src: url('../fonts/CiscoSansTTHeavy.woff') format('woff'); }
-@font-face { font-family: "CiscoSansTT"; font-weight: 500; font-style: normal; src: url('../fonts/CiscoSansTTBold.woff') format('woff'); }
-@font-face { font-family: "CiscoSansTT"; font-weight: 400; font-style: normal; src: url('../fonts/CiscoSansTTRegular.woff') format('woff'); }
-@font-face { font-family: "CiscoSansTT"; font-weight: 300; font-style: normal; src: url('../fonts/CiscoSansTTLight.woff') format('woff'); }
-@font-face { font-family: "CiscoSansTT"; font-weight: 200; font-style: normal; src: url('../fonts/CiscoSansTTExtraLight.woff') format('woff'); }
-@font-face { font-family: "CiscoSansTT"; font-weight: 100; font-style: normal; src: url('../fonts/CiscoSansTTThin.woff') format('woff'); }
+@font-face { font-family: 'CiscoSansTT'; font-weight: 600; font-style: normal; src: url('fonts/CiscoSansTTHeavy.woff') format('woff'); }
+@font-face { font-family: "CiscoSansTT"; font-weight: 500; font-style: normal; src: url('fonts/CiscoSansTTBold.woff') format('woff'); }
+@font-face { font-family: "CiscoSansTT"; font-weight: 400; font-style: normal; src: url('fonts/CiscoSansTTRegular.woff') format('woff'); }
+@font-face { font-family: "CiscoSansTT"; font-weight: 300; font-style: normal; src: url('fonts/CiscoSansTTLight.woff') format('woff'); }
+@font-face { font-family: "CiscoSansTT"; font-weight: 200; font-style: normal; src: url('fonts/CiscoSansTTExtraLight.woff') format('woff'); }
+@font-face { font-family: "CiscoSansTT"; font-weight: 100; font-style: normal; src: url('fonts/CiscoSansTTThin.woff') format('woff'); }
 
 html {
   scroll-behavior: smooth;
@@ -56,15 +56,15 @@ footer  { padding: 4rem 1rem; }
 
 .masthead { 
   padding: 4rem 1rem 0;
-  background-image: url("bg-masthead.jpg"); 
+  background-image: url("img/bg-masthead.jpg"); 
   background-position: top center; 
 }
 
 .bg-gray  { background-color: #f0f0f0; }
 .bg-blue  { background-color: #0096bb; }
-.skyline  { background-image: url("bg-skyline.jpg");  }
-.ceiling  { background-image: url("bg-ceiling.jpg"); background-position: bottom center; }
-.happy    { background-image: url("bg-happy.jpg"); }
+.skyline  { background-image: url("img/bg-skyline.jpg");  }
+.ceiling  { background-image: url("img/bg-ceiling.jpg"); background-position: bottom center; }
+.happy    { background-image: url("img/bg-happy.jpg"); }
 
 @media (max-width: 576px) {
   .call span {
@@ -77,7 +77,7 @@ footer  { padding: 4rem 1rem; }
 
 @media (min-width: 768px) { 
   .already {
-    background: url("../img/bg-phone.jpg") no-repeat center top;
+    background: url("img/bg-phone.jpg") no-repeat center top;
     background-size: auto 500px;
   }
 }
@@ -200,7 +200,7 @@ form {
   width: 128px;
   height: 50px;
   margin: 0.5rem 1rem 0.5rem 0;
-  background: url("../img/vox-logo.png") left/auto 100% no-repeat;
+  background: url("img/vox-logo.png") left/auto 100% no-repeat;
   text-indent: -1000em;
   overflow: hidden;
 }
@@ -212,6 +212,7 @@ form {
 }
 
 .video-overlay,
+.video-overlay img,
 .video {
   position: absolute;
   top: 0;
@@ -223,8 +224,6 @@ form {
 
 .video-overlay {
   z-index: 1;
-  background: url("../img/video-overlay.jpg") center no-repeat;
-  background-size: cover;
 }
 
 .video-overlay:hover {
