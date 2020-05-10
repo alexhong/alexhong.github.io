@@ -130,8 +130,7 @@ header.masthead {
   padding: 3rem 1rem;
 }
 
-.gray-bg,
-footer {
+.bg-gray {
   background: #f0f0f0;
 }
 
@@ -300,12 +299,21 @@ a:hover {
   background: rgba(0,0,0,0.2);
 }
 
-.ceiling-bg {
+.bg-ceiling {
   background: #fff url("../img/ceiling.jpg") bottom no-repeat;
   background-size: cover;
 }
 
-.skyline {
+.bg-skyline {
   background: #0096bb url("../img/skyline.jpg") no-repeat center center; 
   background-size: cover;
+}
+
+.presenters .testimonial-item {
+  max-width: 18rem;
+}
+
+.presenters .presenter-item img {
+  max-width: 12rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2)
 }
