@@ -10,21 +10,63 @@ html {
 }
 
 body {
-  color: #505050;
+  color: #202020;
   font-family: CiscoSansTT, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-label small {
-  color: #a0a0a0;
-}
-
-::placeholder {
-  color: #c0c0c0 !important;
 }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+}
+
+p, ul, ol {
+  color: #505050;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  letter-spacing: -0.04rem;
+}
+
+.light          { font-weight: 400; }
+.bg-blue .light { font-weight: 300; }
+
+.bg-blue,
+.bg-blue p,
+.bg-blue ul,
+.bg-blue ol {
+  color: #fff;
+}
+
+header,
+section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header  { padding: 6rem 1rem 1rem; }
+section { padding: 6rem 1rem; }
+footer  { padding: 4rem 1rem; }
+
+.bg-gray  { background-color: #f0f0f0; }
+.bg-blue  { background-color: #0096bb; }
+.masthead { background-image: url("bg-masthead.jpg"); background-position: top center; }
+.skyline  { background-image: url("bg-skyline.jpg");  }
+.ceiling  { background-image: url("bg-ceiling.jpg"); background-position: bottom center; }
+.happy    { background-image: url("bg-happy.jpg"); }
+
+@media (max-width: 576px) {
+  .call span {
+    display: none;
+  }
+  header.masthead {
+    background-image: none;
   }
 }
 
@@ -35,46 +77,10 @@ label small {
   }
 }
 
-.testimonial {
-  background: #0096bb url("../img/testimonial.jpg") no-repeat center;
-  background-size: auto 100%;
-}
-
-@media (min-width: 990px) {
-  .testimonial {
-    background-position: right;
-  }
-}
-
-.light {
-  font-weight: 400;
-}
-
-.text-white .light {
-  font-weight: 300;
-}
-
-.heavy {
-  font-weight: 600;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #202020;
-  font-weight: 500;
-  letter-spacing: -0.04rem;
-}
-
-.text-white h1,
-.text-white h2,
-.text-white h3,
-.text-white h4,
-.text-white h5,
-.text-white h6 {
-  color: #fff;
-}
+label small   { color: #a0a0a0; }
+::placeholder { color: #c0c0c0 !important; }
 
 .hr {
-  /*color: #0096bb;*/
   margin-bottom: 1rem;
   border-bottom: 0.2rem solid;
 }
@@ -91,47 +97,12 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.6;
 }
 
-.text-primary {
-  color: inherit !important;
-}
-
-ul, ol {
-  padding-left: 1.5rem;
-}
-
-header.masthead {
-  position: relative;
-  background: #0096bb url("../img/masthead.jpg") no-repeat top center;
-  background-size: cover;
-  padding: 4rem 1rem 0;
-}
-
-@media (max-width: 576px) {
-  .call span {
-    display: none;
-  }
-  header.masthead {
-    background-image: none;
-  }
-}
 
 .masthead .video-container {
   position: relative;
   /*top: 4rem;*/
   margin-bottom: -4rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-.bg-blue {
-  background-color: #0096bb;
-}
-
-.showcase {
-  padding: 3rem 1rem;
-}
-
-.bg-gray {
-  background: #f0f0f0;
 }
 
 .showcase .showcase-img {
@@ -190,10 +161,7 @@ form {
   font-size: 5rem;
 }
 
-footer.footer {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
+
 
 a {
   color: #00BCEA;
@@ -213,6 +181,12 @@ a:hover {
 
 .btn-lg {
   font-size: 1.1rem;
+}
+
+.btn-caps {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
 }
 
 .call {
@@ -299,21 +273,8 @@ a:hover {
   background: rgba(0,0,0,0.2);
 }
 
-.bg-ceiling {
-  background: #fff url("../img/ceiling.jpg") bottom no-repeat;
-  background-size: cover;
-}
 
-.bg-skyline {
-  background: #0096bb url("../img/skyline.jpg") no-repeat center center; 
-  background-size: cover;
-}
-
-.presenters .testimonial-item {
-  max-width: 18rem;
-}
-
-.presenters .presenter-item img {
+.presenter-item img {
   max-width: 12rem;
   box-shadow: 0 1px 4px rgba(0,0,0,0.2)
 }
