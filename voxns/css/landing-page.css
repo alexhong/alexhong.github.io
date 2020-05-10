@@ -136,11 +136,24 @@ footer {
   border-radius: 1.5rem;
 }
 
+.form-header {
+  background: #fff url("../img/ceiling.jpg") bottom no-repeat;
+  background-size: cover;
+  padding: 1.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border: 0.1rem solid #e6e6e6;
+  border-bottom: 0;
+}
+
+.form-header + form {
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
 form {
   background: #f0f0f0;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  box-shadow: inset 0 1px 4px rgba(0,0,0,0.2);
+  box-shadow: inset 0 1px 4px rgba(0,0,0,0.1);
 }
 
 .features-icons {
@@ -279,6 +292,6 @@ a:hover {
 }
 
 .ceiling-bg {
-  background: #fff url("../img/ceiling.jpg") center no-repeat;
+  background: #fff url("../img/ceiling.jpg") bottom no-repeat;
   background-size: cover;
 }
