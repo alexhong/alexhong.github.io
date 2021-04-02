@@ -587,8 +587,8 @@ Array.from(document.getElementsByTagName('pre')).map(function(pre){
 			list.append(li);
 		}
 	});
-	if (pre.parentNode.id == 'plus')
-		total = parseInt((Date.now()-Date.parse('2013-02-28'))/1000/60/60/24*50/365);
+	// if (pre.parentNode.id == 'plus')
+	// 	total = parseInt((Date.now()-Date.parse('2013-02-28'))/1000/60/60/24*50/365);
 	if (total)
 		pre.previousSibling.setAttribute('title','$'+total+' ('+list.childElementCount+' × '+(total/list.childElementCount).toFixed(2)+')');
 	pre.replaceWith(list);
