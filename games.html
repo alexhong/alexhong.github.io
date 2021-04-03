@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>games.owned</title>
+<title>games</title>
 <link href="css/games.css" rel="stylesheet">
 <script src="js/smartquotes.js"></script>
 </head>
@@ -588,7 +588,7 @@ Array.from(document.getElementsByTagName('pre')).map(function(pre){
 		})
 		var li = document.createElement('li');
 		li.innerHTML = line.trim();
-		if (line[0] == ' ' || line[0] == '	') {
+		if (line[0] == '\t') {
 			var last = list.lastElementChild;
 			if (!last.getElementsByTagName('ul').length) last.append(document.createElement('ul'));
 			last.getElementsByTagName('ul')[0].append(li);
