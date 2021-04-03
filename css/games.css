@@ -18,13 +18,14 @@ div {
 
 @media only screen and (min-width: 560px) { 
 	#owned div { 
-		width: 50%; 
+		width: 33%; 
 		float: left; 
 	} 
 }
 
-li li { padding-left: 10px; }
+li li { padding-left: 14px; }
 
+header span,
 header:after {
 	content: '\00a0\00a0'attr(title);
 	font-size: 10px;
@@ -41,10 +42,10 @@ u {
 	text-align: center;
 	white-space: nowrap;
 	padding: 0 2px;
-	margin-right: 2px;
+	margin-right: 1px;
 	border: 1px solid;
-	border-radius: 2px;
-	box-shadow: 0 1px 0 rgba(0,0,0,0.25);
+	border-radius: 1px;
+	border-bottom-width: 2px;
 }
 
 #owned u {
@@ -52,8 +53,8 @@ u {
 }
 
 .ps4 { color: #4080c0; }
-.ps3,.ps2 { color: #808080; }
-.psv,.psp,.ps1 { color: #40c080; }
+.ps3,.ps2 { color: #c0c0c0; }
+.psv,.psp,.ps1 { color: #40c040; }
 
 span {
 	color: #c04040;
