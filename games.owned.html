@@ -22,12 +22,12 @@
 [3] Beyond Good & Evil $3
 [4V] Bit.Trip Presents Runner 2: Future Legend of Rhythm Alien $2
 [4] Bloodborne $8
-Borderlands Bundle $21
- [3] Borderlands
- [3] Borderlands 2
-Borderlands: The Handsome Collection $18
- [4] Borderlands 2
- [4] Borderlands: The Pre-Sequel
+[3] Borderlands Bundle $21
+	Borderlands
+	Borderlands 2
+[4] Borderlands: The Handsome Collection $18
+	Borderlands 2
+	Borderlands: The Pre-Sequel
 [3] Braid $1
 [3] Catherine $7
 [43V] Cel Damage HD $3
@@ -61,18 +61,18 @@ Borderlands: The Handsome Collection $18
 [V] Killzone: Mercenary $9
 [4] Last Day of June $11
 [3] The Last of Us $36
- Season Pass $20
+	Season Pass $20
 [4] The Last of Us Remastered $11
 [4] Life Is Strange $10
 [4] Life Is Strange: Before the Storm $13
-Mass Effect Trilogy $15
- [3] Mass Effect
- [3] Mass Effect 2
- [3] Mass Effect 3 
+[3] Mass Effect Trilogy $15
+	Mass Effect
+	Mass Effect 2
+	Mass Effect 3 
 [3] Max Payne 3 $8
-Metal Gear Solid HD Collection $9
- [V] Metal Gear Solid 2: Sons of Liberty
- [V] Metal Gear Solid 3: Snake Eater
+[V] Metal Gear Solid HD Collection $9
+	Metal Gear Solid 2: Sons of Liberty
+	Metal Gear Solid 3: Snake Eater
 [3] Mirror's Edge $2
 [4] Mirror's Edge Catalyst $12
 [V] Need for Speed: Most Wanted $5
@@ -92,14 +92,14 @@ Metal Gear Solid HD Collection $9
 [P] Persona 3 Portable $5
 [V] Persona 4: Dancing All Night $13
 [V] Persona 4 Golden $9
-P3D & P5D Bundle $46
- [V] Persona 3: Dancing in Moonlight
- [V] Persona 5: Dancing in Starlight
+[V] P3D & P5D Bundle $46
+	Persona 3: Dancing in Moonlight
+	Persona 5: Dancing in Starlight
 [4] Plants vs. Zombies: Garden Warfare
-Prince of Persia Trilogy $8
- [3] Prince of Persia: The Sands of Time
- [3] Prince of Persia: Warrior Within
- [3] Prince of Persia: The Two Thrones
+[3] Prince of Persia Trilogy $8
+	Prince of Persia: The Sands of Time
+	Prince of Persia: Warrior Within
+	Prince of Persia: The Two Thrones
 [3] Prince of Persia: The Forgotten Sands $4
 [3] Red Dead Redemption $14
 [43V] Resogun
@@ -115,7 +115,7 @@ Prince of Persia Trilogy $8
 [V] Steins;Gate $3
 [3V] Stick It to the Man $6
 [4] Street Fighter V #60
- Season Pass #30
+	Season Pass #30
 [4] Tacoma $10
 [4] Tales from the Borderlands $4
 [3] Tales of Monkey Island $1
@@ -125,10 +125,10 @@ Prince of Persia Trilogy $8
 [V] Three Fourths Home $2
 [3] Tokyo Jungle $1
 [4] Tom Clancy's The Division 2 $3
-Uncharted: The Nathan Drake Collection $8
- [4] Uncharted: Drake's Fortune
- [4] Uncharted 2: Among Thieves
- [4] Uncharted 3: Drake's Deception
+[4] Uncharted: The Nathan Drake Collection $8
+	Uncharted: Drake's Fortune
+	Uncharted 2: Among Thieves
+	Uncharted 3: Drake's Deception
 [43V] The Unfinished Swan $4
 [4] Virginia $5
 [4V] Volume $5
@@ -217,7 +217,7 @@ Uncharted: The Nathan Drake Collection $8
 [3] Demon's Souls
 [4] Destiny 2
 [4] Detroit: Become Human
- [4] Heavy Rain
+	Heavy Rain
 [3] Deus Ex: Human Revolution
 [4] Deus Ex: Mankind Divided
 [3] Dirt 3
@@ -288,10 +288,10 @@ Uncharted: The Nathan Drake Collection $8
 [4] Heavy Rain
 [43V] Helldivers
 [V] History Legends of War: Patton
-Hitman HD Trilogy
- [3] Hitman 2: Silent Assassin
- [3] Hitman: Contracts
- [3] Hitman: Blood Money
+[3] Hitman HD Trilogy
+	Hitman 2: Silent Assassin
+	Hitman: Contracts
+	Hitman: Blood Money
 [3] Hitman: Absolution
 [4] Hitman: The Complete First Season
 [3] Hoard
@@ -354,9 +354,9 @@ Hitman HD Trilogy
 [3] Malicious
 [3] Master Reboot
 [3] Medal of Honor: Warfighter
-Mega Man 9 & 10 Combo Pack
- [3] Mega Man 9
- [3] Mega Man 10
+[3] Mega Man 9 & 10 Combo Pack
+	Mega Man 9
+	Mega Man 10
 [4] Mercenary Kings
 [3] Metal Gear Solid 4: Guns of the Patriots
 [4] Metal Gear Solid V: Ground Zeroes
@@ -417,9 +417,9 @@ Mega Man 9 & 10 Combo Pack
 [4] Rebel Galaxy
 [3] Remember Me
 [4] Resident Evil
-Resident Evil: Chronicles HD Collection
- [3] Resident Evil: The Umbrella Chronicles
- [3] Resident Evil: The Darkside Chronicles
+[3] Resident Evil: Chronicles HD Collection
+	Resident Evil: The Umbrella Chronicles
+	Resident Evil: The Darkside Chronicles
 [3] Retro/Grade
 [4] RIGS: Mechanized Combat League
 [4] RiME
@@ -588,7 +588,7 @@ Array.from(document.getElementsByTagName('pre')).map(function(pre){
 		})
 		var li = document.createElement('li');
 		li.innerHTML = line.trim();
-		if (line[0] == ' ') {
+		if (line[0] == ' ' || line[0] == '	') {
 			var last = list.lastElementChild;
 			if (!last.getElementsByTagName('ul').length) last.append(document.createElement('ul'));
 			last.getElementsByTagName('ul')[0].append(li);
@@ -602,5 +602,10 @@ Array.from(document.getElementsByTagName('pre')).map(function(pre){
 		pre.previousSibling.setAttribute('title','$'+total+' ('+list.childElementCount+' × '+(total/list.childElementCount).toFixed(2)+')');
 	pre.replaceWith(list);
 });
+document.querySelectorAll('u').forEach(function(u){
+	u.parentNode.classList.add(u.className);
+});
+var hash = window.location.hash.substr(1);
+if (hash) document.querySelectorAll('ol>li:not(.'+hash+')').forEach(function(li){ li.style.display = 'none' });
 </script>
 </body>

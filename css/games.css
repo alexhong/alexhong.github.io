@@ -23,7 +23,8 @@ div {
 	} 
 }
 
-li li { padding-left: 14px; }
+li li { color: #808080; padding-left: 2px; }
+li li:before { content: '\21b3\00a0'; font: 12px 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 header span,
 header:after {
@@ -52,9 +53,9 @@ u {
 	width: 7px;
 }
 
-.ps4 { color: #4080c0; }
-.ps3,.ps2 { color: #c0c0c0; }
-.psv,.psp,.ps1 { color: #40c040; }
+u.ps4 { color: #4080c0; }
+u.ps3, u.ps2 { color: #808080; }
+u.psv, u.psp, u.ps1 { color: #40c040; }
 
 span {
 	color: #c04040;
