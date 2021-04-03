@@ -16,14 +16,16 @@ div {
 	box-sizing: border-box; 
 }
 
-@media only screen and (min-width: 560px) { 
+@media only screen and (min-width: 600px) { 
 	#owned div { 
 		width: 33%; 
 		float: left; 
 	} 
 }
 
-li li { color: #808080; padding-left: 2px; }
+li { padding-left: 17px; text-indent: -17px; }
+u { text-indent: 0; }
+li li { color: #808080; padding-left: 0px; text-indent: -15px; }
 li li:before { content: '\21b3\00a0'; font: 12px 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 header span,
