@@ -25,7 +25,7 @@ div {
 
 li { padding-left: 17px; text-indent: -17px; }
 u { text-indent: 0; }
-li li { color: #808080; padding-left: 0px; text-indent: -14px; }
+li li { color: #808080; padding-left: 0.65em; text-indent: -14px; }
 li li:before { content: '\21b3\00a0'; }
 
 header span,
