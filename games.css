@@ -19,7 +19,7 @@ div {
 @media only screen and (min-width: 600px) { 
 	#owned div { 
 		width: 33.3%; 
-		float: left; 
+		float: right; 
 	} 
 }
 
