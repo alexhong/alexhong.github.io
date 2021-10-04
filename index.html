@@ -16,8 +16,8 @@
 }
 
 body {
-	color: #404040;
-	background: #fff;
+	color: #c0c0c0;
+	background: #000;
 	font: 18px/1.67 -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	padding: 2.22em;
 }
@@ -27,12 +27,21 @@ ul {
 }
 
 a {
-	color: #6080a0;
+	color: inherit;
 	text-decoration: none;
 }
 
+li li a:before {
+	content:  "⬇️ ";
+	opacity: 0.75;
+}
+
 a:hover, a:focus {
-	text-decoration: underline;
+	color: #fff;
+}
+
+a:hover:before, a:focus:before {
+	opacity: 1;
 }
 
 </style>
@@ -49,9 +58,9 @@ a:hover, a:focus {
 <ul>
 <li><a href="https://getstickerpack.com">getstickerpack.com</a>
 	<ul>
-	<li><a href="wa/ht1.wastickers">⬇ (20) HelloTalk 1</a></li>
-	<li><a href="wa/ht2.wastickers">⬇ (24) HelloTalk 2</a></li>
-	<li><a href="wa/qq.wastickers">⬇ (23) QQ</a></li>
+	<li><a href="wa/ht1.wastickers">(20) HelloTalk 1</a></li>
+	<li><a href="wa/ht2.wastickers">(24) HelloTalk 2</a></li>
+	<li><a href="wa/qq.wastickers">(23) QQ</a></li>
 	</ul>
 </li>
 
