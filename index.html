@@ -41,6 +41,24 @@ body {
 	text-align: center;
 }
 
+body.light {
+	color: #404040;
+	background: #fff;
+}
+
+a {
+	color: inherit;
+}
+
+a:hover, a:focus {
+	color: #fff;
+}
+
+body.light a:hover,
+body.light a:focus {
+	color: #808080;
+}
+
 h2 {
 	font-size: 100%;
 	font-weight: normal;
@@ -61,19 +79,6 @@ h2:after{
 p, ul {
 	margin-bottom: 1.67em;
 	white-space: nowrap;
-}
-
-a {
-	color: inherit;
-}
-
-li li a:before {
-	content:  "⬇️ ";
-	opacity: 0.75;
-}
-
-a:hover, a:focus {
-	color: #fff;
 }
 
 a:hover:before, a:focus:before {
@@ -104,15 +109,11 @@ a.paused:after  { content: "⏸️"; margin-left: 0.31em; }
 	<a href="https://www.instagram.com/modestmaoist/">instagram</a>
 </p>
 <p><a class="paused" href="https://www.etsy.com/shop/ntifa">etsy: ntifa</a></p>
-<!-- <ul>
-<li><a href="https://getstickerpack.com">getstickerpack.com</a>
-	<ul>
-		<li><a href="wa/ht1.wastickers">(20) HelloTalk 1</a></li>
-		<li><a href="wa/ht2.wastickers">(24) HelloTalk 2</a></li>
-	</ul>
-</li>
-</ul> -->
 
+<script>
+var hash = window.location.hash.substr(1);
+if (hash) document.body.className = hash;
+</script>
 </body>
 
 </html>
