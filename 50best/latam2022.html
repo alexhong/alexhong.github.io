@@ -10,7 +10,7 @@
 
 <body>
 
-<h1><a href="#"><span>Latin America’s</span> 100 Best Restaurants <i>2022</i></a></h1>
+<h1><span>Latin America’s</span> 100 Best Restaurants <i>2022</i></h1>
 <ol>
 	<li class="v">
 		<img src="https://www.theworlds50best.com/latinamerica/en/filestore/jpg/LatAm50BR22-Central-Dish-1.jpg"/>
@@ -714,16 +714,7 @@
 	</li>
 </ol>
 
-<script>
-document.querySelectorAll('.country').forEach(function(c){
-	c.parentNode.classList.add(c.classList[1]);
-});
-var hash = window.location.hash.substr(1);
-if (hash.length == 2) {
-	document.querySelectorAll('li').forEach(function(li){ li.classList.add('fade'); });
-	document.querySelectorAll('li.'+hash).forEach(function(li){ li.classList.remove('fade'); });
-}
-</script>
+<script src="50best.js"></script>
 </body>
 
 </html>
