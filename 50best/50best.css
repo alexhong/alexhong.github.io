@@ -30,7 +30,7 @@ p, h1, h2 {
 	font-size: 100%;
 	display: inline;
 }
-p.country {
+#title, p.country {
 	cursor: pointer;
 }
 .fade {
