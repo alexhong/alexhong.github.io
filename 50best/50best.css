@@ -2,6 +2,18 @@ body {
 	padding: 10px; 
 	font: 13px/20px -apple-system, BlinkMacSystemFont, Roboto, sans-serif; 
 }
+h1 {
+	text-transform: uppercase;
+}
+h1 span {
+	display: block;
+	font-size: 16px;
+	text-transform: none;
+}
+h1 i {
+	font-style: normal;
+	font-weight: normal;
+}
 a {
 	color: inherit;
 	text-decoration: none;
