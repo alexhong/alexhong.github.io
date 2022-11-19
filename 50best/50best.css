@@ -7,7 +7,10 @@ h1 {
 }
 h1 span {
 	display: block;
+}
+h1 b {
 	font-size: 16px;
+	line-height: 0;
 	text-transform: none;
 }
 h1 i {
