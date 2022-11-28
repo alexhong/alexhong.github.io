@@ -67,17 +67,6 @@ h2 {
 
 p+h2 { margin-top:  1.67em; }
 
-h2:before,
-h2:after{
-	font-size: 32px;
-	line-height: 0;
-	position: relative;
-	top: 4px;
-}
-
-.ent:before { content: "🇺🇸"; margin-right: 0.31em; }
-.ent:after  { content: "🇵🇪"; margin-left: 0.31em; }
-
 p, ul {
 	white-space: nowrap;
 }
@@ -86,11 +75,11 @@ a:hover:before, a:focus:before {
 	opacity: 1;
 }
 
-a.paused {
+.fade {
 	opacity: 0.5;
-	text-decoration: none;
 }
 
+a.paused 				{ text-decoration: none; }
 a.paused:before { content: "⏸️"; margin-right: 0.31em; }
 a.paused:after  { content: "⏸️"; margin-left: 0.31em; }
 
@@ -99,17 +88,17 @@ a.paused:after  { content: "⏸️"; margin-left: 0.31em; }
 
 <body>
 
-<h2 class="ent">ENTREG<b>ALEX</b></h2>
-<p>
-	<a href="https://wa.me/15106766288">whatsapp</a> ·
-	<a href="https://www.instagram.com/entregalex/">instagram</a>
-</p>
-<h2>Alex 洪 (personal)</h2>
+<h2>🐸&nbsp;&nbsp;<b>Alex 洪</b>&nbsp;&nbsp;📷</h2>
 <p>
 	<a href="https://www.facebook.com/alex.hong/">facebook</a> ·
 	<a href="https://www.instagram.com/modestmaoist/">instagram</a>
 </p>
-<p><a class="paused" href="https://www.etsy.com/shop/ntifa">etsy: ntifa</a></p>
+<p class="fade"><a class="paused" href="https://www.etsy.com/shop/ntifa">etsy: ntifa</a></p>
+<h2 class="ent">🇺🇸&nbsp;&nbsp;ENTREG<b>ALEX</b>&nbsp;&nbsp;🇵🇪</h2>
+<p>
+	<a href="https://wa.me/15106766288">whatsapp</a>
+</p>
+<p class="fade">prox viaje: por determinar</p>
 
 <script>
 var hash = window.location.hash.substr(1);
