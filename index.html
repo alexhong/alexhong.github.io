@@ -37,8 +37,7 @@ body {
 	color: #c0c0c0;
 	background: #000;
 	font: 24px/1.67 Rubik, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	padding: 3.33em 1.67em;
-	text-align: center;
+	padding: 3.33em 0;
 }
 
 body.light {
@@ -46,8 +45,25 @@ body.light {
 	background: #fff;
 }
 
+h2 {
+	text-align: center;
+}
+
+ul {
+	width: 50%;
+	float: left;
+	text-align: right;
+}
+
+ul+ul {
+	text-align: left;
+}
+
 a {
+	display: block;
 	color: inherit;
+	text-decoration: none;
+	padding: 0 0.5em;
 }
 
 a:hover, a:focus {
@@ -61,11 +77,10 @@ body.light a:focus {
 
 h2 {
 	font-size: 100%;
-	font-weight: normal;
 	white-space: nowrap;
 }
 
-p+h2 { margin-top:  1.67em; }
+p+h2 { margin-top: 1.67em; }
 
 p, ul {
 	white-space: nowrap;
@@ -79,28 +94,23 @@ a:hover:before, a:focus:before {
 	opacity: 0.5;
 }
 
-a.paused 				{ text-decoration: none; }
-a.paused:before { content: "⏸️"; margin-right: 0.31em; }
-a.paused:after  { content: "⏸️"; margin-left: 0.31em; }
-
 </style>
 </head>
 
 <body>
 
-<h2><!-- 🐸&nbsp;&nbsp; --><b>ALEX 洪</b><!-- &nbsp;&nbsp;📷 --></h2>
-<p>
-	<a href="https://www.instagram.com/modestmaoist/">insta</a> ·
-	<a href="https://www.facebook.com/alex.hong/">face</a> ·
-	<a href="https://www.etsy.com/shop/ntifa">etsy</a>
-</p>
-<!-- <p><a href="https://www.etsy.com/shop/ntifa">etsy</a></p> -->
-<h2><!-- 🇺🇸&nbsp;&nbsp; -->[ENTREG<b>ALEX</b>]<!-- &nbsp;&nbsp;🇵🇪 --></h2>
-<p>
-	<a href="https://wa.me/15106766288">whats</a> ·
-	<a href="https://grabr.io/es/users/558064">grabr</a>
-</p>
-<!-- <p class="fade">prox viaje: por determinar</p> -->
+<h2>ALEX 洪</h2>
+<ul>
+	<li><a href="https://www.instagram.com/modestmaoist/"><span>insta</span> 📷</a></li>
+	<li><a href="https://www.facebook.com/alex.hong/"><span>face</span> 🐸</a></li>
+	<li><a href="https://mastodon.social/@modestmaoist" rel="me"><span>mast</span> 🫥</a></li>
+</ul>
+<ul>
+	<li></li>
+	<li><a href="https://www.etsy.com/shop/ntifa">🌙 <span>etsy</span></a></li>
+	<li><a href="https://grabr.io/es/users/558064">📦 <span>grabr</span></a></li>
+	<li><a href="https://offerup.com/p/86128331">🏷️ <span>offerup</span></a></li>
+</ul>
 
 <script>
 var hash = window.location.hash.substr(1);
